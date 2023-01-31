@@ -1,0 +1,23 @@
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--c-main);
+    color: var(--c-bg);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 clamp(2rem, 6vw, 10rem);
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    font-size: clamp(2.4rem, 5vw, 4rem)
+}
+
+.hamburger-menu li:not(:last-child) {
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+}

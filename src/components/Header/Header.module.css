@@ -20,6 +20,7 @@
 .logo, .hamburger-button {
     text-transform: uppercase;
     font-size: clamp(1.6rem, 3vw, 2.4rem);
+    z-index: 2;
 }
 
 @media only screen and (min-width: 61.25em) {
