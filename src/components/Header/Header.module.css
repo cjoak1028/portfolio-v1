@@ -14,7 +14,8 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-medium);
+    font-family: var(--f-main);
 }
 
 .logo, .hamburger-button {

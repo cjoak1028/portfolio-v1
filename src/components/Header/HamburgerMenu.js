@@ -10,7 +10,7 @@ const HamburgerMenu = () => {
         <li>03/ PROJECTS</li>
         <li>04/ CONTACT</li>
       </ul>
-      {/* <p className={styles.email}>changju.kim10@gmail.com</p> */}
+      <p className={styles.email}>changju.kim10@gmail.com</p>
     </div>
   );
 };
