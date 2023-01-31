@@ -1,8 +1,15 @@
 /* VARIABLES */
 :root {
+  /* COLORS */
   --c-bg: #EDEAE8;
   --c-main: #2C2B2B;
-  --f-main: 'Inter', sans-serif;
+  /* FONTS */
+  --ff-main: 'Inter', sans-serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }
 
 /* RESET */
@@ -16,7 +23,7 @@ body {
   min-height: 100%;
   background-color: var(--c-bg);
   color: var(--c-main);
-  font-family: var(--f-main);
+  font-family: var(--ff-main);
 }
 
 *, *::before, *::after {

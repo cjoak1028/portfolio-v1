@@ -1,0 +1,17 @@
+.navigation {
+    display: none;
+    font-weight: var(--fw-medium);
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    text-transform: uppercase;
+}
+
+.navigation li:not(:last-child) {
+    margin-right: 3rem;
+}
+
+@media only screen and (min-width: 61.25em) {
+    .navigation {
+        display: flex;
+        list-style: none;
+    }
+}

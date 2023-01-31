@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: clamp(6.3rem, 13vw, 10rem);
+    padding: 0 clamp(2rem, 6vw, 10rem);
+}
+
+.logo {
+    font-weight: var(--fw-semi-bold);
+}
+
+.hamburger-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: var(--fw-regular);
+}
+
+.logo, .hamburger-button {
+    text-transform: uppercase;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+@media only screen and (min-width: 61.25em) {
+    .hamburger-button {
+        display: none;
+    }
+}
