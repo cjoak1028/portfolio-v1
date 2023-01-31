@@ -3,7 +3,7 @@ import styles from "./HamburgerMenu.module.css";
 
 const HamburgerMenu = () => {
   return (
-    <div className={`${styles["hamburger-menu"]} padding-x`}>
+    <div className={`${styles["hamburger-menu"]} padding-x flex flex-d-c flex-jc-c`}>
       <ul>
         <li>01/ ABOUT</li>
         <li>02/ SKILLS</li>

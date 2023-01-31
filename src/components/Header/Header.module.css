@@ -1,7 +1,4 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: clamp(6.3rem, 13vw, 10rem);
 }
 

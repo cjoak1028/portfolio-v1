@@ -1,7 +1,4 @@
 .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -26,5 +23,6 @@
     position: fixed;
     bottom: 2rem;
     right: clamp(2rem, 6vw, 10rem);
-    font-size: clamp(1.6rem, 4vw, 2.4rem)
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    color: var(--c-sub);
 }
