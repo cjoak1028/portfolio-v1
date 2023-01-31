@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} padding-x`}>
       <p className={`${styles.logo} ${openMenu ? "white" : ""}`}>
         CJ PORTFOLIO
       </p>

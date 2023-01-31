@@ -10,7 +10,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 0 clamp(2rem, 6vw, 10rem);
 }
 
 .hamburger-menu ul {

@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     height: clamp(6.3rem, 13vw, 10rem);
-    padding: 0 clamp(2rem, 6vw, 10rem);
 }
 
 .logo {
