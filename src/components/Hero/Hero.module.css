@@ -1,0 +1,23 @@
+.hero {
+    min-height: calc(100vh - clamp(6.3rem, 13vw, 10rem));
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 15vw;
+    font-weight: var(--fw-semi-bold);
+}
+
+.hero p {
+    font-size: clamp(1.2rem, 2.2vw, 2.4rem);
+    font-weight: var(--fw-medium);
+}
+
+.role {
+    margin-left: clamp(0rem, 1.5vw, 2rem);
+}
+
+.location {
+    text-align: right;
+    margin-right: clamp(0rem, 1.5vw, 2rem);
+}
