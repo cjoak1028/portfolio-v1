@@ -26,10 +26,7 @@ const Hero = () => {
         <h1>CHANG-JU</h1>
         <p className={styles.location}>
           TORONTO --{" "}
-          <span className={styles.time}>
-            {/* <span>01</span>:<span>23</span>:<span>34</span> <span>PM</span> */}
-            {date.toLocaleTimeString()}
-          </span>
+          <span className={styles.time}>{date.toLocaleTimeString()}</span>
         </p>
       </div>
     </div>
