@@ -21,3 +21,7 @@
     text-align: right;
     margin-right: clamp(0rem, 1.5vw, 2rem);
 }
+
+.time {
+    font-weight: var(--fw-light);
+}
