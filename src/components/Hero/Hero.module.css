@@ -4,7 +4,7 @@
 }
 
 .hero h1 {
-    font-size: 15vw;
+    font-size: 16.5vw;
     font-weight: var(--fw-semi-bold);
 }
 
@@ -23,5 +23,12 @@
 }
 
 .time {
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-regular);
+}
+
+.arrow {
+    font-size: clamp(3rem, 5vw, 6rem);
+    position: absolute;
+    bottom: 3rem;
+    left: clamp(2rem, 6vw, 10rem);
 }

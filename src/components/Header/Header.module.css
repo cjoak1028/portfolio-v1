@@ -1,5 +1,5 @@
 .header {
-    height: clamp(6.3rem, 13vw, 10rem);
+    height: clamp(6.3rem, 8vw, 10rem);
 }
 
 .logo {
@@ -16,7 +16,7 @@
 
 .logo, .hamburger-button {
     text-transform: uppercase;
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-size: clamp(1.6rem, 2.5vw, 2.4rem);
     z-index: 2;
 }
 

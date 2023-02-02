@@ -1,6 +1,6 @@
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
+import { HiOutlineChevronDown } from "react-icons/hi";
 
 const Hero = () => {
   const [date, setDate] = useState(new Date());
@@ -23,12 +23,13 @@ const Hero = () => {
     >
       <div>
         <p className={styles.role}>FRONT-END DEVELOPER</p>
-        <h1>CHANG-JU</h1>
+        <h1>CHANG*JU</h1>
         <p className={styles.location}>
           TORONTO --{" "}
           <span className={styles.time}>{date.toLocaleTimeString()}</span>
         </p>
       </div>
+      <HiOutlineChevronDown className={styles.arrow} />
     </div>
   );
 };
