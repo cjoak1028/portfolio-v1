@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { HiOutlineChevronDown } from "react-icons/hi";
+import { AiOutlineSmile } from "react-icons/ai";
 
 const Hero = () => {
   const [date, setDate] = useState(new Date());
@@ -23,7 +24,11 @@ const Hero = () => {
     >
       <div>
         <p className={styles.role}>FRONT-END DEVELOPER</p>
-        <h1>CHANG*JU</h1>
+        <h1>
+          CHANG
+            <AiOutlineSmile className={styles["name-divider"]} />
+          JU
+        </h1>
         <p className={styles.location}>
           TORONTO &#8212;{" "}
           <span className={styles.time}>{date.toLocaleTimeString()}</span>

@@ -4,8 +4,10 @@
 }
 
 .hero h1 {
-    font-size: 16.5vw;
+    font-size: 18vw;
     font-weight: var(--fw-semi-bold);
+    letter-spacing: -0.5vw;
+    white-space: nowrap;
 }
 
 .hero p {
@@ -31,5 +33,8 @@
     position: absolute;
     bottom: 3rem;
     left: clamp(2rem, 6vw, 10rem);
-    opacity: 0.5;
+}
+
+.name-divider {
+    font-size: 3vw;
 }
