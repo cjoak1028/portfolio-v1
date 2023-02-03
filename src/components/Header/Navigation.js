@@ -4,10 +4,10 @@ import styles from "./Navigation.module.css";
 const Navigation = () => {
   return (
     <ul className={styles.navigation}>
-      <li>01/ About</li>
-      <li>02/ Skills</li>
-      <li>03/ Projects</li>
-      <li>04/ Contact</li>
+      <li initial={{ opacity: 0 }}>01/ About</li>
+      <li initial={{ opacity: 0 }}>02/ Skills</li>
+      <li initial={{ opacity: 0 }}>03/ Projects</li>
+      <li initial={{ opacity: 0 }}>04/ Contact</li>
     </ul>
   );
 };

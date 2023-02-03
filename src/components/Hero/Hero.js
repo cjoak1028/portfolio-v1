@@ -25,10 +25,11 @@ const Hero = () => {
         <p className={styles.role}>FRONT-END DEVELOPER</p>
         <h1>CHANG*JU</h1>
         <p className={styles.location}>
-          TORONTO --{" "}
+          TORONTO &#8212;{" "}
           <span className={styles.time}>{date.toLocaleTimeString()}</span>
         </p>
       </div>
+
       <HiOutlineChevronDown className={styles.arrow} />
     </div>
   );

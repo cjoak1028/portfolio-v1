@@ -27,8 +27,9 @@
 }
 
 .arrow {
-    font-size: clamp(3rem, 5vw, 6rem);
+    font-size: clamp(3rem, 4.5vw, 6rem);
     position: absolute;
     bottom: 3rem;
     left: clamp(2rem, 6vw, 10rem);
+    opacity: 0.5;
 }

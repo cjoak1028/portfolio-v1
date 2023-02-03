@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}>
-      <p className={`${styles.logo} ${openMenu ? "white" : ""}`}>
+      <p initial={{ opacity: 0 }} className={`${styles.logo} ${openMenu ? "white" : ""}`}>
         CJ PORTFOLIO
       </p>
       <Navigation />
