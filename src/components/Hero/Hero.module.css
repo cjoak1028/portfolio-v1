@@ -1,21 +1,21 @@
 .hero {
-    /* min-height: calc(100vh - clamp(6.3rem, 13vw, 10rem)); */
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100%;
+    min-height: calc(100vh - clamp(6.3rem, 13vw, 10rem));
     text-transform: uppercase;
 }
 
-.hero h1 {
-    font-size: 18.4vw;
+.hero-title {
+    /* center hero title */
+    margin-top: clamp(-10rem, -13vw, -6.3rem);
+}
+
+.hero-title h1 {
+    font-size: 15vw;
     font-weight: var(--fw-semi-bold);
     letter-spacing: -0.5vw;
     white-space: nowrap;
 }
 
-.hero p {
+.hero-title p {
     font-size: clamp(1.2rem, 2.2vw, 2.4rem);
     font-weight: var(--fw-medium);
 }

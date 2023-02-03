@@ -22,11 +22,11 @@ const Hero = () => {
     <div
       className={`${styles.hero} padding-x flex flex-d-c flex-ai-c flex-jc-c`}
     >
-      <div>
+      <div className={styles["hero-title"]}>
         <p className={styles.role}>FRONT-END DEVELOPER</p>
         <h1>
           CHANG
-            <AiOutlineSmile className={styles["name-divider"]} />
+          <AiOutlineSmile className={styles["name-divider"]} />
           JU
         </h1>
         <p className={styles.location}>
