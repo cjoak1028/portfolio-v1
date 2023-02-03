@@ -1,10 +1,15 @@
 .hero {
-    min-height: calc(100vh - clamp(6.3rem, 13vw, 10rem));
+    /* min-height: calc(100vh - clamp(6.3rem, 13vw, 10rem)); */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
     text-transform: uppercase;
 }
 
 .hero h1 {
-    font-size: 18vw;
+    font-size: 18.4vw;
     font-weight: var(--fw-semi-bold);
     letter-spacing: -0.5vw;
     white-space: nowrap;
@@ -17,11 +22,15 @@
 
 .role {
     margin-left: clamp(0rem, 1.5vw, 2rem);
+    position: relative;
+    top: 1vw;
 }
 
 .location {
     text-align: right;
     margin-right: clamp(0rem, 1.5vw, 2rem);
+    position: relative;
+    top: -1vw;
 }
 
 .time {
