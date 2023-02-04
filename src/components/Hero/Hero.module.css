@@ -1,11 +1,6 @@
 .hero {
-    min-height: calc(100vh - clamp(6.3rem, 13vw, 10rem));
+    min-height: 100vh;
     text-transform: uppercase;
-}
-
-.hero-title {
-    /* center hero title */
-    margin-top: clamp(-10rem, -13vw, -6.3rem);
 }
 
 .hero-title h1 {

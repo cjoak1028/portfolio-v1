@@ -1,5 +1,7 @@
 .header {
     height: clamp(6.3rem, 8vw, 10rem);
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
