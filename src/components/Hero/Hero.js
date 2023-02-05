@@ -19,9 +19,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      className={`${styles.hero} padding-x flex flex-d-c flex-ai-c flex-jc-c`}
-    >
+    <div className={`${styles.hero} flex flex-d-c flex-ai-c flex-jc-c`}>
       <div className={styles["hero-title"]}>
         <p className={styles.role}>FRONT-END DEVELOPER</p>
         <h1>

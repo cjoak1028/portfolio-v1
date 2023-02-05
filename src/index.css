@@ -25,6 +25,7 @@ body {
   background-color: var(--c-bg);
   color: var(--c-main);
   font-family: var(--ff-main);
+  text-transform: uppercase;
 }
 
 *, *::before, *::after {
