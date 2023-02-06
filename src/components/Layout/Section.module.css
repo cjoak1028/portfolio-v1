@@ -1,33 +1,28 @@
 .section {
-    margin-bottom: 10rem;
+    margin-bottom: clamp(10rem, 20vw, 30rem);
     display: flex;
     flex-direction: column;
 }
 
 .section-title {
     margin-bottom: 2rem;
-    font-size: clamp(1.8rem, 2vw, 2.4rem);
+    font-size: clamp(1.6rem, 1vw, 2rem);
     font-weight: var(--fw-medium);
 }
 
 @media only screen and (min-width: 43.75em) {
-    .section {
+    .rotate {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .section-title {
+    .rotate .section-title {
         transform: rotate(180deg);
         writing-mode: vertical-lr;
-        position: relative;
-        top: 1rem;
-    }
-
-    .container-2 {
-        width: 80%;
-    }
-
-    .section-title {
         margin-bottom: 0;
+    }
+
+    .rotate .container-2 {
+        width: 80%;
     }
 }

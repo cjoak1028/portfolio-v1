@@ -1,7 +1,7 @@
 .hero {
     min-height: 100vh;
     text-transform: uppercase;
-    margin-bottom: clamp(5rem, 7vw, 10rem);
+    margin-bottom: clamp(10rem, 20vw, 30rem);
 }
 
 .hero-title h1 {

@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className="padding-x">
         <Hero />
-        <Section title={"01/ about"}>
+        <Section title={"01/ about"} rotate={true}>
           <About />
         </Section>
       </div>
