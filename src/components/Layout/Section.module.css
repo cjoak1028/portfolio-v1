@@ -7,7 +7,7 @@
 .section-title {
     margin-bottom: 2rem;
     font-size: clamp(1.6rem, 1vw, 2rem);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
 }
 
 @media only screen and (min-width: 43.75em) {

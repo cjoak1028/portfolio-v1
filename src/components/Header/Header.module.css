@@ -7,14 +7,14 @@
 }
 
 .logo {
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-medium);
 }
 
 .hamburger-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     font-family: var(--f-main);
 }
 
