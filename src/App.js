@@ -17,6 +17,9 @@ function App() {
         <Section title={"02/ skills"} rotate={false}>
           <Skills />
         </Section>
+        <Section title={"03/ projects"} rotate={true}>
+          <div>PROJECTS</div>
+        </Section>
       </div>
     </div>
   );
