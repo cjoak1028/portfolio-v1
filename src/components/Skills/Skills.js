@@ -1,41 +1,46 @@
 import React from "react";
 import styles from "./Skills.module.css";
-import { AiOutlineSmile } from "react-icons/ai";
 
 const Skills = () => {
   return (
     <div className={styles.skills}>
-      <div className={styles["inf-scroll"]}>
-        <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
-        <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
-        <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
-        <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
-        <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
-        <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
-      </div>
-      <div className={styles["heading-container"]}>
+      <div className={styles["skills__category"]}>
+        <div
+          className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
+        >
+          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+        </div>
         <h3>Languages</h3>
       </div>
-      <div className={styles["inf-scroll-rev"]}>
-        <span>- React - Node.JS - Express - Mongoose - React Native</span>
-        <span>- React - Node.JS - Express - Mongoose - React Native</span>
-        <span>- React - Node.JS - Express - Mongoose - React Native</span>
-        <span>- React - Node.JS - Express - Mongoose - React Native</span>
-        <span>- React - Node.JS - Express - Mongoose - React Native</span>
-        <span>- React - Node.JS - Express - Mongoose - React Native</span>
+      <div className={styles["skills__category"]}>
+        <div
+          className={`${styles["inf-scroll"]} ${styles["inf-scroll--right"]}`}
+        >
+          <span>- React - Node.JS - Express - Mongoose - React Native</span>
+          <span>- React - Node.JS - Express - Mongoose - React Native</span>
+          <span>- React - Node.JS - Express - Mongoose - React Native</span>
+          <span>- React - Node.JS - Express - Mongoose - React Native</span>
+          <span>- React - Node.JS - Express - Mongoose - React Native</span>
+          <span>- React - Node.JS - Express - Mongoose - React Native</span>
+        </div>
+        <h3>Libraries/Frameworks</h3>
       </div>
-      <div className={styles["heading-container"]}>
-        <h3>LIBRARIES/FRAMEWORKS</h3>
-      </div>
-      <div className={styles["inf-scroll"]}>
-        <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
-        <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
-        <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
-        <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
-        <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
-        <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
-      </div>
-      <div className={styles["heading-container"]}>
+      <div className={styles["skills__category"]}>
+        <div
+          className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
+        >
+          <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
+          <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
+          <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
+          <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
+          <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
+          <span>Git - Webpack - MongoDB - Figma - Photoshop -</span>
+        </div>
         <h3>Other Tools</h3>
       </div>
     </div>

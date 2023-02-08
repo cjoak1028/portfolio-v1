@@ -5,20 +5,29 @@
     margin-top: 2rem;
 }
 
+.skills__category {
+    text-align: center;
+    margin-bottom: clamp(2rem, 3vw, 4rem);
+}
+
+.skills__category h3 {
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    font-weight: var(--fw-semi-bold)
+}
+
 .inf-scroll {
     display: inline-block;
     white-space: nowrap;
-    animation: infScroll 80s infinite linear;
     border-bottom: 1px solid var(--c-main);
     margin-bottom: 1rem;
 }
 
-.inf-scroll-rev {
-    display: inline-block;
-    white-space: nowrap;
-    animation: infScrollRev 100s infinite linear;
-    border-bottom: 1px solid var(--c-main);
-    margin-bottom: 1rem;
+.inf-scroll--left {
+    animation: scrollToLeft 80s infinite linear;
+}
+
+.inf-scroll--right {
+    animation: scrollToRight 100s infinite linear;
 }
 
 .inf-scroll span {
@@ -29,25 +38,11 @@
     margin-right: 3rem;
 }
 
-.inf-scroll-rev span {
-    font-size: clamp(3rem, 8vw, 12rem);
-    font-weight: var(--fw-light);
-    display: inline-block;
-    min-width: 100vw;
-    margin-right: 3rem;
+.inf-scroll--right span {
     color: var(--c-sub);
 }
 
-.heading-container {
-    text-align: center;
-    margin-bottom: clamp(2rem, 3vw, 4rem);
-}
-
-.heading-container h3 {
-    font-size: clamp(1rem, 1.2vw, 1.4rem)
-}
-
-@keyframes infScroll {
+@keyframes scrollToLeft {
     from {
         transform: translateX(0%);
     }
@@ -57,7 +52,7 @@
     }
 }
 
-@keyframes infScrollRev {
+@keyframes scrollToRight {
     from {
         transform: translateX(-50%);
     }
