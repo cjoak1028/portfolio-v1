@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Section from "./components/Layout/Section";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Section>
         <Section title={"03/ projects"} rotate={true}>
           <div>PROJECTS</div>
+        </Section>
+        <Section title={"04/ CONTACT"} rotate={false}>
+          <Contact />
         </Section>
       </div>
     </div>

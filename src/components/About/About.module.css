@@ -10,7 +10,7 @@
 }
 
 .about p {
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-regular);
     font-size: clamp(1.4rem, 1.6vw, 2rem);
 }
 
