@@ -10,7 +10,36 @@
 
 .contact p {
     font-size: clamp(1.2rem, 1.6vw, 2rem);
-    width: 65vw;
-    margin-top: clamp(-2rem, -1vw, -0.2rem);
+    width: 70vw;
+    /* margin-top: clamp(-2rem, -1vw, -0.2rem); */
     font-weight: var(--fw-medium);
+    margin-bottom: clamp(6rem, 7.5vw, 9rem);
+}
+
+.link-list {
+    text-transform: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-list a {
+    font-size: clamp(3rem, 4vw, 5rem);
+    font-weight: var(--fw-medium);
+    border-bottom: 3px solid var(--c-main);
+}
+
+.link-list li:not(last-child) {
+    margin-bottom: 3.5rem;
+}
+
+@media only screen and (min-width: 43.75em) {
+    .link-list {
+        flex-direction: row;
+    }
+
+    .link-list li:not(last-child) {
+        margin-bottom: 0;
+        margin-right: clamp(2rem, 3vw, 4rem);
+    }
 }
