@@ -14,13 +14,15 @@ const Contact = () => {
           <a>Email</a>
         </li>
         <li>
-          <a>LinkedIn</a>
+          <a href={"https://linkedin.com/in/chang-ju-kim-966351255"}>
+            LinkedIn
+          </a>
         </li>
         <li>
-          <a>Github</a>
+          <a href={"https://github.com/cjoak1028"}>Github</a>
         </li>
         <li>
-          <a>Resume</a>
+          <a href={""}>Resume</a>
         </li>
       </ul>
     </div>

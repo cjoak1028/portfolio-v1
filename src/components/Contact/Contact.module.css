@@ -27,6 +27,11 @@
     font-size: clamp(3rem, 4vw, 5rem);
     font-weight: var(--fw-medium);
     border-bottom: 3px solid var(--c-main);
+    text-decoration: none;
+}
+
+.link-list a:visited {
+    color: var(--c-main);
 }
 
 .link-list li:not(last-child) {
