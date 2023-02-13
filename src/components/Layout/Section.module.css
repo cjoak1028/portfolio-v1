@@ -10,6 +10,11 @@
     font-weight: var(--fw-medium);
 }
 
+.border {
+    border-top: 1px solid var(--c-main);
+    padding-top: clamp(2rem, 4vw, 4rem);
+}
+
 @media only screen and (min-width: 43.75em) {
     .rotate {
         flex-direction: row;
@@ -23,6 +28,6 @@
     }
 
     .rotate .container-2 {
-        width: 80%;
+        width: 85%;
     }
 }
