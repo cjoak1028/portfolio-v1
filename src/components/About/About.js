@@ -8,12 +8,13 @@ const About = () => {
         <h3>PASSIONATE FRONT-END DEVELOPER BASED IN TORONTO</h3>
       </div>
       <div className={styles["container-2"]}>
+        <div className={styles["img-container"]}></div>
         <p>
           I DISCOVERED MY PASSION FOR BUILDING THINGS ON THE WEB IN 2017 DURING
           AN INTERNSHIP AS A FULL-STACK WEB DEVELOPER.
         </p>
         <p>
-          I CONSIDER MYSELF CREATIVE AND GIVE A CONSIDERABLE AMOUNT OF ATTENTION
+          I AM CREATIVE AND GIVE A CONSIDERABLE AMOUNT OF ATTENTION
           TO DETAIL. I AM ABLE TO CRAFT WEBSITES THAT ARE BOTH FUNCTIONAL AND
           VISUALLY APPEALING WITH GREAT PROFICIENCY.
         </p>

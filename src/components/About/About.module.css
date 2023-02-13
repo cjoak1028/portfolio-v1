@@ -18,6 +18,16 @@
     margin-bottom: 1.8rem;
 }
 
+.img-container {
+    height: 40rem;
+    background-image: url('../../assets/changju_desktop.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2.5rem;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
 @media only screen and (min-width: 61.25em) {
     .about {
         flex-direction: row;
