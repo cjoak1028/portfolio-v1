@@ -28,6 +28,7 @@
     font-weight: var(--fw-medium);
     border-bottom: 3px solid var(--c-main);
     text-decoration: none;
+    color: var(--c-main);
 }
 
 .link-list a:visited {
@@ -45,6 +46,6 @@
 
     .link-list li:not(last-child) {
         margin-bottom: 0;
-        margin-right: clamp(2rem, 3vw, 4rem);
+        margin-right: clamp(2rem, 3.5vw, 5rem);
     }
 }
