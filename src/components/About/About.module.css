@@ -19,9 +19,9 @@
 }
 
 .img-container {
-    height: 40rem;
-    background-image: url('../../assets/changju_desktop.JPG');
-    background-position: center;
+    height: clamp(15rem, 25vw, 30rem);
+    background-image: url('../../assets/cj_desktop.JPG');
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     margin-bottom: 2.5rem;
     background-size: cover;

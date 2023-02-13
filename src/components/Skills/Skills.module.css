@@ -31,7 +31,7 @@
 }
 
 .inf-scroll span {
-    font-size: clamp(3rem, 8vw, 12rem);
+    font-size: clamp(4rem, 8vw, 12rem);
     font-weight: var(--fw-light);
     display: inline-block;
     min-width: 100vw;
