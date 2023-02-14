@@ -1,12 +1,14 @@
 .footer {
-    height: 5rem;
+    height: clamp(6rem, 7vw, 8rem);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .footer p {
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-medium);
+    font-size: clamp(1rem, 1.2vw, 1.4rem)
 }
 
 .footer p:first-child {

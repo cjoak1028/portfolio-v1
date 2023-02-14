@@ -1,5 +1,5 @@
 .header {
-    height: clamp(6.3rem, 8vw, 10rem);
+    height: clamp(6.3rem, 10vw, 10rem);
     position: fixed;
     width: 100%;
     background-color: rgba(237, 234, 232, 0.9);
@@ -24,8 +24,19 @@
     z-index: 2;
 }
 
+.email {
+    display: none;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    font-weight: var(--fw-medium);
+}
+
 @media only screen and (min-width: 61.25em) {
     .hamburger-button {
         display: none;
+    }
+
+    .email {
+        display: block;
     }
 }

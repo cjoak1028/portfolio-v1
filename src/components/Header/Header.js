@@ -19,6 +19,7 @@ const Header = () => {
         CJ PORTFOLIO
       </p>
       <Navigation />
+      <p className={styles.email}>changju.kim10@gmail.com</p>
       <button
         className={`${styles["hamburger-button"]} ${openMenu ? "white" : ""}`}
         onClick={toggleMenu}

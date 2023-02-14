@@ -19,7 +19,7 @@
 }
 
 .img-container {
-    height: clamp(15rem, 25vw, 30rem);
+    height: clamp(20rem, 30vw, 35rem);
     background-image: url('../../assets/cj_desktop.JPG');
     background-position: 50% 40%;
     background-repeat: no-repeat;
