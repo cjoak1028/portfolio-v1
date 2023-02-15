@@ -19,21 +19,19 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={`${styles.hero} flex flex-d-c flex-ai-c flex-jc-c`}>
-      <div className={styles["hero-title"]}>
-        <p className={styles.role}>FRONT-END DEVELOPER</p>
-        <h1>
-          CHANG
-          <AiOutlineSmile className={styles["name-divider"]} />
-          JU
-        </h1>
+    <div className={`${styles.hero} flex flex-d-c flex-jc-c`}>
+      <div className={styles.about}>
+        <p className={styles.name}>Chang-Ju Kim</p>
+        <p>Front-End Developer</p>
         <p className={styles.location}>
           TORONTO &#8212;{" "}
           <span className={styles.time}>{date.toLocaleTimeString()}</span>
         </p>
       </div>
-
-      <HiOutlineChevronDown className={styles.arrow} />
+      <div className={styles.contact}>
+        <p className={styles.email}>changju.kim10@gmail.com</p>
+        <p>905 580 9682</p>
+      </div>
     </div>
   );
 };

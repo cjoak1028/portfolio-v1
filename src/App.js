@@ -13,16 +13,16 @@ function App() {
       <Header />
       <div className="padding-x">
         <Hero />
-        <Section title={"01/ about"} rotate={true} border={true}>
+        <Section title={"about"} rotate={true} border={true}>
           <About />
         </Section>
-        <Section title={"02/ skills"} rotate={false}>
+        <Section title={"skills"} rotate={false}>
           <Skills />
         </Section>
-        <Section title={"03/ projects"} rotate={true} border={true}>
+        <Section title={"projects"} rotate={true} border={true}>
           <div>PROJECTS</div>
         </Section>
-        <Section title={"04/ CONTACT"} rotate={false}>
+        <Section title={"contact"} rotate={false}>
           <Contact />
         </Section>
       </div>

@@ -20,13 +20,13 @@
 
 .logo, .hamburger-button {
     text-transform: uppercase;
-    font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+    font-size: clamp(1.6rem, 1.8vw, 2rem);
     z-index: 2;
 }
 
 .email {
     display: none;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-size: 1.2rem;
     font-weight: var(--fw-medium);
 }
@@ -34,9 +34,5 @@
 @media only screen and (min-width: 61.25em) {
     .hamburger-button {
         display: none;
-    }
-
-    .email {
-        display: block;
     }
 }

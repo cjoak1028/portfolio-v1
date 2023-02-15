@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
+import { AiOutlineSmile } from "react-icons/ai";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
         CJ PORTFOLIO
       </p>
       <Navigation />
-      <p className={styles.email}>changju.kim10@gmail.com</p>
+      {/* <p className={styles.email}>changju.kim10@gmail.com</p> */}
       <button
         className={`${styles["hamburger-button"]} ${openMenu ? "white" : ""}`}
         onClick={toggleMenu}

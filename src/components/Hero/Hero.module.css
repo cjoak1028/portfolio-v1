@@ -4,42 +4,23 @@
     margin-bottom: clamp(15rem, 20vw, 30rem);
 }
 
-.hero-title h1 {
-    font-size: 15vw;
+.name {
+    display: inline-block;
     font-weight: var(--fw-semi-bold);
-    letter-spacing: -0.5vw;
-    white-space: nowrap;
 }
 
-.hero-title p {
-    font-size: clamp(1.2rem, 2.2vw, 2.4rem);
-    font-weight: var(--fw-regular);
+p {
+    font-size: 1.6rem;
 }
 
-.role {
-    margin-left: clamp(0rem, 1.5vw, 2rem);
-    position: relative;
-    top: 1vw;
+.about {
+    margin-bottom: 5rem;
 }
 
-.location {
-    text-align: right;
-    margin-right: clamp(0rem, 1.5vw, 2rem);
-    position: relative;
-    top: -1vw;
+.about p:not(:last-child), .contact p:not(:last-child) {
+    margin-bottom: .5rem;
 }
 
-.time {
-    font-weight: var(--fw-regular);
-}
-
-.arrow {
-    font-size: clamp(3rem, 4.5vw, 6rem);
-    position: absolute;
-    bottom: 3rem;
-    left: clamp(2rem, 6vw, 10rem);
-}
-
-.name-divider {
-    font-size: 3vw;
+.email {
+    text-transform: lowercase;
 }

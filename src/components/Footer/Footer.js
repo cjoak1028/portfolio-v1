@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={`${styles.footer} padding-x`}>
       <p>DESIGNED & BUILT BY CHANG-JU KIM</p>
-      <p>CJ PORTFOLIO &#169; 2023</p>
+      <p className={styles.copyright}>CJ PORTFOLIO &#169; 2023</p>
     </div>
   );
 };
