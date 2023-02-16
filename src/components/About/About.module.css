@@ -19,9 +19,10 @@
 }
 
 .img-container {
-    height: clamp(20rem, 30vw, 35rem);
-    background-image: url('../../assets/hero-image-2.JPG');
-    background-position: 50% 40%;
+    /* height: clamp(20rem, 30vw, 35rem); */
+    height: 30rem;
+    /* background-image: url('../../assets/about-image.jpg'); */
+    background-position: 50% 70%;
     background-repeat: no-repeat;
     margin-bottom: 2.5rem;
     background-size: cover;

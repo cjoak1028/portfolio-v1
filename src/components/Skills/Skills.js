@@ -8,7 +8,7 @@ const Skills = () => {
         <div
           className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
         >
-          <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
+          <span>Javascript - HTML - CSS - SCSS/SASS - Python - Java - C </span>
           <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
           <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>
           <span>JavaScript - HTML - CSS - SCSS/SASS - Python - Java - C -</span>

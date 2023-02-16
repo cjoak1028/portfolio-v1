@@ -1,6 +1,6 @@
 .skills {
-    margin-left: clamp(-10rem, -6vw, -2rem);
-    width: calc(100% + clamp(4rem, 12vw, 20rem));
+    /* margin-left: clamp(-10rem, -6vw, -2rem);
+    width: calc(100% + clamp(4rem, 12vw, 20rem)); */
     overflow: hidden;
     margin-top: 2rem;
 }
@@ -31,7 +31,7 @@
 }
 
 .inf-scroll span {
-    font-size: clamp(4rem, 8vw, 12rem);
+    font-size: clamp(4rem, 8vw, 10rem);
     font-weight: var(--fw-light);
     display: inline-block;
     min-width: 100vw;
