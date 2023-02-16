@@ -20,7 +20,7 @@
 
 .img-container {
     height: clamp(20rem, 30vw, 35rem);
-    background-image: url('../../assets/cj_desktop.JPG');
+    background-image: url('../../assets/hero-image-2.JPG');
     background-position: 50% 40%;
     background-repeat: no-repeat;
     margin-bottom: 2.5rem;

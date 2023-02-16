@@ -6,7 +6,8 @@
 
 .section-title {
     margin-bottom: 2rem;
-    font-size: clamp(1.6rem, 1vw, 2rem);
+    /* font-size: clamp(1.6rem, 1vw, 2rem); */
+    font-size: 1.6rem;
     font-weight: var(--fw-regular);
 }
 

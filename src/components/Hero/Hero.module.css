@@ -1,7 +1,16 @@
 .hero {
+    /* min-height: calc(100vh - clamp(6.3rem, 10vw, 10rem)); */
     min-height: 100vh;
+    padding: clamp(6.3rem, 10vw, 10rem) 0;
     text-transform: uppercase;
     margin-bottom: clamp(15rem, 20vw, 30rem);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero-text {
+    display: inline-block;
 }
 
 .name {
@@ -23,4 +32,14 @@ p {
 
 .email {
     text-transform: lowercase;
+}
+
+.hero-image {
+    height: 40vh;
+    width: 65%;
+    background-image: url('../../assets/hero-image.JPG');
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 4rem;
 }
