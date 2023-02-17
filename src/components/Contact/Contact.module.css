@@ -6,12 +6,13 @@
     font-size: clamp(4rem, 17vw, 25rem);
     font-weight: var(--fw-medium);
     margin-left: clamp(-1.7rem, -1.1vw, -0.2rem);
+    font-style: italic;
 }
 
 .contact p {
     font-size: clamp(1.2rem, 1.6vw, 2rem);
+    line-height: clamp(1.8rem, 2vw, 2rem);
     width: 70vw;
-    /* margin-top: clamp(-2rem, -1vw, -0.2rem); */
     font-weight: var(--fw-regular);
     margin-bottom: clamp(6rem, 7.5vw, 9rem);
 }

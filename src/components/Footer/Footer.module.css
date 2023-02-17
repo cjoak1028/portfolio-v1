@@ -17,4 +17,5 @@
 
 .copyright {
     font-weight: var(--fw-bold) !important;
+    font-style: italic;
 }

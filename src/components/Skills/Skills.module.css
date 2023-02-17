@@ -36,6 +36,7 @@
     display: inline-block;
     min-width: 100vw;
     margin-right: 3rem;
+    font-style: italic;
 }
 
 .inf-scroll--right span {

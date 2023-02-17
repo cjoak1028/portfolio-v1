@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
+import { AiOutlineSmile } from "react-icons/ai";
 
 const About = () => {
   return (
@@ -9,6 +10,9 @@ const About = () => {
       </div>
       <div className={styles["container-2"]}>
         {/* <div className={styles["img-container"]}></div> */}
+        <p className="flex flex-ai-c">
+          HELLO <AiOutlineSmile className={styles.smiley} /> -- I'M CHANG-JU KIM
+        </p>
         <p>
           I DISCOVERED MY PASSION FOR BUILDING THINGS ON THE WEB IN 2017 DURING
           AN INTERNSHIP AS A FULL-STACK WEB DEVELOPER.

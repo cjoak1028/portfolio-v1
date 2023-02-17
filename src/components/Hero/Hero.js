@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
-import { HiOutlineChevronDown } from "react-icons/hi";
-import { AiOutlineSmile } from "react-icons/ai";
 
 const Hero = () => {
   const [date, setDate] = useState(new Date());

@@ -1,15 +1,12 @@
 .hero {
-    /* min-height: calc(100vh - clamp(6.3rem, 10vw, 10rem)); */
     height: 100vh;
-    padding: clamp(6.3rem, 10vw, 10rem) 0 clamp(4rem, 8vw, 6rem);
-    /* padding-bottom: clamp(4rem, 8vw, 6rem); */
+    padding: clamp(6.3rem, 10vw, 10rem) 0;
     text-transform: uppercase;
     margin-bottom: clamp(15rem, 20vw, 30rem);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
 }
 
 .hero-text {
@@ -51,15 +48,12 @@ p {
     background-position: 50% 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 2rem; */
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
     margin-top: .2rem;
 }
 
 .inf-scroll {
     display: flex;
-    /* display: flex;
-    align-items: center; */
     width: 100%;
     white-space: nowrap;
     animation: scrollToLeft 15s infinite linear;
@@ -78,7 +72,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 90rem;
+    max-width: 70rem;
     overflow: hidden;
 }
 
@@ -106,11 +100,6 @@ p {
 
     .hero-image {
         background-position: 50% 80%;
-    }
-
-    .hero-container {
-        width: 60%;
-        margin-left: clamp(2rem, 4vw, 4rem);
     }
 
     .contact {

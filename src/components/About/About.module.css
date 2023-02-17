@@ -7,6 +7,7 @@
     font-weight: var(--fw-medium);
     font-size: clamp(2.5rem, 3vw, 4rem);
     margin-bottom: 2.3rem;
+    font-style: italic;
 }
 
 .about p {
@@ -27,6 +28,10 @@
     background-repeat: no-repeat;
     margin-bottom: 2.5rem;
     background-size: cover;
+}
+
+.smiley {
+    margin: 0 .5rem;
 }
 
 @media only screen and (min-width: 61.25em) {
