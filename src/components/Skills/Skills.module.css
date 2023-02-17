@@ -12,13 +12,13 @@
 
 .skills__category h3 {
     font-size: clamp(1rem, 1.2vw, 1.4rem);
-    font-weight: var(--fw-semi-bold)
+    font-weight: var(--fw-semi-bold);
 }
 
 .inf-scroll {
     display: inline-block;
     white-space: nowrap;
-    border-bottom: 1px solid var(--c-main);
+    border-bottom: 1px solid var(--c-sub);
     margin-bottom: 1rem;
 }
 
@@ -30,7 +30,7 @@
     animation: scrollToRight 100s infinite linear;
 }
 
-.inf-scroll span {
+.group {
     font-size: clamp(4rem, 8vw, 10rem);
     font-weight: var(--fw-light);
     display: inline-block;

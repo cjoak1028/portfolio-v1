@@ -13,7 +13,7 @@
 
 .border {
     border-top: 1px solid var(--c-main);
-    padding-top: clamp(1.5rem, 3vw, 4rem);
+    padding-top: clamp(1.5rem, 3vw, 3.5rem);
 }
 
 @media only screen and (min-width: 43.75em) {
