@@ -1,42 +1,50 @@
 .skills {
     /* margin-left: clamp(-10rem, -6vw, -2rem);
     width: calc(100% + clamp(4rem, 12vw, 20rem)); */
-    overflow: hidden;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .skills__category {
-    text-align: center;
-    margin-bottom: clamp(2rem, 3vw, 4rem);
+    display: block;
+    margin-bottom: clamp(1rem, 3vw, 3rem);
+    overflow: hidden;
+    border-top: 1px solid var(--c-main);
 }
 
 .skills__category h3 {
     font-size: clamp(1rem, 1.2vw, 1.4rem);
     font-weight: var(--fw-semi-bold);
+    border-top: 1px solid var(--c-main);
+    padding-top: clamp(0.5rem, 0.8vw, 1rem);
+    text-align: right;
 }
 
 .inf-scroll {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     white-space: nowrap;
-    border-bottom: 1px solid var(--c-sub);
-    margin-bottom: 1rem;
 }
 
 .inf-scroll--left {
-    animation: scrollToLeft 80s infinite linear;
+    animation: scrollToLeft 30s infinite linear;
 }
 
 .inf-scroll--right {
-    animation: scrollToRight 100s infinite linear;
+    animation: scrollToRight 30s infinite linear;
 }
 
-.group {
+.skill {
     font-size: clamp(4rem, 8vw, 10rem);
-    font-weight: var(--fw-light);
-    display: inline-block;
-    min-width: 100vw;
-    margin-right: 3rem;
+    font-weight: var(--fw-regular);
     font-style: italic;
+}
+
+.divider {
+    margin: 0 clamp(1rem, 2vw, 3rem);
+    text-transform: lowercase;
+    font-style: normal;
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-weight: var(--fw-light);
 }
 
 .inf-scroll--right span {
@@ -44,21 +52,21 @@
 }
 
 @keyframes scrollToLeft {
-    from {
-        transform: translateX(0%);
+    0% {
+        transform: translateX(0);
     }
 
-    to {
-        transform: translateX(-50%);
+    100% {
+        transform: translateX(clamp(-400rem, -400vw, -100rem));
     }
 }
 
 @keyframes scrollToRight {
-    from {
-        transform: translateX(-50%);
+    0% {
+        transform: translateX(clamp(-400rem, -400vw, -100rem));
     }
 
-    to {
-        transform: translateX(0%);
+    100% {
+        transform: 0;
     }
 }

@@ -52,28 +52,24 @@ p {
     margin-top: .2rem;
 }
 
-.inf-scroll {
-    display: flex;
-    width: 100%;
-    white-space: nowrap;
-    animation: scrollToLeft 15s infinite linear;
-}
-
-.smiley {
-    font-size: 1.2rem;
-    margin: 0 .5rem;
-}
-
-.position, .location {
-    font-weight: var(--fw-semi-bold);
-}
-
 .hero-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 70rem;
     overflow: hidden;
+}
+
+.inf-scroll {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    animation: scrollToLeft 10s infinite linear;
+}
+
+.position, .location {
+    font-weight: var(--fw-semi-bold);
 }
 
 .flex-container {
