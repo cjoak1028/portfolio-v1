@@ -10,8 +10,9 @@ const About = () => {
       </div>
       <div className={styles["container-2"]}>
         {/* <div className={styles["img-container"]}></div> */}
-        <p className="flex flex-ai-c">
-          HELLO <AiOutlineSmile className={styles.smiley} /> -- I'M CHANG-JU KIM
+        <p className={`${styles.intro} flex flex-ai-c`}>
+          HELLO <AiOutlineSmile className={styles.smiley} /> &#8212; I'M
+          CHANG-JU KIM.
         </p>
         <p>
           I DISCOVERED MY PASSION FOR BUILDING THINGS ON THE WEB IN 2017 DURING

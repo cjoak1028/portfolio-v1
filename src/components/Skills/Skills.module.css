@@ -1,14 +1,11 @@
 .skills {
-    /* margin-left: clamp(-10rem, -6vw, -2rem);
-    width: calc(100% + clamp(4rem, 12vw, 20rem)); */
-    /* margin-top: 2rem; */
+    margin-left: clamp(-10rem, -6vw, -2rem);
+    width: calc(100% + clamp(4rem, 12vw, 20rem));
+    overflow: hidden;
 }
 
-.skills__category {
-    display: block;
-    margin-bottom: clamp(1rem, 3vw, 3rem);
-    overflow: hidden;
-    border-top: 1px solid var(--c-main);
+.skills__category:not(:last-child) {
+    margin-bottom: clamp(1rem, 2vw, 3rem);
 }
 
 .skills__category h3 {
@@ -16,7 +13,7 @@
     font-weight: var(--fw-semi-bold);
     border-top: 1px solid var(--c-main);
     padding-top: clamp(0.5rem, 0.8vw, 1rem);
-    text-align: right;
+    text-align: center;
 }
 
 .inf-scroll {
@@ -26,11 +23,11 @@
 }
 
 .inf-scroll--left {
-    animation: scrollToLeft 30s infinite linear;
+    animation: scrollToLeft 50s infinite linear;
 }
 
 .inf-scroll--right {
-    animation: scrollToRight 30s infinite linear;
+    animation: scrollToRight 60s infinite linear;
 }
 
 .skill {
@@ -44,7 +41,7 @@
     text-transform: lowercase;
     font-style: normal;
     font-size: clamp(2rem, 3vw, 4rem);
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-regular);
 }
 
 .inf-scroll--right span {

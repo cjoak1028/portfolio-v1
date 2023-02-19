@@ -12,12 +12,16 @@
 
 .about p {
     font-weight: var(--fw-light);
-    font-size: clamp(1.4rem, 1.6vw, 2rem);
-    line-height: clamp(2rem, 2.2vw, 2.7rem);
+    font-size: clamp(1.4rem, 1.8vw, 1.6rem);
+    line-height: clamp(2rem, 2.2vw, 2.4rem);
 }
 
 .about p:not(:last-child) {
     margin-bottom: 1.8rem;
+}
+
+.intro {
+    font-weight: var(--fw-medium) !important;
 }
 
 .img-container {

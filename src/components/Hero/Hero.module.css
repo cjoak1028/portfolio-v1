@@ -2,7 +2,7 @@
     height: 100vh;
     padding: clamp(6.3rem, 10vw, 10rem) 0;
     text-transform: uppercase;
-    margin-bottom: clamp(15rem, 20vw, 30rem);
+    /* margin-bottom: clamp(15rem, 20vw, 30rem); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .name, .divider {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
     font-weight: var(--fw-bold);
     font-style: italic;
 }
