@@ -5,7 +5,7 @@
 }
 
 .skills__category:not(:last-child) {
-    margin-bottom: clamp(1rem, 2vw, 3rem);
+    margin-bottom: clamp(1.5rem, 2vw, 3rem);
 }
 
 .skills__category h3 {
