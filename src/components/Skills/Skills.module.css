@@ -2,6 +2,7 @@
     margin-left: clamp(-10rem, -6vw, -2rem);
     width: calc(100% + clamp(4rem, 12vw, 20rem));
     overflow: hidden;
+    margin-top: clamp(3rem, 4vw, 5rem);
 }
 
 .skills__category:not(:last-child) {

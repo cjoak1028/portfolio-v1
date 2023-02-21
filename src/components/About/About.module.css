@@ -1,6 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
+    margin-top: clamp(3rem, 4vw, 5rem);
 }
 
 .about h3 {
@@ -10,13 +11,17 @@
     font-style: italic;
 }
 
-.about p {
+.about p, .skill {
     font-weight: var(--fw-light);
     font-size: clamp(1.4rem, 1.8vw, 1.6rem);
     line-height: clamp(2rem, 2.2vw, 2.4rem);
 }
 
-.about p:not(:last-child) {
+.about-text {
+    margin-bottom: 3rem;
+}
+
+.about-text p:not(:last-child) {
     margin-bottom: 1.8rem;
 }
 
@@ -38,6 +43,62 @@
     margin: 0 .5rem;
 }
 
+.work-experience {
+    border-bottom: 1px solid var(--c-sub);
+    margin-bottom: 3rem;
+}
+
+.company {
+    font-weight: var(--fw-regular) !important;
+}
+
+.year {
+    font-weight: var(--fw-light) !important;
+}
+
+.work-experience h4, .technologies h4 {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.technologies {
+    overflow: hidden;
+}
+
+.tech-category {
+    margin-bottom: 1rem;
+}
+
+.category-title {
+    border-top: 1px solid var(--c-sub);
+    padding-top: 0.5rem;
+    text-align: right;
+}
+
+.inf-scroll {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.inf-scroll--left {
+    animation: scrollToLeft 50s infinite linear;
+}
+
+.inf-scroll--right {
+    animation: scrollToRight 40s infinite linear;
+}
+
+.divider {
+    margin: 0 1rem;
+}
+
+.space {
+    display: inline-block;
+    margin-right: 35%;
+}
+
 @media only screen and (min-width: 61.25em) {
     .about {
         flex-direction: row;
@@ -55,5 +116,25 @@
 
     .container-2 {
         width: 50%;
+    }
+}
+
+@keyframes scrollToLeft {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollToRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
     }
 }

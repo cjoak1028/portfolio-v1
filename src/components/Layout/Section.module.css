@@ -6,13 +6,16 @@
 
 .section-title {
     margin-bottom: 2rem;
-    /* font-size: clamp(1.6rem, 1vw, 2rem); */
-    font-size: 1.6rem;
-    font-weight: var(--fw-regular);
+    font-size: clamp(1.6rem, 3vw, 4rem);
+    font-style: italic;
+    font-weight: var(--fw-medium);
+    color: var(--c-sub);
+    opacity: 0.5;
+    padding-bottom: 1rem;
 }
 
 .border {
-    border-top: 1px solid var(--c-main);
+    border-top: 1px solid var(--c-sub);
     padding-top: clamp(1.5rem, 3vw, 3.5rem);
 }
 

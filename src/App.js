@@ -5,6 +5,7 @@ import Section from "./components/Layout/Section";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -16,13 +17,13 @@ function App() {
         <Section title={"about"} rotate={true} border={true}>
           <About />
         </Section>
-        <Section title={"skills"} rotate={false}>
+        {/* <Section title={""} rotate={false}>
           <Skills />
-        </Section>
+        </Section> */}
         <Section title={"projects"} rotate={true} border={true}>
-          <div>PROJECTS</div>
+          <Projects />
         </Section>
-        <Section title={"contact"} rotate={false}>
+        <Section title={""} rotate={false} border={false}>
           <Contact />
         </Section>
       </div>

@@ -6,8 +6,6 @@ const Navigation = () => {
     <ul className={styles.navigation}>
       <li>About</li>
       <li>-</li>
-      <li>Skills</li>
-      <li>-</li>
       <li>Projects</li>
       <li>-</li>
       <li>Contact</li>
