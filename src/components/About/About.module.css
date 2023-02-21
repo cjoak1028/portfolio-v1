@@ -78,12 +78,11 @@
 .inf-scroll {
     display: inline-flex;
     align-items: center;
-    width: 100%;
     white-space: nowrap;
 }
 
 .inf-scroll--left {
-    animation: scrollToLeft 50s infinite linear;
+    animation: scrollToLeft 40s infinite linear;
 }
 
 .inf-scroll--right {
@@ -96,7 +95,7 @@
 
 .space {
     display: inline-block;
-    margin-right: 35%;
+    margin-right: 10%;
 }
 
 @media only screen and (min-width: 61.25em) {
@@ -121,20 +120,20 @@
 
 @keyframes scrollToLeft {
     from {
-        transform: translateX(0%);
+        transform: translateX(0rem);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-100rem);
     }
 }
 
 @keyframes scrollToRight {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-100rem);
     }
 
     to {
-        transform: translateX(0%);
+        transform: translateX(0rem);
     }
 }
