@@ -6,7 +6,7 @@ const Section = (props) => {
     <div
       className={`${styles.section} ${props.rotate ? styles.rotate : ""} ${
         props.border ? styles.border : ""
-      }`}
+      } ${props.title === "about" ? styles["about-section"] : ""}`}
     >
       <div className={styles["container-1"]}>
         <h2 className={styles["section-title"]}>{`${props.title}`}</h2>

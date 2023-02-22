@@ -1,13 +1,13 @@
 .about {
     display: flex;
     flex-direction: column;
-    margin-top: clamp(3rem, 4vw, 5rem);
+    margin-top: 1rem;
 }
 
 .about h3 {
     font-weight: var(--fw-medium);
-    font-size: clamp(2.5rem, 3vw, 4rem);
-    margin-bottom: 2.3rem;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    margin-bottom: 3rem;
     font-style: italic;
 }
 
@@ -27,16 +27,6 @@
 
 .intro {
     font-weight: var(--fw-medium) !important;
-}
-
-.img-container {
-    /* height: clamp(20rem, 30vw, 35rem); */
-    height: 30rem;
-    /* background-image: url('../../assets/about-image.jpg'); */
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
-    margin-bottom: 2.5rem;
-    background-size: cover;
 }
 
 .smiley {
@@ -59,6 +49,7 @@
 .work-experience h4, .technologies h4 {
     margin-bottom: 1rem;
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .technologies {
@@ -73,6 +64,8 @@
     border-top: 1px solid var(--c-sub);
     padding-top: 0.5rem;
     text-align: right;
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
 }
 
 .inf-scroll {
@@ -100,13 +93,9 @@
 
 @media only screen and (min-width: 61.25em) {
     .about {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .about h3 {
-        margin-bottom: 0;
-        text-align: right;
+        /* flex-direction: row;
+        justify-content: space-between; */
+        /* width: 90%; */
     }
 
     .container-1 {

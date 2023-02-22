@@ -1,9 +1,10 @@
 .header {
-    height: clamp(6.3rem, 10vw, 10rem);
+    height: 7rem;
     position: fixed;
     width: 100%;
-    /* background-color: rgba(237, 234, 232, 0.9); */
+    background-color: var(--c-bg);
     z-index: 100;
+    box-shadow: 0 4px 2px -2px rgb(222, 222, 222);
 }
 
 .logo {
@@ -21,7 +22,7 @@
 
 .logo, .hamburger-button {
     text-transform: uppercase;
-    font-size: clamp(1.6rem, 1.8vw, 2rem);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
     z-index: 2;
 }
 

@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Section from "./components/Layout/Section";
@@ -17,13 +17,10 @@ function App() {
         <Section title={"about"} rotate={true} border={true}>
           <About />
         </Section>
-        {/* <Section title={""} rotate={false}>
-          <Skills />
-        </Section> */}
         <Section title={"projects"} rotate={true} border={true}>
           <Projects />
         </Section>
-        <Section title={""} rotate={false} border={false}>
+        <Section title={"contact"} rotate={false} border={true}>
           <Contact />
         </Section>
       </div>

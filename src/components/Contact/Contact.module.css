@@ -1,12 +1,13 @@
 .contact {
     display: inline-block;
+    margin-top: clamp(3rem, 4vw, 5rem);
 }
 
 .contact h3 {
     font-size: clamp(4rem, 17vw, 25rem);
     font-weight: var(--fw-medium);
     margin-left: clamp(-1.7rem, -1.1vw, -0.2rem);
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .contact p {

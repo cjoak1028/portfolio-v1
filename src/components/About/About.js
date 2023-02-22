@@ -5,11 +5,8 @@ import { AiOutlineSmile } from "react-icons/ai";
 const About = () => {
   return (
     <div className={`${styles.about}`}>
-      <div className={styles["container-1"]}>
+      
         <h3>PASSIONATE FRONT-END DEVELOPER BASED IN TORONTO</h3>
-      </div>
-      <div className={styles["container-2"]}>
-        {/* <div className={styles["img-container"]}></div> */}
         <div className={styles["about-text"]}>
           <p className={`${styles.intro} flex flex-ai-c`}>
             HELLO <AiOutlineSmile className={styles.smiley} /> &#8212; I'M
@@ -183,7 +180,8 @@ const About = () => {
             <h5 className={styles["category-title"]}>OTHER</h5>
           </div>
         </div>
-      </div>
+      
+      
     </div>
   );
 };

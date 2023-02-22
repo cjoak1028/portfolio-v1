@@ -26,7 +26,7 @@
 }
 
 p {
-    font-size: clamp(1.4rem, 1.8vw, 1.6rem);
+    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
 }
 
 .about {
