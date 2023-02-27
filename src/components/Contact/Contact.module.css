@@ -1,19 +1,29 @@
 .contact {
-    display: inline-block;
-    margin-top: clamp(3rem, 4vw, 5rem);
+    /* display: inline-block; */
+    /* margin-top: clamp(3rem, 4vw, 5rem); */
+    margin: auto;
+    text-align: center;
+    background-color: #dadada;
+    margin-left: clamp(-10rem, -6vw, -2rem);
+    margin-right: clamp(-10rem, -6vw, -2rem);
+    padding: 5rem 3rem;
+    min-height: calc(100vh - clamp(6rem, 7vw, 12rem));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact h3 {
     font-size: clamp(4rem, 17vw, 25rem);
     font-weight: var(--fw-medium);
     margin-left: clamp(-1.7rem, -1.1vw, -0.2rem);
-    /* font-style: italic; */
+    font-style: italic;
 }
 
 .contact p {
     font-size: clamp(1.2rem, 1.6vw, 2rem);
     line-height: clamp(1.8rem, 2vw, 2rem);
-    width: 70vw;
     font-weight: var(--fw-regular);
     margin-bottom: clamp(6rem, 7.5vw, 9rem);
 }
@@ -26,7 +36,7 @@
 }
 
 .link-list a {
-    font-size: clamp(3rem, 4vw, 5rem);
+    font-size: clamp(2.5rem, 3vw, 4rem);
     font-weight: var(--fw-regular);
     border-bottom: 2px solid var(--c-main);
     text-decoration: none;
@@ -44,6 +54,7 @@
 @media only screen and (min-width: 43.75em) {
     .link-list {
         flex-direction: row;
+        justify-content: center;
     }
 
     .link-list li:not(last-child) {

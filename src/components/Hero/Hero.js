@@ -52,7 +52,6 @@ const Hero = () => {
         <div className={styles["hero-image"]}></div>
         <div className={styles["hero-text"]}>
           <div className={styles.about}>
-            {/* <p className={styles.name}>Chang-Ju Kim</p> */}
             <div className={styles["flex-container"]}>
               <p className={styles.position}>Front-End Developer</p>
               <p className={styles.location}>
@@ -62,8 +61,8 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.contact}>
+            <span className={styles.line}></span>
             <p className={styles.email}>changju.kim10@gmail.com</p>
-            <p>905 580 9682</p>
           </div>
         </div>
       </div>

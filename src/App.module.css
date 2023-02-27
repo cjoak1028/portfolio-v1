@@ -1,3 +1,38 @@
-.about-section {
-    width: 60% !important;
+.side-element {
+    position: fixed;
+    bottom: 0px;
+    right: clamp(2rem, 6vw, 10rem);
+    display: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact p {
+    margin: 20px 0;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    /* text-transform: lowercase; */
+    color: var(--c-main);
+    opacity: 0.8;
+    font-style: italic;
+    letter-spacing: 4px;
+    font-size: 1.4rem;
+}
+
+.contact span {
+    display: block;
+    height: 90px;
+    width: 1px;
+    background-color: var(--c-sub);
+}
+
+@media only screen and (min-width: 61.25em) {
+    .side-element {
+        display: block;
+    }
 }

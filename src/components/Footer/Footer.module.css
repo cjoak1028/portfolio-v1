@@ -1,15 +1,15 @@
 .footer {
-    height: clamp(6rem, 7vw, 8rem);
+    height: clamp(6rem, 7vw, 12rem);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: clamp(3rem, 4vw, 5rem);
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #dadada;
 }
 
 .footer p {
     font-weight: var(--fw-medium);
-    font-size: clamp(1rem, 1.2vw, 1.4rem)
+    font-size: clamp(1rem, 1.2vw, 1.2rem)
 }
 
 .footer p:first-child {
@@ -19,4 +19,5 @@
 .copyright {
     font-weight: var(--fw-bold) !important;
     font-style: italic;
+    margin-bottom: 1.5rem;
 }

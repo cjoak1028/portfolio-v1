@@ -14,17 +14,28 @@ function App() {
       <Header />
       <div className="padding-x">
         <Hero />
-        <Section title={"about"} rotate={true} border={true}>
+        <Section name={"about"} title={"about"} rotate={true} border={true}>
           <About />
         </Section>
-        <Section title={"projects"} rotate={true} border={true}>
+        <Section
+          name={"projects"}
+          title={"projects"}
+          rotate={true}
+          border={true}
+        >
           <Projects />
         </Section>
-        <Section title={"contact"} rotate={false} border={true}>
+        <Section name={"contact"} title={""} rotate={false} border={false}>
           <Contact />
         </Section>
       </div>
       <Footer />
+      <div className={styles["side-element"]}>
+        <div className={styles["contact"]}>
+          <p>changju.kim10@gmail.com</p>
+          <span></span>
+        </div>
+      </div>
     </div>
   );
 }

@@ -20,6 +20,10 @@
     padding-top: clamp(1rem, 2vw, 3.5rem);
 }
 
+.contact-section {
+    margin-bottom: 0 !important;
+}
+
 @media only screen and (min-width: 43.75em) {
     .rotate {
         flex-direction: row;
@@ -39,5 +43,9 @@
     .about-section {
         width: 75%;
         max-width: 100rem;
+    }
+
+    .projects-section {
+        width: 85%;
     }
 }
