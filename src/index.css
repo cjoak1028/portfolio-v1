@@ -7,6 +7,7 @@
   --c-sub: #afafaf;
   /* FONTS */
   --ff-main: 'Inter', sans-serif;
+  --ff-code: 'Fira Code', monospace;
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;

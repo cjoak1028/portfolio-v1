@@ -2,18 +2,21 @@
   {
     "title": "The Planets",
     "description": "A multi-page website that showcases each planet in our solar system",
+    "tech": ["HTML", "SASS/SCSS", "JS"],
     "repo": "https://github.com/cjoak1028/planets-fact-site",
     "link": "https://planets-fact-site-sand.vercel.app/"
   },
   {
     "title": "Photosnap",
     "description": "A marketing website for a photo-sharing application",
+    "tech": ["HTML", "SASS/SCSS", "JS"],
     "repo": "https://github.com/cjoak1028/photosnap-multi-page-website",
     "link": "https://photosnap-multi-page-website-theta.vercel.app/"
   },
   {
     "title": "CJ Portfolio",
     "description": "A portfolio website that showcases my skills and projects",
+    "tech": ["HTML", "CSS", "JS", "REACT"],
     "repo": "https://github.com/cjoak1028/portfolio-website-v1",
     "link": ""
   }

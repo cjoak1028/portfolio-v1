@@ -20,8 +20,8 @@ function App() {
         <Section
           name={"projects"}
           title={"projects"}
-          rotate={true}
-          border={true}
+          rotate={false}
+          border={false}
         >
           <Projects />
         </Section>
@@ -33,7 +33,7 @@ function App() {
       <div className={styles["side-element"]}>
         <div className={styles["contact"]}>
           <p>changju.kim10@gmail.com</p>
-          <span></span>
+          <span className={styles.line}></span>
         </div>
       </div>
     </div>
