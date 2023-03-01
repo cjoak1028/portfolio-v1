@@ -7,11 +7,10 @@
 .project {
     display: flex;
     justify-content: space-between;
-    margin-bottom: clamp(10rem, 15vw, 20rem);
 }
 
-.project:last-child {
-    margin-bottom: 0;
+.project:not(:last-child) {
+    margin-bottom: clamp(5rem, 15vw, 20rem);
 }
 
 .project h3 {
@@ -37,6 +36,7 @@
 .project__img img {
     width: 100%;
     height: auto;
+    border: 1px solid #fff;
     box-shadow: 7px 7px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -49,7 +49,7 @@
     text-align: right;
     font-size: clamp(1.1rem, 1.2vw, 1.5rem);
     /* font-size: clamp(1.4rem, 1.8vw, 1.6rem); */
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .project__links {
