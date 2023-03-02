@@ -1,7 +1,6 @@
 .projects {
     border-left: 1px dashed var(--c-sub);
     padding-left: 0.8rem;
-    margin-top: clamp(1rem, 3vw, 5rem);
 }
 
 .project {
@@ -75,7 +74,7 @@
     .project__img {
         width: 70%;
         margin-bottom: 0;
-        margin-right: clamp(1rem, 2vw, 3rem);
+        margin-right: clamp(2rem, 3vw, 4rem);
     }
 
     .project__text {

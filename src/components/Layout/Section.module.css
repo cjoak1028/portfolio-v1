@@ -1,18 +1,31 @@
 .section {
     margin: auto;
-    margin-bottom: clamp(10rem, 15vw, 20rem);
+    /* margin-bottom: clamp(10rem, 15vw, 20rem); */
+    margin-bottom: clamp(2rem, 4vw, 5rem);
     display: flex;
     flex-direction: column;
 }
 
-.section-title {
-    margin-bottom: 2rem;
-    font-size: clamp(1.6rem, 3vw, 4rem);
+.section__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp(2rem, 4vw, 5rem);
+}
+
+.section__title h2 {
+    font-size: clamp(1.6rem, 2vw, 2rem);
     font-style: italic;
     font-weight: var(--fw-medium);
     color: var(--c-sub);
     opacity: 0.7;
-    padding-bottom: 1rem;
+    margin-right: clamp(1.5rem, 2vw, 3rem);
+}
+
+.line {
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--c-sub);
 }
 
 .border {
@@ -20,36 +33,9 @@
     padding-top: clamp(1rem, 2vw, 3.5rem);
 }
 
-.contact-section {
-    margin-bottom: 0 !important;
-}
-
 @media only screen and (min-width: 43.75em) {
-    .rotate {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .rotate .section-title {
-        transform: rotate(180deg);
-        writing-mode: vertical-lr;
-        margin-bottom: 0;
-    }
-
-    .rotate .container-2 {
-        width: 70%;
-    }
-
-    .projects-section .container-2 {
-        width: 100%;
-    }
-
-    .about-section {
-        width: 75%;
-        max-width: 100rem;
-    }
-
-    .projects-section {
+    .section {
         width: 80%;
+        max-width: 100rem;
     }
 }

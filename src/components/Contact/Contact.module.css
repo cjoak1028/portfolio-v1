@@ -3,11 +3,11 @@
     /* margin-top: clamp(3rem, 4vw, 5rem); */
     margin: auto;
     text-align: center;
-    background-color: #dadada;
+    /* background-color: #dadada; */
     margin-left: clamp(-10rem, -6vw, -2rem);
     margin-right: clamp(-10rem, -6vw, -2rem);
     padding: 5rem 3rem;
-    min-height: calc(100vh - clamp(6rem, 7vw, 12rem));
+    /* min-height: calc(100vh - clamp(6rem, 7vw, 12rem)); */
     display: flex;
     flex-direction: column;
     align-items: center;

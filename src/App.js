@@ -14,7 +14,7 @@ function App() {
       <Header />
       <div className="padding-x">
         <Hero />
-        <Section name={"about"} title={"about"} rotate={true} border={true}>
+        <Section name={"about"} title={"about"} rotate={false} border={false}>
           <About />
         </Section>
         <Section
@@ -25,9 +25,9 @@ function App() {
         >
           <Projects />
         </Section>
-        <Section name={"contact"} title={""} rotate={false} border={false}>
+        {/* <Section name={"contact"} title={""} rotate={false} border={false}>
           <Contact />
-        </Section>
+        </Section> */}
       </div>
       <Footer />
       <div className={styles["side-element"]}>

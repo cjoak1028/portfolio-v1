@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import { AiOutlineSmile } from "react-icons/ai";
+import { BsArrowDownShort } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -25,159 +26,165 @@ const About = () => {
           GOAL OF DELIVERING THE FINEST WEB EXPERIENCES.
         </p>
       </div>
-      <div className={styles["work-experience"]}>
-        <h4>Career</h4>
-        <div className="flex flex-jc-sb">
-          <p className={styles.company}>BioRender</p>
-          <p className={styles.year}>2017</p>
-          <p className={styles.year}>2018</p>
+      <div className={styles["experience-container"]}>
+        <div className={styles["work-experience"]}>
+          <h4>Career</h4>
+          <div className="flex flex-jc-sb">
+            <p className={styles.company}>BioRender</p>
+            <p className={styles.year}>2017</p>
+            <p className={styles.year}>2018</p>
+          </div>
+        </div>
+        <div className={styles["technologies"]}>
+          <h4>Technologies</h4>
+          <div className={styles["tech-category"]}>
+            <div
+              className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
+            >
+              <span className={styles.skill}>JS (ES6)</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>HTML</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>CSS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>SCSS/SASS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Python</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Java</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>C</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>JS (ES6)</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>HTML</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>CSS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>SCSS/SASS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Python</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Java</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>C</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>JS (ES6)</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>HTML</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>CSS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>SCSS/SASS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Python</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Java</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>C</span>
+              <div className={styles.space}></div>
+            </div>
+            <h5 className={styles["category-title"]}>Languages</h5>
+          </div>
+          <div className={styles["tech-category"]}>
+            <div
+              className={`${styles["inf-scroll"]} ${styles["inf-scroll--right"]}`}
+            >
+              <span className={styles.skill}>React</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Node.JS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Express</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Mongoose</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>React Native</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>React</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Node.JS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Express</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Mongoose</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>React Native</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>React</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Node.JS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Express</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Mongoose</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>React Native</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>React</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Node.JS</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Express</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Mongoose</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>React Native</span>
+              <div className={styles.space}></div>
+            </div>
+            <h5 className={styles["category-title"]}>Libraries/Frameworks</h5>
+          </div>
+          <div className={styles["tech-category"]}>
+            <div
+              className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
+            >
+              <span className={styles.skill}>Git</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Webpack</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>MongoDB</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Figma</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Photoshop</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>Git</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Webpack</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>MongoDB</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Figma</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Photoshop</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>Git</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Webpack</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>MongoDB</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Figma</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Photoshop</span>
+              <div className={styles.space}></div>
+              <span className={styles.skill}>Git</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Webpack</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>MongoDB</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Figma</span>
+              <span className={styles.divider}>|</span>
+              <span className={styles.skill}>Photoshop</span>
+              <div className={styles.space}></div>
+            </div>
+            <h5 className={styles["category-title"]}>OTHER</h5>
+          </div>
         </div>
       </div>
-      <div className={styles["technologies"]}>
-        <h4>Technologies</h4>
-        <div className={styles["tech-category"]}>
-          <div
-            className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
-          >
-            <span className={styles.skill}>JS (ES6)</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>HTML</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>CSS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>SCSS/SASS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Python</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Java</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>C</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>JS (ES6)</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>HTML</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>CSS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>SCSS/SASS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Python</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Java</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>C</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>JS (ES6)</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>HTML</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>CSS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>SCSS/SASS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Python</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Java</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>C</span>
-            <div className={styles.space}></div>
-          </div>
-          <h5 className={styles["category-title"]}>Languages</h5>
-        </div>
-        <div className={styles["tech-category"]}>
-          <div
-            className={`${styles["inf-scroll"]} ${styles["inf-scroll--right"]}`}
-          >
-            <span className={styles.skill}>React</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Node.JS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Express</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Mongoose</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>React Native</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>React</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Node.JS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Express</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Mongoose</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>React Native</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>React</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Node.JS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Express</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Mongoose</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>React Native</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>React</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Node.JS</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Express</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Mongoose</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>React Native</span>
-            <div className={styles.space}></div>
-          </div>
-          <h5 className={styles["category-title"]}>Libraries/Frameworks</h5>
-        </div>
-        <div className={styles["tech-category"]}>
-          <div
-            className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
-          >
-            <span className={styles.skill}>Git</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Webpack</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>MongoDB</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Figma</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Photoshop</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>Git</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Webpack</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>MongoDB</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Figma</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Photoshop</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>Git</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Webpack</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>MongoDB</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Figma</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Photoshop</span>
-            <div className={styles.space}></div>
-            <span className={styles.skill}>Git</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Webpack</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>MongoDB</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Figma</span>
-            <span className={styles.divider}>|</span>
-            <span className={styles.skill}>Photoshop</span>
-            <div className={styles.space}></div>
-          </div>
-          <h5 className={styles["category-title"]}>OTHER</h5>
-        </div>
+      <div className={styles.transition}>
+        <p>CHECK OUT SOME OF MY WORK </p>
+        <BsArrowDownShort className={styles["arrow-icon"]} />
       </div>
     </div>
   );

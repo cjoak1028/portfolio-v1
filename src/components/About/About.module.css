@@ -1,12 +1,15 @@
 .about {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    border-left: 1px dashed var(--c-sub);
+    padding-left: calc(10% + 0.8rem);
+    /* width: 70%; */
 }
 
 .about h3 {
     font-weight: var(--fw-medium);
-    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    /* font-size: 3rem; */
     margin-bottom: 3rem;
     font-style: italic;
 }
@@ -89,6 +92,29 @@
 .space {
     display: inline-block;
     margin-right: 10%;
+}
+
+.experience-container {
+    /* border-left: 1px dashed var(--c-sub);
+    border-right: 1px dashed var(--c-sub); */
+    /* padding: 2rem; */
+    margin-bottom: 20rem;
+}
+
+.transition {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.transition p {
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-weight: var(--fw-bold);
+    margin-right: .5rem;
+}
+
+.arrow-icon {
+    font-size: clamp(2rem, 2.3vw, 2.5rem);
 }
 
 @media only screen and (min-width: 61.25em) {
