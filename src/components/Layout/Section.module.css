@@ -1,7 +1,5 @@
 .section {
     margin: auto;
-    /* margin-bottom: clamp(10rem, 15vw, 20rem); */
-    margin-bottom: clamp(2rem, 4vw, 5rem);
     display: flex;
     flex-direction: column;
 }
@@ -9,7 +7,7 @@
 .section__title {
     display: flex;
     align-items: center;
-    margin-bottom: clamp(2rem, 4vw, 5rem);
+    text-transform: uppercase;
 }
 
 .section__title h2 {
@@ -33,7 +31,7 @@
     padding-top: clamp(1rem, 2vw, 3.5rem);
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 61.25em) {
     .section {
         width: 80%;
         max-width: 100rem;

@@ -1,6 +1,7 @@
 .projects {
     border-left: 1px dashed var(--c-sub);
     padding-left: 0.8rem;
+    margin-top: clamp(2rem, 4vw, 5rem);
 }
 
 .project {
@@ -20,6 +21,7 @@
     margin-right: clamp(2rem, 3vw, 4rem);
     font-style: italic;
     font-weight: var(--fw-medium);
+    text-transform: uppercase;
 }
 
 .flex-container {

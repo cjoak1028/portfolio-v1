@@ -3,6 +3,7 @@
     bottom: 0px;
     right: clamp(2rem, 6vw, 10rem);
     display: none;
+    text-transform: uppercase;
 }
 
 .contact {

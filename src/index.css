@@ -27,7 +27,6 @@ body {
   background-color: var(--c-bg);
   color: var(--c-main);
   font-family: var(--ff-main);
-  text-transform: uppercase;
 }
 
 *, *::before, *::after {
@@ -70,3 +69,8 @@ code {
 .flex-jc-sb {
   justify-content: space-between;
 }
+
+/* TYPOGRAPHY */
+/* p {
+  font-size: clamp(1.4rem, 1.8vw, 1.6rem);
+} */
