@@ -1,24 +1,28 @@
 .contact {
     margin: auto;
     text-align: center;
-    /* background-color: #dadada; */
-    /* margin-left: clamp(-10rem, -6vw, -2rem);
-    margin-right: clamp(-10rem, -6vw, -2rem); */
-    margin-bottom: clamp(10rem, 15vw, 20rem);
-    padding: 5rem 0;
+    background-color: #dadada;
+    margin-left: clamp(-10rem, -6vw, -2rem);
+    margin-right: clamp(-10rem, -6vw, -2rem);
+    padding-top: clamp(5rem, 10vw, 15rem);
+    padding-bottom: clamp(5rem, 10vw, 15rem);
+}
+
+.contact__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin: auto;
+    max-width: 100rem;
 }
 
-.contact h3 {
+.contact__content h3 {
     font-size: clamp(4rem, 15vw, 20rem);
     font-weight: var(--fw-medium);
     font-style: italic;
 }
 
-.contact p {
+.contac__content p {
     font-size: clamp(1.2rem, 2vw, 2.5rem);
     font-weight: var(--fw-regular);
 }
@@ -28,7 +32,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
 }
 
 .link-list a {
@@ -50,26 +54,24 @@
 .divider {
     display: block;
     height: 0px;
-    border-top: 1px dashed var(--c-sub);
     width: 100%;
+    border-top: 1px dashed var(--c-sub);
     margin: clamp(2rem, 4vw, 5rem) 0;
-}
-
-@media only screen and (min-width: 43.75em) {
-    .contact {
-        max-width: 100rem;
-        width: 80%;
-    }
 }
 
 @media only screen and (min-width: 28em) {
     .link-list {
         flex-direction: row;
         justify-content: space-between;
-        width: 80%;
     }
 
     .link-list li:not(last-child) {
         margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 43.75em) {
+    .contact__content {
+        width: 80%;
     }
 }

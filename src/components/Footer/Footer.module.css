@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    background-color: #dadada;
 }
 
 .footer p {
