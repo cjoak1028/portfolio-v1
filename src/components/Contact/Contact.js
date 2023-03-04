@@ -3,12 +3,13 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <div className={`${styles.contact} padding-x`}>
       <h3>HIRE ME!</h3>
       <p>
-        OR FEEL FREE TO MESSAGE ME IF YOU WANT TO COLLABORATE OR HAVE A LITTLE
-        CHAT.
+        or feel free to message me if you want to collaborate or have a little
+        chat.
       </p>
+      <span className={styles.divider}></span>
       <ul className={styles["link-list"]}>
         <li>
           <a>Email</a>

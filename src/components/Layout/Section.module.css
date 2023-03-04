@@ -2,6 +2,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: clamp(10rem, 15vw, 20rem);
 }
 
 .section__title {

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
 import { AiOutlineSmile } from "react-icons/ai";
-import { BsArrowDownShort } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -15,10 +14,10 @@ const About = () => {
           </p>
           <p>
             I discovered my passion for web development in 2017 during an
-            internship as a full-stack web developer. With my love for great design and
-            an innate tendency to give a considerable amount of attention to detail, I am able to
-            craft websites and applications that are both functional and
-            visually appealing with great proficiency.
+            internship as a full-stack web developer. With my love for great
+            design and an innate tendency to give a considerable amount of
+            attention to detail, I am able to craft websites and applications
+            that are both functional and visually appealing.
           </p>
           <p>
             I am continuously experimenting with new tools and techniques with
@@ -181,10 +180,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.transition}>
-        <p>CHECK OUT SOME OF MY WORK </p>
-        <BsArrowDownShort className={styles["arrow-icon"]} />
       </div>
     </div>
   );

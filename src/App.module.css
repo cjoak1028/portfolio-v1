@@ -17,7 +17,6 @@
     margin: 20px 0;
     writing-mode: vertical-rl;
     text-decoration: none;
-    /* text-transform: lowercase; */
     color: var(--c-main);
     opacity: 0.8;
     font-style: italic;
@@ -32,8 +31,32 @@
     background-color: var(--c-sub);
 }
 
+.transition {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+}
+
+.transition p {
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-weight: var(--fw-bold);
+    margin-right: .5rem;
+    text-transform: uppercase;
+}
+
+.arrow-icon {
+    font-size: clamp(2rem, 2.3vw, 2.5rem);
+}
+
 @media only screen and (min-width: 61.25em) {
     .side-element {
         display: block;
     }
+
+    .transition {
+        width: 80%;
+        max-width: 100rem;
+    }
+
 }

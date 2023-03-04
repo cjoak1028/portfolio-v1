@@ -3,10 +3,10 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Section from "./components/Layout/Section";
 import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import { BsArrowDownShort } from "react-icons/bs";
 
 function App() {
   return (
@@ -17,6 +17,10 @@ function App() {
         <Section name={"about"} title={"about"} rotate={false} border={false}>
           <About />
         </Section>
+        <div className={styles.transition}>
+          <p>Check out some of my work </p>
+          <BsArrowDownShort className={styles["arrow-icon"]} />
+        </div>
         <Section
           name={"projects"}
           title={"projects"}
@@ -25,9 +29,7 @@ function App() {
         >
           <Projects />
         </Section>
-        {/* <Section name={"contact"} title={""} rotate={false} border={false}>
-          <Contact />
-        </Section> */}
+        <Contact />
       </div>
       <Footer />
       <div className={styles["side-element"]}>

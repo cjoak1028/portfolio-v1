@@ -48,8 +48,8 @@
 
 .project__text p {
     text-align: right;
-    font-size: clamp(1.1rem, 1.2vw, 1.5rem);
-    /* font-size: clamp(1.4rem, 1.8vw, 1.6rem); */
+    font-size: clamp(1.4rem, 1.8vw, 1.6rem);
+    font-weight: var(--fw-light);
     margin-bottom: 1rem;
 }
 
@@ -57,11 +57,16 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-size: clamp(1.4rem, 1.8vw, 1.6rem);
 }
 
 .project__links li:not(:last-child) {
     margin-right: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+.project__links a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--c-main);
 }
 
 .project__links a:visited {

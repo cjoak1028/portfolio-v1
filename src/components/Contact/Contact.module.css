@@ -1,13 +1,11 @@
 .contact {
-    /* display: inline-block; */
-    /* margin-top: clamp(3rem, 4vw, 5rem); */
     margin: auto;
     text-align: center;
     /* background-color: #dadada; */
-    margin-left: clamp(-10rem, -6vw, -2rem);
-    margin-right: clamp(-10rem, -6vw, -2rem);
-    padding: 5rem 3rem;
-    /* min-height: calc(100vh - clamp(6rem, 7vw, 12rem)); */
+    /* margin-left: clamp(-10rem, -6vw, -2rem);
+    margin-right: clamp(-10rem, -6vw, -2rem); */
+    margin-bottom: clamp(10rem, 15vw, 20rem);
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,17 +13,14 @@
 }
 
 .contact h3 {
-    font-size: clamp(4rem, 17vw, 25rem);
+    font-size: clamp(4rem, 15vw, 20rem);
     font-weight: var(--fw-medium);
-    margin-left: clamp(-1.7rem, -1.1vw, -0.2rem);
     font-style: italic;
 }
 
 .contact p {
-    font-size: clamp(1.2rem, 1.6vw, 2rem);
-    line-height: clamp(1.8rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
     font-weight: var(--fw-regular);
-    margin-bottom: clamp(6rem, 7.5vw, 9rem);
 }
 
 .link-list {
@@ -33,14 +28,15 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .link-list a {
-    font-size: clamp(2.5rem, 3vw, 4rem);
+    font-size: clamp(1.8rem, 3vw, 4rem);
     font-weight: var(--fw-regular);
-    border-bottom: 2px solid var(--c-main);
     text-decoration: none;
     color: var(--c-main);
+    border-bottom: 1px solid var(--c-main);
 }
 
 .link-list a:visited {
@@ -48,17 +44,32 @@
 }
 
 .link-list li:not(last-child) {
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.divider {
+    display: block;
+    height: 0px;
+    border-top: 1px dashed var(--c-sub);
+    width: 100%;
+    margin: clamp(2rem, 4vw, 5rem) 0;
 }
 
 @media only screen and (min-width: 43.75em) {
+    .contact {
+        max-width: 100rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 28em) {
     .link-list {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        width: 80%;
     }
 
     .link-list li:not(last-child) {
         margin-bottom: 0;
-        margin-right: clamp(2rem, 3.5vw, 5rem);
     }
 }

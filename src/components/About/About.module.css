@@ -35,9 +35,9 @@
     font-size: clamp(1.4rem, 1.8vw, 1.6rem);
 }
 
-.about__content {
+/* .about__content {
     margin-bottom: clamp(10rem, 15vw, 20rem);
-}
+} */
 
 .about__me {
     border-bottom: 1px dashed var(--c-sub);
@@ -111,22 +111,6 @@
 .space {
     display: inline-block;
     margin-right: 10%;
-}
-
-.transition {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.transition p {
-    font-size: clamp(1rem, 1.1vw, 1.2rem);
-    font-weight: var(--fw-bold);
-    margin-right: .5rem;
-}
-
-.arrow-icon {
-    font-size: clamp(2rem, 2.3vw, 2.5rem);
 }
 
 @media only screen and (min-width: 43.75em) {

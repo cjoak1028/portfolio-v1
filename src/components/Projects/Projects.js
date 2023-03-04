@@ -15,8 +15,8 @@ const Projects = () => {
           </div>
           <div className={styles["project__text"]}>
             <p>
-              A MULTI-PAGE WEBSITE THAT SHOWCASES EACH PLANET IN OUR SOLAR
-              SYSTEM
+              A multi-page website that showcases each planent in our solar
+              system
             </p>
             <ul className={styles["project__links"]}>
               <li>
@@ -38,7 +38,7 @@ const Projects = () => {
             <img src={photosnapImg} alt="the planets website screenshot" />
           </div>
           <div className={styles["project__text"]}>
-            <p>A MARKETING WEBSITE FOR A PHOTO-SHARING APPLICATION</p>
+            <p>A marketing website for a photo-sharing application</p>
             <ul className={styles["project__links"]}>
               <li>
                 <a
@@ -69,7 +69,7 @@ const Projects = () => {
             <img src={portfolioImg} alt="the planets website screenshot" />
           </div>
           <div className={styles["project__text"]}>
-            <p>A PORTFOLIO WEBSITE THAT SHOWCASES MY SKILLS AND PROJECTS</p>
+            <p>A portfolio website that showcases my skills and projects</p>
             <ul className={styles["project__links"]}>
               <li>
                 <a href={"https://github.com/cjoak1028/portfolio-website-v1"}>
