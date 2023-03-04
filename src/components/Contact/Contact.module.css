@@ -4,8 +4,8 @@
     background-color: #dadada;
     margin-left: clamp(-10rem, -6vw, -2rem);
     margin-right: clamp(-10rem, -6vw, -2rem);
-    padding-top: clamp(5rem, 10vw, 15rem);
-    padding-bottom: clamp(5rem, 10vw, 15rem);
+    padding-top: clamp(5rem, 20vw, 15rem);
+    padding-bottom: clamp(5rem, 20vw, 15rem);
 }
 
 .contact__content {
@@ -22,7 +22,7 @@
     font-style: italic;
 }
 
-.contac__content p {
+.contact__content p {
     font-size: clamp(1.2rem, 2vw, 2.5rem);
     font-weight: var(--fw-regular);
 }
