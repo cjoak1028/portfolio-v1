@@ -76,6 +76,13 @@ p {
     overflow: hidden;
 }
 
+.scroll-container {
+    border-top: 1px solid var(--c-sub);
+    border-bottom: 1px solid var(--c-sub);
+    margin-bottom: 0.2rem;
+    padding: 0.1rem 0;
+}
+
 .inf-scroll {
     display: inline-flex;
     align-items: center;
