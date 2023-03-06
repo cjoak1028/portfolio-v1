@@ -8,7 +8,7 @@
     font-size: clamp(3rem, 4.5vw, 6rem);
     font-style: italic;
     padding: clamp(2rem, 3vw, 4rem) 0;
-    border-bottom: 1px solid var(--c-sub);
+    border-bottom: 1px dashed var(--c-sub);
 }
 
 .about__content {
