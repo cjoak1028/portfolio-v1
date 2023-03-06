@@ -10,7 +10,7 @@ const About = () => {
         <div className={styles["about__me"]}>
           <p className={`${styles.greeting} flex flex-ai-c`}>
             Hello <AiOutlineSmile className={styles["smiley-icon"]} /> &#8212;
-            I'm Chang-Ju Kim.
+            I'm Chang-Ju (David) Kim.
           </p>
           <p>
             I discovered my passion for web development in 2017 during an

@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
       </ul>
       <span className={styles.divider}></span>
       <div className={styles["hamburger-menu__info"]}>
-        <p>Chang-Ju Kim</p>
+        <p>Chang-Ju (David) Kim</p>
         <p>Front-end Developer</p>
         <p>Based in Toronto</p>
         <div className={styles.email}>
