@@ -3,14 +3,22 @@ import styles from "./HamburgerMenu.module.css";
 
 const HamburgerMenu = () => {
   return (
-    <div className={`${styles["hamburger-menu"]} padding-x flex flex-d-c flex-jc-c`}>
-      <ul>
-        <li>01/ ABOUT</li>
-        <li>02/ SKILLS</li>
-        <li>03/ PROJECTS</li>
-        <li>04/ CONTACT</li>
+    <div className={`${styles["hamburger-menu"]} padding-x`}>
+      <ul className={styles["hamburger-menu__links"]}>
+        <li>ABOUT</li>
+        <li>PROJECTS</li>
+        <li>CONTACT</li>
       </ul>
-      <p className={styles.email}>changju.kim10@gmail.com</p>
+      <span className={styles.divider}></span>
+      <div className={styles["hamburger-menu__info"]}>
+        <p>Chang-Ju Kim</p>
+        <p>Front-end Developer</p>
+        <p>Based in Toronto</p>
+        <div className={styles.email}>
+          <span className={styles.line}></span>
+          <p>changju.kim10@gmail.com</p>
+        </div>
+      </div>
     </div>
   );
 };
