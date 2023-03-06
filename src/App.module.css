@@ -18,6 +18,7 @@
     writing-mode: vertical-rl;
     text-decoration: none;
     color: var(--c-main);
+    font-weight: var(--fw-medium);
     opacity: 0.8;
     font-style: italic;
     letter-spacing: 4px;
@@ -31,14 +32,14 @@
     background-color: var(--c-sub);
 }
 
-.transition {
+.prompt {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: auto;
 }
 
-.transition p {
+.prompt p {
     font-size: clamp(1rem, 1.1vw, 1.2rem);
     font-weight: var(--fw-bold);
     margin-right: .5rem;
@@ -54,7 +55,7 @@
         display: block;
     }
 
-    .transition {
+    .prompt {
         width: 80%;
         max-width: 100rem;
     }

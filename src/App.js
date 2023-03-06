@@ -17,7 +17,7 @@ function App() {
         <Section name={"about"} title={"about"} rotate={false} border={false}>
           <About />
         </Section>
-        <div className={styles.transition}>
+        <div className={styles.prompt}>
           <p>Check out some of my work </p>
           <BsArrowDownShort className={styles["arrow-icon"]} />
         </div>

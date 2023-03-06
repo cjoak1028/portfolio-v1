@@ -15,9 +15,9 @@ const About = () => {
           <p>
             I discovered my passion for web development in 2017 during an
             internship as a full-stack web developer. With my love for great
-            design and an innate tendency to give a considerable amount of
-            attention to detail, I am able to craft websites and applications
-            that are both functional and visually appealing.
+            design and an innate tendency to be meticulous, I am able to build
+            websites and applications that are both functional and visually
+            appealing.
           </p>
           <p>
             I am continuously experimenting with new tools and techniques with

@@ -47,8 +47,8 @@
     color: var(--c-main);
 }
 
-.link-list li:not(last-child) {
-    margin-bottom: 1.8rem;
+.link-list li:not(:last-child) {
+    margin-bottom: 2.5rem;
 }
 
 .divider {
@@ -56,7 +56,7 @@
     height: 0px;
     width: 100%;
     border-top: 1px dashed var(--c-sub);
-    margin: clamp(2rem, 4vw, 5rem) 0;
+    margin: clamp(4rem, 5vw, 5rem) 0;
 }
 
 @media only screen and (min-width: 28em) {

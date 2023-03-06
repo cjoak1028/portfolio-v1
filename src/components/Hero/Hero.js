@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
+import { BsArrowDownShort } from "react-icons/bs";
 
 const Hero = () => {
   const [date, setDate] = useState(new Date());
@@ -64,6 +65,10 @@ const Hero = () => {
             <span className={styles.line}></span>
             <p className={styles.email}>changju.kim10@gmail.com</p>
           </div>
+        </div>
+        <div className={styles["scroll-prompt"]}>
+          <p>Scroll Down</p>
+          <BsArrowDownShort className={styles["arrow-icon"]} />
         </div>
       </div>
     </div>
