@@ -69,8 +69,8 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles["scroll-prompt"]}>
-          <p>Scroll Down</p>
           <BsArrowDownShort className={styles["arrow-icon"]} />
+          <p>Scroll Down</p>
         </div>
       </div>
     </div>

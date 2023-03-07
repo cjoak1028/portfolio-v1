@@ -29,7 +29,18 @@ function App() {
         >
           <Projects />
         </Section>
-        <Contact />
+        <div className={`${styles.prompt} ${styles["prompt--rev"]}`}>
+          <BsArrowDownShort className={styles["arrow-icon"]} />
+          <p>Get in touch </p>
+        </div>
+        <Section
+          name={"contact"}
+          title={"contact"}
+          rotate={false}
+          border={false}
+        >
+          <Contact />
+        </Section>
       </div>
       <Footer />
       <div className={styles["side-element"]}>

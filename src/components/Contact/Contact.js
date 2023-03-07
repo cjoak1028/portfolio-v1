@@ -3,7 +3,7 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <div className={`${styles.contact} padding-x`}>
+    <div className={`${styles.contact}`}>
       <div className={styles["contact__content"]}>
         <h3>HIRE ME!</h3>
         <p>

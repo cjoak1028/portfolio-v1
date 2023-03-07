@@ -1,11 +1,8 @@
 .contact {
     margin: auto;
     text-align: center;
-    background-color: #dadada;
-    margin-left: clamp(-10rem, -6vw, -2rem);
-    margin-right: clamp(-10rem, -6vw, -2rem);
-    padding-top: clamp(5rem, 20vw, 15rem);
-    padding-bottom: clamp(5rem, 20vw, 15rem);
+    padding-top: clamp(5rem, 10vw, 8rem);
+    padding-bottom: clamp(10rem, 20vw, 18rem);
 }
 
 .contact__content {
@@ -13,7 +10,6 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    max-width: 100rem;
 }
 
 .contact__content h3 {
@@ -72,6 +68,6 @@
 
 @media only screen and (min-width: 43.75em) {
     .contact__content {
-        width: 80%;
+        /* width: 80%; */
     }
 }

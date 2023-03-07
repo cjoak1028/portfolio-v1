@@ -36,7 +36,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: auto;
+    margin: clamp(5rem, 10vw, 12rem) auto;
+}
+
+.prompt--rev {
+    justify-content: flex-start;
 }
 
 .prompt p {

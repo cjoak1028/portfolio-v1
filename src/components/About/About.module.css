@@ -17,7 +17,7 @@
 }
 
 .about__me, .about__experience {
-    padding: clamp(2rem, 3vw, 4rem) 0;
+    padding-top: clamp(2rem, 3vw, 4rem);
 }
 
 .smiley-icon {
@@ -34,10 +34,6 @@
     font-weight: var(--fw-light);
     font-size: clamp(1.4rem, 1.8vw, 1.6rem);
 }
-
-/* .about__content {
-    margin-bottom: clamp(10rem, 15vw, 20rem);
-} */
 
 .about__me {
     border-bottom: 1px dashed var(--c-sub);
@@ -127,6 +123,7 @@
 
     .about__experience {
         padding-left: clamp(1rem, 2vw, 2rem);
+        padding-bottom: clamp(2rem, 3vw, 4rem);
         width: 45%;
     }
 }
