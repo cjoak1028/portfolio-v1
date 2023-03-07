@@ -43,6 +43,10 @@
     justify-content: flex-start;
 }
 
+.prompt--rev .arrow-icon {
+    margin-right: .5rem;
+}
+
 .prompt p {
     font-size: clamp(1rem, 1.1vw, 1.2rem);
     font-weight: var(--fw-bold);
