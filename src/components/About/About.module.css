@@ -20,6 +20,10 @@
     padding-top: clamp(2rem, 3vw, 4rem);
 }
 
+.about__me {
+    padding-bottom: clamp(2rem, 3vw, 4rem);
+}
+
 .smiley-icon {
     margin: 0 .5rem;
 }

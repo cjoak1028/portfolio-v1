@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
-import { AiOutlineSmile } from "react-icons/ai";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -14,20 +13,20 @@ const Header = () => {
   return (
     <div className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}>
       <p
-        initial={{ opacity: 0 }}
-        className={`${styles.logo} ${openMenu ? "white" : ""}`}
+        className={`${styles.logo} ${openMenu ? styles.white : ""}`}
       >
         CJ PORTFOLIO
       </p>
       <Navigation />
-      {/* <p className={styles.email}>changju.kim10@gmail.com</p> */}
       <button
-        className={`${styles["hamburger-button"]} ${openMenu ? "white" : ""}`}
+        className={`${styles["hamburger-button"]} ${
+          openMenu ? styles.white : ""
+        }`}
         onClick={toggleMenu}
       >
         {openMenu ? "close" : "menu"}
       </button>
-      {openMenu ? <HamburgerMenu /> : ""}
+      <HamburgerMenu open={openMenu} />
     </div>
   );
 };

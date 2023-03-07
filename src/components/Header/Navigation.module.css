@@ -1,7 +1,6 @@
 .navigation {
     display: none;
     font-weight: var(--fw-regular);
-    /* font-size: clamp(1.2rem, 1.3vw, 1.4rem); */
     font-size: 1.4rem;
     text-transform: uppercase;
 }

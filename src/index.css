@@ -41,10 +41,6 @@ code {
 }
 
 /* UTILITIES */
-.white {
-  color: var(--c-bg);
-}
-
 .padding-x {
   padding: 0 clamp(2rem, 6vw, 10rem);
 }
