@@ -1,13 +1,22 @@
 import React from "react";
 import styles from "./HamburgerMenu.module.css";
 
-const HamburgerMenu = ({ open }) => {
+const HamburgerMenu = ({ open, getOpenMenu }) => {
   return (
     <div
       className={`${styles["hamburger-menu"]} ${
-        open ? styles.open : styles.close
+        open ? "" : styles.close
       } padding-x`}
     >
+      <div className={`${styles["hamburger-menu__header"]}`}>
+        <p className={styles.logo}>CJ PORTFOLIO</p>
+        <button
+          className={styles["close-button"]}
+          onClick={() => getOpenMenu(false)}
+        >
+          close
+        </button>
+      </div>
       <div className={styles["hamburger-menu__content"]}>
         <ul className={styles["hamburger-menu__links"]}>
           <li>ABOUT</li>

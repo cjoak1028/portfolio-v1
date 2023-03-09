@@ -12,21 +12,18 @@ const Header = () => {
 
   return (
     <div className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}>
-      <p
-        className={`${styles.logo} ${openMenu ? styles.white : ""}`}
-      >
-        CJ PORTFOLIO
-      </p>
+      <p className={styles.logo}>CJ PORTFOLIO</p>
       <Navigation />
       <button
-        className={`${styles["hamburger-button"]} ${
-          openMenu ? styles.white : ""
-        }`}
-        onClick={toggleMenu}
+        className={styles["hamburger-button"]}
+        onClick={() => setOpenMenu(true)}
       >
-        {openMenu ? "close" : "menu"}
+        menu
       </button>
-      <HamburgerMenu open={openMenu} />
+      <HamburgerMenu
+        open={openMenu}
+        getOpenMenu={(open) => setOpenMenu(open)}
+      />
     </div>
   );
 };

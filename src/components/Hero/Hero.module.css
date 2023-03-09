@@ -65,7 +65,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: .8rem;
-    margin-top: .2rem;
 }
 
 .hero-container {
@@ -76,9 +75,9 @@ p {
 }
 
 .scroll-container {
-    border-top: 1px solid var(--c-sub);
-    border-bottom: 1px solid var(--c-sub);
-    margin-bottom: 0.2rem;
+    /* border-top: 1px solid var(--c-sub); */
+    /* border-bottom: 1px solid var(--c-sub); */
+    margin-bottom: 0.1rem;
     padding: 0.1rem 0;
 }
 
