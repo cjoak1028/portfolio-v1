@@ -31,6 +31,10 @@
     font-weight: var(--fw-medium);
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 @media only screen and (min-width: 61.25em) {
     .hamburger-button {
         display: none;

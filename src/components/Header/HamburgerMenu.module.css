@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    transition: transform 1s ease;
+    transition: transform 0.4s ease;
 }
 
 .hamburger-menu__content {
@@ -88,10 +88,16 @@
     justify-content: space-between;
     align-items: center;
     height: 7rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in 0.3s;
 }
 
 .hamburger-menu__header * {
     color: var(--c-bg);
+}
+
+.open .hamburger-menu__header {
+    opacity: 100;
 }
 
 .close-button {

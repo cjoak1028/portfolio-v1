@@ -5,7 +5,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
   return (
     <div
       className={`${styles["hamburger-menu"]} ${
-        open ? "" : styles.close
+        open ? styles.open : styles.close
       } padding-x`}
     >
       <div className={`${styles["hamburger-menu__header"]}`}>
