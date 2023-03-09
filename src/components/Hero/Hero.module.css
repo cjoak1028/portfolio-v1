@@ -90,7 +90,7 @@ p {
 }
 
 .position, .location {
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-medium);
 }
 
 .flex-container {

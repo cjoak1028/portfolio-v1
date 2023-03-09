@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./HamburgerMenu.module.css";
 
 const HamburgerMenu = ({ open, getOpenMenu }) => {
+  const handleCloseClick = () => {
+    getOpenMenu(false);
+    document.body.classList.toggle("no-scroll");
+  };
+
   return (
     <div
       className={`${styles["hamburger-menu"]} ${
@@ -10,10 +15,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
     >
       <div className={`${styles["hamburger-menu__header"]}`}>
         <p className={styles.logo}>CJ PORTFOLIO</p>
-        <button
-          className={styles["close-button"]}
-          onClick={() => getOpenMenu(false)}
-        >
+        <button className={styles["close-button"]} onClick={handleCloseClick}>
           close
         </button>
       </div>

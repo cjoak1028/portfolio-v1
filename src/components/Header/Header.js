@@ -16,6 +16,11 @@ const Header = () => {
     }
   }, [openMenu]);
 
+  const handleMenuClick = () => {
+    setOpenMenu(true);
+    document.body.classList.toggle("no-scroll");
+  };
+
   return (
     <div className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}>
       <p className={styles.logo}>CJ PORTFOLIO</p>
@@ -24,7 +29,7 @@ const Header = () => {
         className={`${styles["hamburger-button"]} ${
           isButtonDisabled ? styles.disabled : ""
         }`}
-        onClick={() => setOpenMenu(true)}
+        onClick={handleMenuClick}
       >
         menu
       </button>
