@@ -2,7 +2,6 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* margin-bottom: clamp(10rem, 15vw, 20rem); */
 }
 
 .section__title {
@@ -25,11 +24,6 @@
     height: 1px;
     width: 100%;
     background-color: var(--c-sub);
-}
-
-.border {
-    border-top: 1px solid var(--c-sub);
-    padding-top: clamp(1rem, 2vw, 3.5rem);
 }
 
 @media only screen and (min-width: 61.25em) {

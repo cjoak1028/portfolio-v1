@@ -1,7 +1,6 @@
 import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Section from "./components/Layout/Section";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
@@ -14,33 +13,17 @@ function App() {
       <Header />
       <div className="padding-x">
         <Hero />
-        <Section name={"about"} title={"about"} rotate={false} border={false}>
-          <About />
-        </Section>
+        <About />
         <div className={styles.prompt}>
           <p>Check out some of my work </p>
           <BsArrowDownShort className={styles["arrow-icon"]} />
         </div>
-        <Section
-          name={"projects"}
-          title={"projects"}
-          rotate={false}
-          border={false}
-        >
-          <Projects />
-        </Section>
+        <Projects />
         <div className={`${styles.prompt} ${styles["prompt--rev"]}`}>
           <BsArrowDownShort className={styles["arrow-icon"]} />
           <p>Get in touch </p>
         </div>
-        <Section
-          name={"contact"}
-          title={"contact"}
-          rotate={false}
-          border={false}
-        >
-          <Contact />
-        </Section>
+        <Contact />
       </div>
       <Footer />
       <div className={styles["side-element"]}>

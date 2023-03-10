@@ -4,11 +4,7 @@ import styles from "./Section.module.css";
 const Section = (props) => {
   return (
     <div
-      className={`${styles.section} ${props.rotate ? styles.rotate : ""} ${
-        props.border ? styles.border : ""
-      } ${props.name === "about" ? styles["section--about"] : ""} ${
-        props.name === "projects" ? styles["section--projects"] : ""
-      }`}
+      className={styles.section}
     >
       <div className={styles["section__title"]}>
         <h2>{`${props.title}`}</h2>
