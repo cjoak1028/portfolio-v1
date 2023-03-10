@@ -68,10 +68,10 @@ const Hero = () => {
             <p className={styles.email}>changju.kim10@gmail.com</p>
           </div>
         </div>
-        <div className={styles["scroll-prompt"]}>
-          <BsArrowDownShort className={styles["arrow-icon"]} />
-          <p>Scroll Down</p>
-        </div>
+      </div>
+      <div className={styles["scroll-prompt"]}>
+        <BsArrowDownShort className={styles["arrow-icon"]} />
+        <p>Scroll Down</p>
       </div>
     </div>
   );
