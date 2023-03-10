@@ -1,7 +1,8 @@
 .contact {
     margin: auto;
     text-align: center;
-    padding-top: clamp(5rem, 10vw, 8rem);
+    /* padding-top: clamp(5rem, 8vw, 5rem); */
+    padding-top: clamp(3rem, 4vw, 5rem);
     padding-bottom: clamp(10rem, 20vw, 18rem);
 }
 
