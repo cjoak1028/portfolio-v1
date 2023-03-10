@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-scroll";
 import styles from "./HamburgerMenu.module.css";
 
 const HamburgerMenu = ({ open, getOpenMenu }) => {
+  const menuRef = useRef(null);
   const handleMenuClick = () => {
     getOpenMenu(false);
     document.body.classList.toggle("no-scroll");
+    menuRef.current.classList.add(styles.close);
+    setTimeout(() => {
+      menuRef.current.classList.remove(styles.open);
+      menuRef.current.classList.remove(styles.close);
+    }, 500);
   };
 
+  useEffect(() => {
+    if (open) {
+      menuRef.current.classList.add(styles.open);
+    }
+  }, [open]);
+
   return (
-    <div
-      className={`${styles["hamburger-menu"]} ${
-        open ? styles.open : styles.close
-      } padding-x`}
-    >
+    <div ref={menuRef} className={`${styles["hamburger-menu"]} padding-x`}>
       <div className={`${styles["hamburger-menu__header"]}`}>
         <p className={styles.logo}>
-          {" "}
           <Link
             to="hero"
             spy={true}
