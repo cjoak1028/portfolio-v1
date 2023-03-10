@@ -35,8 +35,24 @@
     pointer-events: none;
 }
 
+.navigation ul {
+    display: none;
+    font-weight: var(--fw-regular);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.navigation li:not(:last-child) {
+    margin-right: 1rem;
+}
+
 @media only screen and (min-width: 61.25em) {
     .hamburger-button {
         display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
     }
 }
