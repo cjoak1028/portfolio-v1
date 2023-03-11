@@ -94,16 +94,16 @@
     justify-content: space-between;
     align-items: center;
     height: 7rem;
-    opacity: 0;
-    transition: opacity 0.2s ease-in 0.3s;
 }
 
 .hamburger-menu__header * {
     color: var(--c-bg);
+    opacity: 0;
 }
 
-.open .hamburger-menu__header {
-    opacity: 100;
+.open .hamburger-menu__header * {
+    transition: opacity 0.2s ease-in 0.4s;
+    opacity: 1;
 }
 
 .close-button {

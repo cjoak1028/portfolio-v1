@@ -16,14 +16,14 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
       setTimeout(() => {
         menuRef.current.classList.remove(styles.open);
         menuRef.current.classList.remove(styles.close);
-      }, 500);
+      }, 400);
     }
     document.body.classList.toggle("no-scroll");
   }, [open]);
 
   return (
     <div ref={menuRef} className={`${styles["hamburger-menu"]} padding-x`}>
-      <div className={`${styles["hamburger-menu__header"]}`}>
+      <div className={styles["hamburger-menu__header"]}>
         <p className={styles.logo}>
           <Link
             to="hero"
