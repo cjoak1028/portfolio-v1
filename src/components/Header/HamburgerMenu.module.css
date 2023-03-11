@@ -34,7 +34,7 @@
 }
 
 .hamburger-menu__links li:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 
 .divider {
@@ -55,7 +55,7 @@
 }
 
 .hamburger-menu__info p:not(:last-of-type) {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
 }
 
 .email {
@@ -75,13 +75,13 @@
 }
 
 .email p {
-    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
     letter-spacing: 2px;
     color: var(--c-bg);
 }
 
 .open {
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
     transform: translateY(0vh);
 }
 
@@ -122,6 +122,12 @@
 .logo, .close-button {
     text-transform: uppercase;
     font-size: clamp(1.4rem, 1.8vw, 2rem);
+}
+
+@media only screen and (min-width: 61.25em) {
+    .hamburger-menu {
+        display: none;
+    }
 }
 
 @keyframes closeMenu {

@@ -4,6 +4,7 @@
     right: clamp(2rem, 6vw, 10rem);
     display: none;
     text-transform: uppercase;
+    opacity: 0.5;
 }
 
 .contact {
@@ -22,7 +23,7 @@
     opacity: 0.8;
     font-style: italic;
     letter-spacing: 4px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .contact span {

@@ -18,13 +18,19 @@ const Header = () => {
 
   const handleMenuClick = () => {
     setOpenMenu(true);
-    document.body.classList.toggle("no-scroll");
   };
 
   return (
     <div className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}>
       <p className={styles.logo}>
-        <Link to="hero" spy={true} smooth={true} duration={500} offset={-70}>
+        <Link
+          to="hero"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className={"link"}
+        >
           CJ PORTFOLIO
         </Link>
       </p>
@@ -37,6 +43,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-110}
+              className={"link"}
             >
               About
             </Link>
@@ -49,6 +56,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-110}
+              className={"link"}
             >
               Projects
             </Link>
@@ -61,6 +69,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-110}
+              className={"link"}
             >
               Contact
             </Link>

@@ -6,18 +6,19 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
   const menuRef = useRef(null);
   const handleMenuClick = () => {
     getOpenMenu(false);
-    document.body.classList.toggle("no-scroll");
-    menuRef.current.classList.add(styles.close);
-    setTimeout(() => {
-      menuRef.current.classList.remove(styles.open);
-      menuRef.current.classList.remove(styles.close);
-    }, 500);
   };
 
   useEffect(() => {
     if (open) {
       menuRef.current.classList.add(styles.open);
+    } else {
+      menuRef.current.classList.add(styles.close);
+      setTimeout(() => {
+        menuRef.current.classList.remove(styles.open);
+        menuRef.current.classList.remove(styles.close);
+      }, 500);
     }
+    document.body.classList.toggle("no-scroll");
   }, [open]);
 
   return (
@@ -31,6 +32,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
             duration={500}
             offset={-70}
             onClick={handleMenuClick}
+            className={"link"}
           >
             CJ PORTFOLIO
           </Link>
@@ -50,6 +52,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 duration={500}
                 offset={-110}
                 onClick={handleMenuClick}
+                className={"link"}
               >
                 About
               </Link>
@@ -62,6 +65,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 duration={500}
                 offset={-110}
                 onClick={handleMenuClick}
+                className={"link"}
               >
                 Projects
               </Link>
@@ -74,6 +78,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 duration={500}
                 offset={-110}
                 onClick={handleMenuClick}
+                className={"link"}
               >
                 Contact
               </Link>
