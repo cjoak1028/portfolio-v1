@@ -20,8 +20,8 @@
 }
 
 .contact__content p {
-    font-size: clamp(1.2rem, 2vw, 2.5rem);
-    font-weight: var(--fw-regular);
+    font-size: clamp(1.2rem, 1.8vw, 2.5rem);
+    font-weight: var(--fw-light);
 }
 
 .link-list {

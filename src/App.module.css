@@ -3,7 +3,6 @@
     bottom: 0px;
     right: clamp(2rem, 6vw, 10rem);
     display: none;
-    text-transform: uppercase;
     opacity: 0.5;
 }
 
@@ -22,8 +21,9 @@
     font-weight: var(--fw-medium);
     opacity: 0.8;
     font-style: italic;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .contact span {

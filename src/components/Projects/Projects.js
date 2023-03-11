@@ -16,22 +16,42 @@ const Projects = () => {
               <img src={thePlanetsImg} alt="the planets website screenshot" />
             </div>
             <div className={styles["project__text"]}>
-              <p>
-                A multi-page website that showcases each planet in our solar
-                system
-              </p>
-              <ul className={styles["project__links"]}>
-                <li>
-                  <a href={"https://github.com/cjoak1028/planets-fact-site"}>
-                    REPO
-                  </a>
-                </li>
-                <li>
-                  <a href={"https://planets-fact-site-sand.vercel.app/"}>
-                    SITE
-                  </a>
-                </li>
-              </ul>
+              <div>
+                <div className={styles["project__description"]}>
+                  <p>
+                    A multi-page website that showcases each planet in our solar
+                    system
+                  </p>
+                </div>
+                <div className={styles["project__tech"]}>
+                  <ul>
+                    <li>
+                      <p>HTML</p>
+                    </li>
+                    <li>
+                      <p>SCSS</p>
+                    </li>
+                    <li>
+                      <p>JS(ES6)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles["project__links"]}>
+                <ul>
+                  <li>
+                    <a href={"https://github.com/cjoak1028/planets-fact-site"}>
+                      REPO
+                    </a>
+                  </li>
+                  <li>
+                    <a href={"https://planets-fact-site-sand.vercel.app/"}>
+                      SITE
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -42,27 +62,47 @@ const Projects = () => {
               <img src={photosnapImg} alt="the planets website screenshot" />
             </div>
             <div className={styles["project__text"]}>
-              <p>A marketing website for a photo-sharing application</p>
-              <ul className={styles["project__links"]}>
-                <li>
-                  <a
-                    href={
-                      "https://github.com/cjoak1028/photosnap-multi-page-website"
-                    }
-                  >
-                    REPO
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={
-                      "https://photosnap-multi-page-website-theta.vercel.app/"
-                    }
-                  >
-                    SITE
-                  </a>
-                </li>
-              </ul>
+              <div>
+                <div className={styles["project__description"]}>
+                  <p>A marketing website for a photo-sharing application</p>
+                </div>
+                <div className={styles["project__tech"]}>
+                  <ul>
+                    <li>
+                      <p>HTML</p>
+                    </li>
+                    <li>
+                      <p>SCSS</p>
+                    </li>
+                    <li>
+                      <p>JS(ES6)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles["project__links"]}>
+                <ul>
+                  <li>
+                    <a
+                      href={
+                        "https://github.com/cjoak1028/photosnap-multi-page-website"
+                      }
+                    >
+                      REPO
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={
+                        "https://photosnap-multi-page-website-theta.vercel.app/"
+                      }
+                    >
+                      SITE
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -73,17 +113,44 @@ const Projects = () => {
               <img src={portfolioImg} alt="the planets website screenshot" />
             </div>
             <div className={styles["project__text"]}>
-              <p>A portfolio website that showcases my skills and projects</p>
-              <ul className={styles["project__links"]}>
-                <li>
-                  <a href={"https://github.com/cjoak1028/portfolio-website-v1"}>
-                    REPO
-                  </a>
-                </li>
-                <li>
-                  <a href={""}>SITE</a>
-                </li>
-              </ul>
+              <div>
+                <div className={styles["project__description"]}>
+                  <p>
+                    A portfolio website that showcases my skills and projects
+                  </p>
+                </div>
+                <div className={styles["project__tech"]}>
+                  <ul>
+                    <li>
+                      <p>HTML</p>
+                    </li>
+                    <li>
+                      <p>CSS</p>
+                    </li>
+                    <li>
+                      <p>JS(ES6)</p>
+                    </li>
+                    <li>
+                      <p>REACT</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles["project__links"]}>
+                <ul>
+                  <li>
+                    <a
+                      href={"https://github.com/cjoak1028/portfolio-website-v1"}
+                    >
+                      REPO
+                    </a>
+                  </li>
+                  <li>
+                    <a href={""}>SITE</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

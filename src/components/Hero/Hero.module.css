@@ -58,6 +58,7 @@ p {
     letter-spacing: 2px;
     font-size: clamp(1.1rem, 1.4vw, 1.4rem);
     font-weight: var(--fw-medium);
+    text-transform: lowercase;
 }
 
 .hero-image {

@@ -42,32 +42,66 @@
 }
 
 .project__text {
-    max-width: 25rem;
-    align-self: flex-end;
+    /* max-width: 25rem; */
+    /* align-self: flex-end; */
 }
 
-.project__text p {
-    text-align: right;
+.project__description {
+    border-bottom: 1px dashed var(--c-sub);
+    padding-bottom: 1rem;
+}
+
+.project__description p {
+    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+}
+
+.project__tech {
+    padding-top: 1rem;
+    border-bottom: 1px dashed var(--c-sub);
+    padding-bottom: 1rem;
+}
+
+.project__tech p {
+    font-family: var(--ff-code);
+    font-weight: var(--fw-regular);
+    color: var(--c-main);
+    opacity: 0.5;
+    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+}
+
+.project__tech ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+.project__tech li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/* .project__text p {
+    text-align: left;
     font-size: clamp(1.4rem, 1.8vw, 1.6rem);
     font-weight: var(--fw-light);
-    margin-bottom: 1rem;
-}
+} */
 
-.project__links {
+.project__links ul {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     list-style: none;
-    font-size: clamp(1.4rem, 1.8vw, 1.6rem);
+    /* font-size: clamp(1.4rem, 1.8vw, 1.6rem); */
+    padding-top: 1rem;
 }
 
 .project__links li:not(:last-child) {
-    margin-right: clamp(1rem, 1.2vw, 1.5rem);
+    margin-right: clamp(1.2rem, 1.6vw, 1.8rem);
 }
 
 .project__links a {
     text-decoration: none;
     border-bottom: 1px solid var(--c-main);
     color: var(--c-main);
+    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
 }
 
 .project__links a:visited {
@@ -82,23 +116,36 @@
     .project__img {
         width: 70%;
         margin-bottom: 0;
-        margin-right: clamp(2rem, 3vw, 4rem);
+        padding-right: clamp(3rem, 3vw, 4rem);
     }
 
     .project__text {
         width: 30%;
         display: flex;
         flex-direction: column;
-        max-width: 100%;
         align-self: stretch;
         justify-content: space-between;
+        min-width: 20rem;
     }
 
     .project__text p {
         text-align: right;
     }
 
-    .project__links {
+    .project__tech {
+        border-bottom: none;
+    }
+
+    .project__tech ul {
+        justify-content: flex-end;
+    }
+
+    /* .project__tech li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 0.2rem;
+    } */
+
+    .project__links ul {
         justify-content: flex-end;
     }
 }
