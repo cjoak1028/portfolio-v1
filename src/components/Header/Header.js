@@ -43,12 +43,12 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-110}
-              className={"link"}
+              className={`${styles.underline} link`}
             >
               About
             </Link>
           </li>
-          <li>-</li>
+          <li>/</li>
           <li>
             <Link
               to="projects"
@@ -56,12 +56,12 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-110}
-              className={"link"}
+              className={`${styles.underline} link`}
             >
               Projects
             </Link>
           </li>
-          <li>-</li>
+          <li>/</li>
           <li>
             <Link
               to="contact"
@@ -69,7 +69,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-110}
-              className={"link"}
+              className={`${styles.underline} link`}
             >
               Contact
             </Link>
