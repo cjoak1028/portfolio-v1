@@ -17,7 +17,7 @@ const Projects = () => {
             </div>
             <div className={styles["project__text"]}>
               <p>
-                A multi-page website that showcases each planent in our solar
+                A multi-page website that showcases each planet in our solar
                 system
               </p>
               <ul className={styles["project__links"]}>

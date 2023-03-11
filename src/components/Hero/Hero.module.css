@@ -9,6 +9,7 @@
     max-width: 100rem;
     margin: auto;
     margin-bottom: clamp(5rem, 8vw, 10rem);
+    position: relative;
 }
 
 .hero-text {
@@ -107,8 +108,9 @@ p {
     position: absolute;
     width: 100%;
     max-width: 100rem;
+    left: 0;
     bottom: clamp(3rem, 3vw, 4rem);
-    padding: 0 clamp(2rem, 6vw, 10rem);
+    margin: auto;
 }
 
 .scroll-prompt p {
@@ -132,14 +134,7 @@ p {
     .hero {
         flex-direction: row-reverse;
         align-items: center;
-    }
-
-    .hero-container, .scroll-prompt {
         width: 80%;
-    }
-
-    .scroll-prompt {
-        padding: 0;
     }
 
     .hero-text {
