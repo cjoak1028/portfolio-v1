@@ -41,12 +41,18 @@ const Projects = () => {
               <div className={styles["project__links"]}>
                 <ul>
                   <li>
-                    <a href={"https://github.com/cjoak1028/planets-fact-site"}>
+                    <a
+                      className={styles["project__link"]}
+                      href={"https://github.com/cjoak1028/planets-fact-site"}
+                    >
                       REPO
                     </a>
                   </li>
                   <li>
-                    <a href={"https://planets-fact-site-sand.vercel.app/"}>
+                    <a
+                      className={styles["project__link"]}
+                      href={"https://planets-fact-site-sand.vercel.app/"}
+                    >
                       SITE
                     </a>
                   </li>
@@ -85,6 +91,7 @@ const Projects = () => {
                 <ul>
                   <li>
                     <a
+                      className={styles["project__link"]}
                       href={
                         "https://github.com/cjoak1028/photosnap-multi-page-website"
                       }
@@ -94,6 +101,7 @@ const Projects = () => {
                   </li>
                   <li>
                     <a
+                      className={styles["project__link"]}
                       href={
                         "https://photosnap-multi-page-website-theta.vercel.app/"
                       }
@@ -141,13 +149,16 @@ const Projects = () => {
                 <ul>
                   <li>
                     <a
+                      className={styles["project__link"]}
                       href={"https://github.com/cjoak1028/portfolio-website-v1"}
                     >
                       REPO
                     </a>
                   </li>
                   <li>
-                    <a href={""}>SITE</a>
+                    <a className={styles["project__link"]} href={""}>
+                      SITE
+                    </a>
                   </li>
                 </ul>
               </div>
