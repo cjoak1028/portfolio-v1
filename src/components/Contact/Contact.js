@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import Section from "../Layout/Section";
-import resume from "../../assets/resume/kim_resume.pdf";
 
 const Contact = () => {
   return (
@@ -27,7 +26,9 @@ const Contact = () => {
               <a href={"https://github.com/cjoak1028"}>Github</a>
             </li>
             <li>
-              <a href={resume}>Resume</a>
+              <a href={"/resume.pdf"} target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
             </li>
           </ul>
         </div>
