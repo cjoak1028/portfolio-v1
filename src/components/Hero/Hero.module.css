@@ -64,7 +64,7 @@ p {
 .hero-image {
     height: clamp(15rem, 25vw, 25rem);
     width: 100%;
-    background-image: url('../../assets/hero-img.jpg');
+    background-image: url('../../assets/img/hero-img.jpg');
     background-position: 50% 80%;
     background-repeat: no-repeat;
     background-size: cover;

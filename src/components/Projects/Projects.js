@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import Section from "../Layout/Section";
-import thePlanetsImg from "../../assets/projects/planets-desktop.png";
-import photosnapImg from "../../assets/projects/photosnap-desktop.png";
-import portfolioImg from "../../assets/projects/cj-portfolio-desktop.png";
+import thePlanetsImg from "../../assets/img/planets-desktop.png";
+import photosnapImg from "../../assets/img/photosnap-desktop.png";
+import portfolioImg from "../../assets/img/cj-portfolio-desktop.png";
 
 const Projects = () => {
   return (

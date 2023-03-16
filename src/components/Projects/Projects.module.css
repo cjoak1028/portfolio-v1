@@ -85,14 +85,11 @@
     padding-top: 1rem;
 }
 
-.project__links li:not(:last-child) {
-    margin-right: clamp(1.2rem, 1.6vw, 1.8rem);
-}
-
 .project__link {
     text-decoration: none;
     color: var(--c-main);
     font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+    font-weight: var(--fw-regular);
 }
 
 .project__link:visited {
@@ -104,6 +101,10 @@
     display: inline-block;
 }
 
+.project__links li:not(:last-child) {
+    margin-right: clamp(1.2rem, 1.6vw, 1.8rem);
+}
+
 .project__links li::after {
     content: "";
     position: absolute;
@@ -112,14 +113,14 @@
     background-color: var(--c-main);
     height: 1px;
     width: 100%;
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
 }
 
 .project__links li:hover::after {
     transform: scaleX(0);
     -webkit-transform: scaleX(0);
-    transform-origin: bottom left;
+    transform-origin: bottom right;
 }
 
 @media only screen and (min-width: 43.75em) {

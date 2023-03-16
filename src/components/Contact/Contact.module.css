@@ -37,7 +37,24 @@
     font-weight: var(--fw-regular);
     text-decoration: none;
     color: var(--c-main);
-    border-bottom: 1px solid var(--c-main);
+    position: relative;
+}
+
+.link-list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--c-main);
+    transform-origin: bottom left;
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
+}
+
+.link-list a:hover::after {
+    transform-origin: bottom right;
+    transform: scaleX(0);
 }
 
 .link-list a:visited {
