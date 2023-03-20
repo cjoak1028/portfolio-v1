@@ -1,7 +1,47 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import styles from "./Header.module.css";
 import HamburgerMenu from "./HamburgerMenu";
+
+const header = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.4,
+      delayChildren: 0.5,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
+const logo = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+};
+
+const navList = {
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
+const navItem = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 160,
+    },
+  },
+  hidden: { opacity: 0, y: 15 },
+};
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -21,8 +61,13 @@ const Header = () => {
   };
 
   return (
-    <div className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}>
-      <p className={styles.logo}>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={header}
+      className={`${styles.header} padding-x flex flex-jc-sb flex-ai-c`}
+    >
+      <motion.p className={styles.logo} variants={logo}>
         <Link
           to="hero"
           spy={true}
@@ -33,10 +78,10 @@ const Header = () => {
         >
           CJ PORTFOLIO
         </Link>
-      </p>
+      </motion.p>
       <nav className={styles.navigation}>
-        <ul>
-          <li>
+        <motion.ul variants={navList}>
+          <motion.li variants={navItem}>
             <Link
               to="about"
               spy={true}
@@ -47,9 +92,9 @@ const Header = () => {
             >
               About
             </Link>
-          </li>
-          <li>/</li>
-          <li>
+          </motion.li>
+          <motion.li variants={navItem}>/</motion.li>
+          <motion.li variants={navItem}>
             <Link
               to="projects"
               spy={true}
@@ -60,9 +105,9 @@ const Header = () => {
             >
               Projects
             </Link>
-          </li>
-          <li>/</li>
-          <li>
+          </motion.li>
+          <motion.li variants={navItem}>/</motion.li>
+          <motion.li variants={navItem}>
             <Link
               to="contact"
               spy={true}
@@ -73,8 +118,8 @@ const Header = () => {
             >
               Contact
             </Link>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </nav>
       <button
         className={`${styles["hamburger-button"]} ${
@@ -88,7 +133,7 @@ const Header = () => {
         open={openMenu}
         getOpenMenu={(open) => setOpenMenu(open)}
       />
-    </div>
+    </motion.div>
   );
 };
 
