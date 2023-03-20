@@ -20,17 +20,33 @@ function App() {
         <Element name="about">
           <About />
         </Element>
-        <div className={styles.prompt}>
+        <motion.div
+          className={styles.prompt}
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+        >
           <p>Check out some of my work </p>
           <BsArrowDownShort className={styles["arrow-icon"]} />
-        </div>
+        </motion.div>
         <Element name="projects">
           <Projects />
         </Element>
-        <div className={`${styles.prompt} ${styles["prompt--rev"]}`}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+          className={`${styles.prompt} ${styles["prompt--rev"]}`}
+        >
           <BsArrowDownShort className={styles["arrow-icon"]} />
           <p>Get in touch </p>
-        </div>
+        </motion.div>
         <Element name="contact">
           <Contact />
         </Element>

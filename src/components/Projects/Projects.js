@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
 import Section from "../Layout/Section";
 import thePlanetsImg from "../../assets/img/planets-desktop.png";
@@ -9,7 +10,15 @@ const Projects = () => {
   return (
     <Section name={"projects"} title={"projects"}>
       <div className={styles.projects}>
-        <div className={styles.project}>
+        <motion.div
+          className={styles.project}
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+        >
           <h3>01. The Planets</h3>
           <div className={styles["flex-container"]}>
             <div className={styles["project__img"]}>
@@ -60,8 +69,16 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.project}>
+        </motion.div>
+        <motion.div
+          className={styles.project}
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+        >
           <h3>02. Photosnap</h3>
           <div className={styles["flex-container"]}>
             <div className={styles["project__img"]}>
@@ -113,8 +130,16 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.project}>
+        </motion.div>
+        <motion.div
+          className={styles.project}
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+        >
           <h3>03. CJ Portfolio</h3>
           <div className={styles["flex-container"]}>
             <div className={styles["project__img"]}>
@@ -164,7 +189,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

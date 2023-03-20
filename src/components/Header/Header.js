@@ -40,7 +40,7 @@ const navItem = {
       stiffness: 160,
     },
   },
-  hidden: { opacity: 0, y: 15 },
+  hidden: { opacity: 0, y: 10 },
 };
 
 const Header = () => {

@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: clamp(8rem, 10vw, 12rem) auto;
+    margin: clamp(8rem, 16vw, 16rem) auto;
 }
 
 .prompt--rev {

@@ -32,7 +32,7 @@ const fromBottom = {
   },
   hidden: {
     opacity: 0,
-    y: 10,
+    y: 5,
   },
 };
 
@@ -47,8 +47,13 @@ const fromTop = {
   },
   hidden: {
     opacity: 0,
-    y: -10,
+    y: -5,
   },
+};
+
+const contact = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 0.6 },
 };
 
 const Hero = () => {
@@ -121,7 +126,7 @@ const Hero = () => {
               </motion.p>
             </div>
           </div>
-          <motion.div className={styles.contact}>
+          <motion.div className={styles.contact} variants={contact}>
             <span className={styles.line}></span>
             <p className={styles.email}>changju.kim10@gmail.com</p>
           </motion.div>

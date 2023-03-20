@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./Contact.module.css";
 import Section from "../Layout/Section";
 
@@ -7,13 +8,37 @@ const Contact = () => {
     <Section name={"contact"} title={"contact"}>
       <div className={`${styles.contact}`}>
         <div className={styles["contact__content"]}>
-          <h3>HIRE ME!</h3>
-          <p>
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
+            HIRE ME!
+          </motion.h3>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
             or feel free to message me if you want to collaborate or have a
             little chat.
-          </p>
+          </motion.p>
           <span className={styles.divider}></span>
-          <ul className={styles["link-list"]}>
+          <motion.ul
+            className={styles["link-list"]}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
             <li>
               <a>Email</a>
             </li>
@@ -30,7 +55,7 @@ const Contact = () => {
                 Resume
               </a>
             </li>
-          </ul>
+          </motion.ul>
         </div>
       </div>
     </Section>

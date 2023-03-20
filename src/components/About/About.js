@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./About.module.css";
 import Section from "../Layout/Section";
 import { AiOutlineSmile } from "react-icons/ai";
@@ -7,9 +8,26 @@ const About = () => {
   return (
     <Section name="about" title="about">
       <div className={`${styles.about}`}>
-        <h3>PASSIONATE FRONT-END DEVELOPER BASED IN TORONTO</h3>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 0.6, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+        >
+          PASSIONATE FRONT-END DEVELOPER BASED IN TORONTO
+        </motion.h3>
         <div className={styles["about__content"]}>
-          <div className={styles["about__me"]}>
+          <motion.div
+            className={styles["about__me"]}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
             <p className={`${styles.greeting} flex flex-ai-c`}>
               Hello <AiOutlineSmile className={styles["smiley-icon"]} /> &#8212;
               I'm Chang-Ju (David) Kim.
@@ -24,8 +42,16 @@ const About = () => {
               I am continuously experimenting with new tools and techniques with
               the goal of delivering the finest web experiences.
             </p>
-          </div>
-          <div className={styles["about__experience"]}>
+          </motion.div>
+          <motion.div
+            className={styles["about__experience"]}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
             <div className={styles["about__career"]}>
               <h4>Career</h4>
               <div className="flex flex-jc-sb">
@@ -182,7 +208,7 @@ const About = () => {
                 <h5 className={styles["category-title"]}>OTHER</h5>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Section>
