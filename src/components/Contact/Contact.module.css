@@ -16,7 +16,7 @@
 .contact__content h3 {
     font-size: clamp(4rem, 15vw, 20rem);
     font-weight: var(--fw-medium);
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .contact__content p {

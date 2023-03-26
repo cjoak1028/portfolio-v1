@@ -16,7 +16,7 @@ const Contact = () => {
             }}
             viewport={{ once: true }}
           >
-            HIRE ME!
+            HIRE ME
           </motion.h3>
           <motion.p
             initial={{ opacity: 0 }}

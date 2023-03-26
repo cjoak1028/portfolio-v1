@@ -18,7 +18,7 @@
 }
 
 .name, .divider {
-    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
     font-weight: var(--fw-bold);
     font-style: italic;
 }
@@ -29,7 +29,7 @@
 }
 
 p {
-    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
 }
 
 .about {
@@ -37,7 +37,7 @@ p {
 }
 
 .position {
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
 }
 
 .contact {

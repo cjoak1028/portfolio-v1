@@ -55,7 +55,7 @@ function App() {
       <motion.div
         className={styles["side-element"]}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6, transition: { delay: 0.5 } }}
+        animate={{ opacity: 0.6, transition: { delay: 2.6 } }}
       >
         <div className={styles["contact"]}>
           <p>changju.kim10@gmail.com</p>
