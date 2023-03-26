@@ -1,6 +1,30 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 import styles from "./HamburgerMenu.module.css";
+
+const navList = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      staggerChildren: 0.2,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
+const navItem = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+    },
+  },
+  hidden: { opacity: 0, y: 10 },
+};
 
 const HamburgerMenu = ({ open, getOpenMenu }) => {
   const menuRef = useRef(null);
@@ -43,8 +67,13 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
       </div>
       <div className={styles["hamburger-menu__content"]}>
         <nav>
-          <ul className={styles["hamburger-menu__links"]}>
-            <li>
+          <motion.ul
+            className={styles["hamburger-menu__links"]}
+            variants={navList}
+            initial="hidden"
+            whileInView="visible"
+          >
+            <motion.li variants={navItem}>
               <Link
                 to="about"
                 spy={true}
@@ -56,8 +85,8 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
               >
                 About
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={navItem}>
               <Link
                 to="projects"
                 spy={true}
@@ -69,8 +98,8 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
               >
                 Projects
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={navItem}>
               <Link
                 to="contact"
                 spy={true}
@@ -82,8 +111,8 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
               >
                 Contact
               </Link>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </nav>
         <span className={styles.divider}></span>
         <div className={styles["hamburger-menu__info"]}>

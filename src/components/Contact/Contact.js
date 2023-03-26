@@ -58,7 +58,13 @@ const Contact = () => {
             or feel free to message me if you want to collaborate or have a
             little chat.
           </motion.p>
-          <span className={styles.divider}></span>
+          <motion.span
+            className={styles.divider}
+            variants={contactEl}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          ></motion.span>
           <motion.ul
             className={styles["link-list"]}
             variants={linksList}
