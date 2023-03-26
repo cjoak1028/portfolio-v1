@@ -17,7 +17,8 @@ const linksList = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
+      delay: 0.2,
     },
   },
   hidden: { opacity: 0 },
@@ -69,12 +70,22 @@ const Contact = () => {
               <a>Email</a>
             </motion.li>
             <motion.li variants={linksItem}>
-              <a href={"https://linkedin.com/in/chang-ju-kim-966351255"}>
+              <a
+                href={"https://linkedin.com/in/chang-ju-kim-966351255"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
               </a>
             </motion.li>
             <motion.li variants={linksItem}>
-              <a href={"https://github.com/cjoak1028"}>Github</a>
+              <a
+                href={"https://github.com/cjoak1028"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </motion.li>
             <motion.li variants={linksItem}>
               <a href={"/resume.pdf"} target="_blank" rel="noopener noreferrer">
