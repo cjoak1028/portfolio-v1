@@ -80,8 +80,6 @@ p {
 }
 
 .scroll-container {
-    /* border-top: 1px solid var(--c-sub); */
-    /* border-bottom: 1px solid var(--c-sub); */
     margin-bottom: 0.1rem;
     padding: 0.1rem 0;
 }

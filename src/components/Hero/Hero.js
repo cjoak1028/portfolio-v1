@@ -51,11 +51,6 @@ const fromTop = {
   },
 };
 
-const contact = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 0.6 },
-};
-
 const Hero = () => {
   const [date, setDate] = useState(new Date());
 

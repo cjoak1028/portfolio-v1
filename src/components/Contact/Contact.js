@@ -40,15 +40,37 @@ const Contact = () => {
   return (
     <Section name={"contact"} title={"contact"}>
       <div className={`${styles.contact}`}>
-        <div className={styles["contact__content"]}>
-          <motion.h3
-            variants={contactEl}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            HIRE ME
-          </motion.h3>
+        <motion.div
+          className={styles["contact__content"]}
+          variants={contactEl}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <div className={styles["inf-scroll"]}>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+            <h3>Hire me</h3>
+          </div>
           <motion.p
             variants={contactEl}
             initial="hidden"
@@ -73,7 +95,14 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <motion.li variants={linksItem}>
-              <a>Email</a>
+              <button
+                onClick={(e) => {
+                  window.location.href = "mailto:changju.kim10@gmail.com";
+                  e.preventDefault();
+                }}
+              >
+                Email
+              </button>
             </motion.li>
             <motion.li variants={linksItem}>
               <a
@@ -99,7 +128,7 @@ const Contact = () => {
               </a>
             </motion.li>
           </motion.ul>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

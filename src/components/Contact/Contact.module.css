@@ -4,6 +4,7 @@
     /* padding-top: clamp(5rem, 8vw, 5rem); */
     padding-top: clamp(3rem, 4vw, 5rem);
     padding-bottom: clamp(10rem, 20vw, 18rem);
+    overflow: hidden;
 }
 
 .contact__content {
@@ -11,12 +12,6 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-}
-
-.contact__content h3 {
-    font-size: clamp(4rem, 15vw, 20rem);
-    font-weight: var(--fw-medium);
-    /* font-style: italic; */
 }
 
 .contact__content p {
@@ -32,15 +27,18 @@
     width: 80%;
 }
 
-.link-list a {
+.link-list a, button {
     font-size: clamp(1.8rem, 3vw, 4rem);
     font-weight: var(--fw-regular);
     text-decoration: none;
     color: var(--c-main);
     position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.link-list a::after {
+.link-list a::after, button::after {
     content: "";
     position: absolute;
     left: 0;
@@ -52,7 +50,7 @@
     transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
 }
 
-.link-list a:hover::after {
+.link-list a:hover::after, button:hover::after {
     transform-origin: bottom right;
     transform: scaleX(0);
 }
@@ -73,6 +71,21 @@
     margin: clamp(4rem, 5vw, 5rem) 0;
 }
 
+.inf-scroll {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    animation: scrollToLeft 40s infinite linear;
+}
+
+.inf-scroll h3 {
+    font-size: clamp(4rem, 15vw, 20rem);
+    font-weight: var(--fw-medium);
+    margin-right: clamp(2rem, 6vw, 8rem);
+    text-transform: lowercase;
+}
+
 @media only screen and (min-width: 28em) {
     .link-list {
         flex-direction: row;
@@ -84,8 +97,12 @@
     }
 }
 
-@media only screen and (min-width: 43.75em) {
-    .contact__content {
-        /* width: 80%; */
+@keyframes scrollToLeft {
+    from {
+        transform: translateX(0rem);
+    }
+
+    to {
+        transform: translateX(-500rem);
     }
 }
