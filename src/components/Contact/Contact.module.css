@@ -27,7 +27,7 @@
     width: 80%;
 }
 
-.link-list a, button {
+.link-list a, .link-list button {
     font-size: clamp(1.8rem, 3vw, 4rem);
     font-weight: var(--fw-regular);
     text-decoration: none;
@@ -38,7 +38,7 @@
     cursor: pointer;
 }
 
-.link-list a::after, button::after {
+.link-list a::after, .link-list button::after {
     content: "";
     position: absolute;
     left: 0;
@@ -50,7 +50,7 @@
     transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
 }
 
-.link-list a:hover::after, button:hover::after {
+.link-list a:hover::after, .link-list button:hover::after {
     transform-origin: bottom right;
     transform: scaleX(0);
 }

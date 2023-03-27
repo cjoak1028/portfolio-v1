@@ -121,10 +121,6 @@ const Hero = () => {
               </motion.p>
             </div>
           </div>
-          {/* <motion.div className={styles.contact} variants={contact}>
-            <span className={styles.line}></span>
-            <p className={styles.email}>changju.kim10@gmail.com</p>
-          </motion.div> */}
         </div>
       </div>
       <motion.div variants={fromTop} className={styles["scroll-prompt"]}>

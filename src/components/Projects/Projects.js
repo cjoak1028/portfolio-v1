@@ -53,6 +53,8 @@ const Projects = () => {
                     <a
                       className={styles["project__link"]}
                       href={"https://github.com/cjoak1028/planets-fact-site"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       REPO
                     </a>
@@ -61,6 +63,8 @@ const Projects = () => {
                     <a
                       className={styles["project__link"]}
                       href={"https://planets-fact-site-sand.vercel.app/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       SITE
                     </a>
@@ -112,6 +116,8 @@ const Projects = () => {
                       href={
                         "https://github.com/cjoak1028/photosnap-multi-page-website"
                       }
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       REPO
                     </a>
@@ -122,6 +128,8 @@ const Projects = () => {
                       href={
                         "https://photosnap-multi-page-website-theta.vercel.app/"
                       }
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       SITE
                     </a>
@@ -176,12 +184,19 @@ const Projects = () => {
                     <a
                       className={styles["project__link"]}
                       href={"https://github.com/cjoak1028/portfolio-website-v1"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       REPO
                     </a>
                   </li>
                   <li>
-                    <a className={styles["project__link"]} href={""}>
+                    <a
+                      className={styles["project__link"]}
+                      href={""}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       SITE
                     </a>
                   </li>
