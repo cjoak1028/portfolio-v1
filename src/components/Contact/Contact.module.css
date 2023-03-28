@@ -23,14 +23,12 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    /* width: 80%;
-    max-width: 80rem; */
     width: 100%;
     margin-top: clamp(4rem, 6vw, 8rem);
 }
 
 .link-list a, .link-list button {
-    font-size: clamp(2rem, 5vw, 7rem);
+    font-size: clamp(2rem, 4.5vw, 6.5rem);
     font-weight: var(--fw-regular);
     text-decoration: none;
     color: var(--c-main);

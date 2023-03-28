@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./About.module.css";
 import Section from "../Layout/Section";
 import { AiOutlineSmile } from "react-icons/ai";
+import Marquee from "react-fast-marquee";
 
 const About = () => {
   return (
@@ -53,9 +54,7 @@ const About = () => {
             <div className={styles["about__tech"]}>
               <h4>Technologies</h4>
               <div className={styles["tech-category"]}>
-                <div
-                  className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
-                >
+                <Marquee gradient={false} speed={70}>
                   <span className={styles.skill}>JS (ES6)</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>HTML</span>
@@ -70,41 +69,11 @@ const About = () => {
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>C</span>
                   <div className={styles.space}></div>
-                  <span className={styles.skill}>JS (ES6)</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>HTML</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>CSS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>SCSS/SASS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Python</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Java</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>C</span>
-                  <div className={styles.space}></div>
-                  <span className={styles.skill}>JS (ES6)</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>HTML</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>CSS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>SCSS/SASS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Python</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Java</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>C</span>
-                  <div className={styles.space}></div>
-                </div>
+                </Marquee>
                 <h5 className={styles["category-title"]}>Languages</h5>
               </div>
               <div className={styles["tech-category"]}>
-                <div
-                  className={`${styles["inf-scroll"]} ${styles["inf-scroll--right"]}`}
-                >
+                <Marquee gradient={false} speed={40} direction={"right"}>
                   <span className={styles.skill}>React</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Node.JS</span>
@@ -115,45 +84,13 @@ const About = () => {
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>React Native</span>
                   <div className={styles.space}></div>
-                  <span className={styles.skill}>React</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Node.JS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Express</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Mongoose</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>React Native</span>
-                  <div className={styles.space}></div>
-                  <span className={styles.skill}>React</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Node.JS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Express</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Mongoose</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>React Native</span>
-                  <div className={styles.space}></div>
-                  <span className={styles.skill}>React</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Node.JS</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Express</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Mongoose</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>React Native</span>
-                  <div className={styles.space}></div>
-                </div>
+                </Marquee>
                 <h5 className={styles["category-title"]}>
                   Libraries/Frameworks
                 </h5>
               </div>
               <div className={styles["tech-category"]}>
-                <div
-                  className={`${styles["inf-scroll"]} ${styles["inf-scroll--left"]}`}
-                >
+                <Marquee gradient={false} speed={60}>
                   <span className={styles.skill}>Git</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Webpack</span>
@@ -164,37 +101,7 @@ const About = () => {
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Photoshop</span>
                   <div className={styles.space}></div>
-                  <span className={styles.skill}>Git</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Webpack</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>MongoDB</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Figma</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Photoshop</span>
-                  <div className={styles.space}></div>
-                  <span className={styles.skill}>Git</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Webpack</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>MongoDB</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Figma</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Photoshop</span>
-                  <div className={styles.space}></div>
-                  <span className={styles.skill}>Git</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Webpack</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>MongoDB</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Figma</span>
-                  <span className={styles.divider}>|</span>
-                  <span className={styles.skill}>Photoshop</span>
-                  <div className={styles.space}></div>
-                </div>
+                </Marquee>
                 <h5 className={styles["category-title"]}>Other</h5>
               </div>
             </div>

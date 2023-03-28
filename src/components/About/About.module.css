@@ -39,7 +39,7 @@
 
 .about__content p, .skill {
     font-weight: var(--fw-light);
-    font-size: clamp(1.4rem, 1.8vw, 1.6rem);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
 }
 
 .about__me {
@@ -47,7 +47,7 @@
 }
 
 .about__me p {
-    line-height: clamp(2rem, 2.2vw, 2.4rem);
+    line-height: clamp(2rem, 2.4vw, 2.8rem);
 }
 
 .about__me p:not(:last-child) {
@@ -82,7 +82,7 @@
 }
 
 .tech-category {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .category-title {
