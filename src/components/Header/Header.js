@@ -103,7 +103,7 @@ const Header = () => {
               offset={-110}
               className={`${styles.underline} link`}
             >
-              Projects
+              Work
             </Link>
           </motion.li>
           <motion.li variants={navItem}>/</motion.li>

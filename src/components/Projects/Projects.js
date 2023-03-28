@@ -8,7 +8,7 @@ import portfolioImg from "../../assets/img/cj-portfolio-desktop.png";
 
 const Projects = () => {
   return (
-    <Section name={"projects"} title={"projects"}>
+    <Section name={"projects"} title={"work"} direction={"right"}>
       <div className={styles.projects}>
         <motion.div
           className={styles.project}

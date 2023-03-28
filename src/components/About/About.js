@@ -8,16 +8,6 @@ const About = () => {
   return (
     <Section name="about" title="about">
       <div className={`${styles.about}`}>
-        <motion.h3
-          initial={{ opacity: 0 }}
-          whileInView={{
-            opacity: 1,
-            transition: { duration: 0.6, delay: 0.2 },
-          }}
-          viewport={{ once: true }}
-        >
-          PASSIONATE FRONT-END DEVELOPER BASED IN TORONTO
-        </motion.h3>
         <div className={styles["about__content"]}>
           <motion.div
             className={styles["about__me"]}
@@ -205,7 +195,7 @@ const About = () => {
                   <span className={styles.skill}>Photoshop</span>
                   <div className={styles.space}></div>
                 </div>
-                <h5 className={styles["category-title"]}>OTHER</h5>
+                <h5 className={styles["category-title"]}>Other</h5>
               </div>
             </div>
           </motion.div>

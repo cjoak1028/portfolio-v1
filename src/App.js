@@ -52,7 +52,7 @@ function App() {
         </Element>
       </div>
       <Footer />
-      <motion.div
+      {/* <motion.div
         className={styles["side-element"]}
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6, transition: { delay: 2.6 } }}
@@ -61,7 +61,7 @@ function App() {
           <p>changju.kim10@gmail.com</p>
           <span className={styles.line}></span>
         </div>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 }

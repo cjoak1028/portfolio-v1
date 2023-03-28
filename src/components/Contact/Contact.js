@@ -47,39 +47,15 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <div className={styles["inf-scroll"]}>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-            <h3>Hire me</h3>
-          </div>
-          <motion.p
+          {/* <motion.p
             variants={contactEl}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
           >
-            or feel free to message me if you want to collaborate or have a
-            little chat.
-          </motion.p>
+            Feel free to message me if you want to collaborate or have a little
+            chat.
+          </motion.p> */}
           <motion.span
             className={styles.divider}
             variants={contactEl}

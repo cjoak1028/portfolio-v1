@@ -1,14 +1,17 @@
 .about {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-.about h3 {
-    font-weight: var(--fw-regular);
-    font-size: clamp(3rem, 4.5vw, 6rem);
-    font-style: italic;
-    padding: clamp(2rem, 3vw, 4rem) 0;
-    border-bottom: 1px dashed var(--c-sub);
+.about__img {
+    margin: clamp(2rem, 3vw, 3rem) 0;
+    height: clamp(15rem, 25vw, 30rem);
+    width: 100%;
+    background-image: url('../../assets/img/hero-img.jpg');
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about__content {
@@ -40,7 +43,7 @@
 }
 
 .about__me {
-    border-bottom: 1px dashed var(--c-sub);
+    border-bottom: 1px solid var(--c-sub);
 }
 
 .about__me p {
@@ -116,17 +119,18 @@
 @media only screen and (min-width: 43.75em) {
     .about__content {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .about__me {
         border-bottom: none;
-        border-right: 1px dashed var(--c-sub);
-        padding-right: clamp(1rem, 2vw, 2rem);
+        border-right: 1px solid var(--c-sub);
+        padding-right: clamp(2rem, 3vw, 3rem);
         width: 55%;
     }
 
     .about__experience {
-        padding-left: clamp(1rem, 2vw, 2rem);
+        padding-left: clamp(2rem, 3vw, 3rem);
         padding-bottom: clamp(2rem, 3vw, 4rem);
         width: 45%;
     }
