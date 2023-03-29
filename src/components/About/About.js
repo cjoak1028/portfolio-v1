@@ -54,7 +54,7 @@ const About = () => {
             <div className={styles["about__tech"]}>
               <h4>Technologies</h4>
               <div className={styles["tech-category"]}>
-                <Marquee gradient={false} speed={70}>
+                <Marquee gradient={false} speed={50}>
                   <span className={styles.skill}>JS (ES6)</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>HTML</span>
@@ -73,7 +73,7 @@ const About = () => {
                 <h5 className={styles["category-title"]}>Languages</h5>
               </div>
               <div className={styles["tech-category"]}>
-                <Marquee gradient={false} speed={40} direction={"right"}>
+                <Marquee gradient={false} speed={30} direction={"right"}>
                   <span className={styles.skill}>React</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Node.JS</span>
@@ -90,7 +90,7 @@ const About = () => {
                 </h5>
               </div>
               <div className={styles["tech-category"]}>
-                <Marquee gradient={false} speed={60}>
+                <Marquee gradient={false} speed={40}>
                   <span className={styles.skill}>Git</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Webpack</span>
