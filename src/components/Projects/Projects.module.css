@@ -1,5 +1,5 @@
 .projects {
-    border-left: 1px dashed var(--c-sub);
+    border-left: 1px solid var(--c-sub);
     padding-left: 0.8rem;
     margin-top: clamp(2rem, 4vw, 5rem);
 }
@@ -10,7 +10,7 @@
 }
 
 .project:not(:last-child) {
-    margin-bottom: clamp(5rem, 15vw, 20rem);
+    margin-bottom: clamp(3rem, 10vw, 20rem);
 }
 
 .project h3 {
@@ -25,54 +25,74 @@
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
     width: 90%;
+    position: relative;
+    height: clamp(25rem, 40vw, 50rem);
+    border: 1px solid rgba(158, 158, 158, 0.51);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .project__img {
-    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.project__img--planets {
+    background-image: url('../../assets/img/planets-desktop.png');
+}
+
+.project__img--photosnap {
+    background-image: url('../../assets/img/photosnap-desktop.png');
+}
+
+.project__img--portfolio {
+    background-image: url('../../assets/img/portfolio-desktop.png');
 }
 
 .project__img img {
     width: 100%;
     height: auto;
-    border: 1px solid #fff;
-    box-shadow: 7px 7px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .project__text {
-    /* max-width: 25rem; */
-    /* align-self: flex-end; */
+    background-color: rgba(38, 38, 38, 0.926);
+    color: var(--c-bg);
+    padding: 2rem clamp(2.5rem, 3vw, 4rem);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project__description {
-    border-bottom: 1px dashed var(--c-sub);
-    padding-bottom: 1rem;
+    margin-bottom: clamp(1rem, 1.5vw, 3rem);
 }
 
 .project__description p {
-    font-size: clamp(1.2rem, 1.4vw, 1.6rem);
-}
-
-.project__tech {
-    padding-top: 1rem;
-    border-bottom: 1px dashed var(--c-sub);
-    padding-bottom: 1rem;
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    text-align: left;
+    line-height: clamp(2rem, 2vw, 2.5rem);
 }
 
 .project__tech p {
     font-family: var(--ff-code);
     font-weight: var(--fw-regular);
-    color: var(--c-main);
-    opacity: 0.5;
-    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+    color: var(--c-sub);
+    opacity: 0.8;
+    font-size: clamp(1.2rem, 1.4vw, 1.8rem);
 }
 
 .project__tech ul {
     list-style: none;
     display: flex;
     width: 100%;
+    justify-content: left;
+    margin-bottom: 2rem;
 }
 
 .project__tech li:not(:last-child) {
@@ -82,18 +102,20 @@
 .project__links ul {
     display: flex;
     list-style: none;
-    padding-top: 1rem;
+    justify-content: right;
+    margin-top: 1rem;
 }
 
 .project__link {
     text-decoration: none;
-    color: var(--c-main);
-    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+    color: var(--c-bg);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
     font-weight: var(--fw-regular);
+    font-family: var(--ff-main);
 }
 
 .project__link:visited {
-    color: var(--c-main);
+    color: var(--c-bg);
 }
 
 .project__links li {
@@ -102,36 +124,22 @@
 }
 
 .project__links li:not(:last-child) {
-    margin-right: clamp(1.2rem, 1.6vw, 1.8rem);
-}
-
-.project__links li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background-color: var(--c-main);
-    height: 1px;
-    width: 100%;
-    transform-origin: bottom left;
-    transition: transform 0.2s cubic-bezier(1, 0, 0, 1);
-}
-
-.project__links li:hover::after {
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    transform-origin: bottom right;
+    margin-right: clamp(1.4rem, 1.8vw, 2rem);
 }
 
 @media only screen and (min-width: 43.75em) {
     .flex-container {
+        background-image: none;
+        display: flex;
         flex-direction: row;
+        height: auto;
     }
 
     .project__img {
         width: 70%;
         margin-bottom: 0;
-        padding-right: clamp(3rem, 3vw, 4rem);
+        display: block;
+        position: static;
     }
 
     .project__text {
@@ -141,21 +149,20 @@
         align-self: stretch;
         justify-content: space-between;
         min-width: 20rem;
-    }
-
-    .project__text p {
-        text-align: right;
-    }
-
-    .project__tech {
-        border-bottom: none;
-    }
-
-    .project__tech ul {
-        justify-content: flex-end;
+        border-left: 1px solid var(--c-sub);
+        position: static;
+        background-color: var(--c-main);
+        min-height: 30rem;
+        height: 32vw;
+        padding: clamp(2.5rem, 3vw, 4rem);
     }
 
     .project__links ul {
-        justify-content: flex-end;
+        writing-mode: vertical-lr;
+        display: flex;
+    }
+
+    .project__links li:not(:last-child) {
+        margin-bottom: clamp(1.4rem, 1.8vw, 2rem);
     }
 }

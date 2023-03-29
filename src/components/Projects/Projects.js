@@ -2,9 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
 import Section from "../Layout/Section";
-import thePlanetsImg from "../../assets/img/planets-desktop.png";
-import photosnapImg from "../../assets/img/photosnap-desktop.png";
-import portfolioImg from "../../assets/img/cj-portfolio-desktop.png";
 
 const Projects = () => {
   return (
@@ -21,9 +18,9 @@ const Projects = () => {
         >
           <h3>01. The Planets</h3>
           <div className={styles["flex-container"]}>
-            <div className={styles["project__img"]}>
-              <img src={thePlanetsImg} alt="the planets website screenshot" />
-            </div>
+            <div
+              className={`${styles["project__img"]} ${styles["project__img--planets"]}`}
+            ></div>
             <div className={styles["project__text"]}>
               <div>
                 <div className={styles["project__description"]}>
@@ -46,7 +43,6 @@ const Projects = () => {
                   </ul>
                 </div>
               </div>
-
               <div className={styles["project__links"]}>
                 <ul>
                   <li>
@@ -56,7 +52,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      REPO
+                      repo
                     </a>
                   </li>
                   <li>
@@ -66,7 +62,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      SITE
+                      site
                     </a>
                   </li>
                 </ul>
@@ -85,9 +81,9 @@ const Projects = () => {
         >
           <h3>02. Photosnap</h3>
           <div className={styles["flex-container"]}>
-            <div className={styles["project__img"]}>
-              <img src={photosnapImg} alt="the planets website screenshot" />
-            </div>
+            <div
+              className={`${styles["project__img"]} ${styles["project__img--photosnap"]}`}
+            ></div>
             <div className={styles["project__text"]}>
               <div>
                 <div className={styles["project__description"]}>
@@ -119,7 +115,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      REPO
+                      repo
                     </a>
                   </li>
                   <li>
@@ -131,7 +127,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      SITE
+                      site
                     </a>
                   </li>
                 </ul>
@@ -150,9 +146,9 @@ const Projects = () => {
         >
           <h3>03. CJ Portfolio</h3>
           <div className={styles["flex-container"]}>
-            <div className={styles["project__img"]}>
-              <img src={portfolioImg} alt="the planets website screenshot" />
-            </div>
+            <div
+              className={`${styles["project__img"]} ${styles["project__img--portfolio"]}`}
+            ></div>
             <div className={styles["project__text"]}>
               <div>
                 <div className={styles["project__description"]}>
@@ -187,17 +183,17 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      REPO
+                      repo
                     </a>
                   </li>
                   <li>
                     <a
                       className={styles["project__link"]}
-                      href={""}
+                      href={"/"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      SITE
+                      site
                     </a>
                   </li>
                 </ul>

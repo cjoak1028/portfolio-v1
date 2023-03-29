@@ -28,8 +28,9 @@
 }
 
 .link-list a, .link-list button {
-    font-size: clamp(2rem, 4.5vw, 6.5rem);
-    font-weight: var(--fw-regular);
+    font-family: var(--ff-main);
+    font-size: clamp(3rem, 4.5vw, 6.5rem);
+    font-weight: var(--fw-light);
     text-decoration: none;
     color: var(--c-main);
     position: relative;
@@ -60,10 +61,10 @@
 }
 
 .link-list li:not(:last-child) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
-@media only screen and (min-width: 28em) {
+@media only screen and (min-width: 36em) {
     .link-list {
         flex-direction: row;
         justify-content: space-between;
