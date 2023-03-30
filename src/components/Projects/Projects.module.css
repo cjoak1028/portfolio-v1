@@ -27,10 +27,10 @@
 .flex-container {
     width: 90%;
     height: clamp(40rem, 40vw, 50rem);
-    border: 1px solid rgba(158, 158, 158, 0.51);
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .project__img {
@@ -73,7 +73,7 @@
 }
 
 .project__description p {
-    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    font-size: clamp(1.4rem, 1.4vw, 2rem);
     text-align: left;
     line-height: clamp(2rem, 2vw, 2.5rem);
 }
@@ -83,14 +83,15 @@
     font-weight: var(--fw-regular);
     color: var(--c-sub);
     opacity: 0.8;
-    font-size: clamp(1.2rem, 1.4vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.2vw, 1.8rem);
 }
 
 .project__tech ul {
     list-style: none;
     display: flex;
     width: 100%;
-    justify-content: left;
+    /* justify-content: left; */
+    flex-flow: wrap;
 }
 
 .project__tech li:not(:last-child) {
@@ -128,6 +129,8 @@
     .flex-container {
         flex-direction: row;
         height: auto;
+        border: none;
+        box-shadow: none;
     }
 
     .project__img {
@@ -136,6 +139,9 @@
         display: block;
         position: static;
         height: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+        margin-right: 2rem;
     }
 
     .project__text {
@@ -151,6 +157,8 @@
         min-height: 30rem;
         height: 32vw;
         padding: clamp(2.5rem, 3vw, 4rem);
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
     }
 
     .project__links ul {
