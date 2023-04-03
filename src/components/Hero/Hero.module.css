@@ -1,8 +1,6 @@
 .hero {
-    /* height: 100vh; */
     min-height: 100vh;
     padding: 7rem 0;
-    /* text-transform: uppercase; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,9 +72,6 @@ p {
 .hero-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between;
-    flex: 1; */
-    /* max-height: 45rem; */
     width: 100%;
     overflow: hidden;
     max-width: 120rem;
@@ -105,15 +100,20 @@ p {
     flex-direction: column;
 }
 
-.scroll-prompt {
-    display: flex;
-    align-items: center;
+.bottom-section {
     position: absolute;
     width: 100%;
-    /* max-width: 150rem; */
     left: 0;
     bottom: clamp(3rem, 3vw, 4rem);
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-prompt {
+    display: flex;
+    align-items: center;
 }
 
 .scroll-prompt p {
@@ -138,11 +138,8 @@ p {
 }
 
 .intro p {
-    /* font-size: 2rem; */
     font-size: clamp(2rem, 3.4vw, 4rem);
     font-weight: var(--fw-light);
-    /* color: rgb(108, 108, 108); */
-    /* text-align: right; */
 }
 
 .intro p:not(:last-child) {
@@ -191,22 +188,8 @@ p {
     }
 }
 
-@media only screen and (min-width: 61.25em) {
-    .hero {
-        /* flex-direction: row-reverse;
-        align-items: center; */
-        /* width: 80%; */
-    }
-
-    .hero-text {
-        flex: 1;
-    }
-
-    .hero-image {
-        background-position: 50% 80%;
-    }
-
-    .contact {
+@media only screen and (max-width: 20em) {
+    .time {
         display: none;
     }
 }

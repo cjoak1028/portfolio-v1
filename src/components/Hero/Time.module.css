@@ -1,0 +1,5 @@
+.time {
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+}

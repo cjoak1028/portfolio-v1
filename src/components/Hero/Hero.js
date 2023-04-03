@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import { BsArrowDownShort } from "react-icons/bs";
+import Time from "./Time";
 
 const hero = {
   visible: {
@@ -32,7 +33,7 @@ const fromBottom = {
   },
   hidden: {
     opacity: 0,
-    y: 5,
+    y: 10,
   },
 };
 
@@ -47,25 +48,11 @@ const fromTop = {
   },
   hidden: {
     opacity: 0,
-    y: -5,
+    y: -10,
   },
 };
 
 const Hero = () => {
-  const [date, setDate] = useState(new Date());
-
-  const tick = () => {
-    setDate(new Date());
-  };
-
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
-
-    return () => {
-      clearInterval(timerID);
-    };
-  }, []);
-
   return (
     <motion.div
       initial="hidden"
@@ -75,7 +62,7 @@ const Hero = () => {
     >
       <div className={styles["hero-container"]}>
         <div className={styles.image}>
-          <motion.p variants={opacity} className={styles.greeting}>
+          <motion.p variants={fromBottom} className={styles.greeting}>
             Hello,
           </motion.p>
           <motion.div variants={opacity}>
@@ -83,19 +70,26 @@ const Hero = () => {
           </motion.div>
         </div>
         <div className={styles.intro}>
-          <motion.p variants={opacity} className={styles.greeting}>
+          <motion.p variants={fromBottom} className={styles.greeting}>
             Hello,
           </motion.p>
           <div>
-            <motion.p variants={opacity}>My name is Chang-Ju.</motion.p>
-            <motion.p variants={opacity}>I am a front-end developer.</motion.p>
+            <motion.p variants={fromBottom}>My name is Chang-Ju.</motion.p>
+            <motion.p variants={fromBottom}>
+              I am a front-end developer.
+            </motion.p>
           </div>
         </div>
       </div>
-      <motion.div variants={fromTop} className={styles["scroll-prompt"]}>
-        <BsArrowDownShort className={styles["arrow-icon"]} />
-        <p>Scroll Down</p>
-      </motion.div>
+      <div className={styles["bottom-section"]}>
+        <motion.div variants={fromTop} className={styles["scroll-prompt"]}>
+          <BsArrowDownShort className={styles["arrow-icon"]} />
+          <p>Scroll Down</p>
+        </motion.div>
+        <motion.div variants={fromTop} className={styles.time}>
+          <Time />
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
