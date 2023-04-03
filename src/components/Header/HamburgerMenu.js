@@ -96,7 +96,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 onClick={handleMenuClick}
                 className={"link"}
               >
-                Projects
+                Work
               </Link>
             </motion.li>
             <motion.li variants={navItem}>

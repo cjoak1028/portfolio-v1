@@ -74,52 +74,21 @@ const Hero = () => {
       className={styles.hero}
     >
       <div className={styles["hero-container"]}>
-        <motion.div variants={opacity}>
-          <div className={styles["scroll-container"]}>
-            <div className={styles["inf-scroll"]}>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM </span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM </span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM </span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM </span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM </span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM</span>
-              <span className={styles.divider}>X</span>
-              <span className={styles.name}>CHANG-JU KIM </span>
-              <span className={styles.divider}>X</span>
-            </div>
-          </div>
-          <div className={styles["hero-image"]}></div>
-        </motion.div>
-        <div className={styles["hero-text"]}>
-          <div className={styles.about}>
-            <div className={styles["flex-container"]}>
-              <motion.p className={styles.position} variants={fromBottom}>
-                Front-End Developer
-              </motion.p>
-              <motion.p className={styles.location} variants={fromBottom}>
-                TORONTO &#8212;{" "}
-                <span className={styles.time}>{date.toLocaleTimeString()}</span>
-              </motion.p>
-            </div>
+        <div className={styles.image}>
+          <motion.p variants={opacity} className={styles.greeting}>
+            Hello,
+          </motion.p>
+          <motion.div variants={opacity}>
+            <div className={styles["hero-image"]}></div>
+          </motion.div>
+        </div>
+        <div className={styles.intro}>
+          <motion.p variants={opacity} className={styles.greeting}>
+            Hello,
+          </motion.p>
+          <div>
+            <motion.p variants={opacity}>My name is Chang-Ju.</motion.p>
+            <motion.p variants={opacity}>I am a front-end developer.</motion.p>
           </div>
         </div>
       </div>

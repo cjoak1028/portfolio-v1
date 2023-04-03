@@ -11,9 +11,10 @@
 
 .marquee__title h3 {
     font-size: clamp(4rem, 15vw, 20rem);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     margin-right: clamp(4rem, 8vw, 10rem);
-    /* text-transform: lowercase; */
+
+    text-transform: capitalize;
 }
 
 .line {

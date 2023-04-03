@@ -1,12 +1,12 @@
 .hero {
-    height: 100vh;
-    padding: clamp(6.3rem, 10vw, 10rem) 0;
-    text-transform: uppercase;
+    /* height: 100vh; */
+    min-height: 100vh;
+    padding: 7rem 0;
+    /* text-transform: uppercase; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* max-width: 150rem; */
     margin: auto;
     margin-bottom: clamp(5rem, 8vw, 10rem);
     position: relative;
@@ -62,21 +62,25 @@ p {
 }
 
 .hero-image {
-    height: clamp(15rem, 25vw, 25rem);
+    height: 15rem;
     width: 100%;
     background-image: url('../../assets/img/hero-img.jpg');
     background-position: 50% 80%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: .4rem;
+    margin: 2rem 0;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between;
+    flex: 1; */
+    /* max-height: 45rem; */
     width: 100%;
     overflow: hidden;
-    max-width: 70rem;
+    max-width: 120rem;
+    margin: 5rem 0;
 }
 
 .scroll-container {
@@ -116,10 +120,33 @@ p {
     font-size: clamp(1rem, 1.1vw, 1.2rem);
     font-weight: var(--fw-bold);
     margin-left: 0.5rem;
+    text-transform: uppercase;
 }
 
 .arrow-icon {
     font-size: clamp(2rem, 2.3vw, 2.5rem);
+}
+
+.greeting {
+    font-weight: var(--fw-medium);
+    font-size: clamp(4rem, 7vw, 7rem);
+}
+
+.intro .greeting {
+    display: none;
+    font-size: clamp(4rem, 7vw, 7rem);
+}
+
+.intro p {
+    /* font-size: 2rem; */
+    font-size: clamp(2rem, 3.4vw, 4rem);
+    font-weight: var(--fw-light);
+    /* color: rgb(108, 108, 108); */
+    /* text-align: right; */
+}
+
+.intro p:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 28em) {
@@ -129,10 +156,45 @@ p {
     }
 }
 
+@media only screen and (min-width: 36em) {
+    .hero-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .intro {
+        margin-right: 2rem;
+    }
+
+    .intro .greeting {
+        display: block;
+        font-weight: var(--fw-medium);
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .image .greeting {
+        display: none;
+    }
+
+    .hero-image {
+        margin: 0;
+        height: 30rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 @media only screen and (min-width: 61.25em) {
     .hero {
-        flex-direction: row-reverse;
-        align-items: center;
+        /* flex-direction: row-reverse;
+        align-items: center; */
         /* width: 80%; */
     }
 
@@ -146,15 +208,5 @@ p {
 
     .contact {
         display: none;
-    }
-}
-
-@keyframes scrollToLeft {
-    from {
-        transform: translateX(0%);
-    }
-
-    to {
-        transform: translateX(-50%);
     }
 }
