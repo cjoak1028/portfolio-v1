@@ -38,7 +38,7 @@
 .navigation ul {
     display: none;
     font-weight: var(--fw-regular);
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
     text-transform: uppercase;
 }
 
@@ -69,7 +69,7 @@
     transform-origin: bottom left;
 }
 
-@media only screen and (min-width: 61.25em) {
+@media only screen and (min-width: 28em) {
     .hamburger-button {
         display: none;
     }
