@@ -37,8 +37,8 @@ const About = () => {
               My focus is on building responsive, mobile-first designs that
               enhance user experience and engagement. I am also committed to
               staying up-to-date with the latest trends and technologies in web
-              development, and I am always seeking new challenges to expand my
-              skill set.
+              development, and I am always seeking new project opportunities to
+              expand my skill set.
             </p>
           </motion.div>
           <motion.div
@@ -50,7 +50,9 @@ const About = () => {
             }}
             viewport={{ once: true }}
           >
-            <h2 className={styles["about__experience-title"]}>The following are some of my experiences:</h2>
+            <h2 className={styles["about__experience-title"]}>
+              The following are some of my experiences:
+            </h2>
             <div className={styles["about__career"]}>
               <h4>Career</h4>
               <div className="flex flex-jc-sb">
