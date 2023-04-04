@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import { BsArrowDownShort } from "react-icons/bs";

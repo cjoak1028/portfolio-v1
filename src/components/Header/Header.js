@@ -16,21 +16,6 @@ const header = {
   hidden: { opacity: 0 },
 };
 
-const fromBottom = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 250,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    y: 8,
-  },
-};
-
 const navList = {
   visible: {
     opacity: 1,
