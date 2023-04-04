@@ -1,10 +1,8 @@
 .footer {
-    /* height: clamp(6rem, 7vw, 12rem); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: #dadada; */
 }
 
 .footer p {

@@ -21,7 +21,7 @@
 }
 
 .greeting {
-    font-weight: var(--fw-medium) !important;
+    font-weight: var(--fw-regular) !important;
     text-transform: uppercase;
     display: flex;
     align-items: center;
