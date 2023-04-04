@@ -16,7 +16,9 @@ const Time = () => {
     };
   }, []);
 
-  const time = date.toLocaleTimeString("en-US", { timeZone: "EST" });
+  const time = date.toLocaleTimeString("en-US", {
+    timeZone: "America/Toronto",
+  });
 
   return <p className={styles.time}>Toronto &#8212; {time}</p>;
 };

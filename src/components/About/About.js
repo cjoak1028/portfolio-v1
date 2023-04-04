@@ -19,19 +19,26 @@ const About = () => {
             }}
             viewport={{ once: true }}
           >
-            <p className={`${styles.greeting} flex flex-ai-c`}>
+            <p className={`${styles.greeting}`}>
               Hello <AiOutlineSmile className={styles["smiley-icon"]} /> &#8212;
               I'm Chang-Ju (David) Kim.
             </p>
             <p>
-              I discovered my passion for web development in 2017 during an
-              internship as a full-stack web developer. With my love for great
-              design and being naturally detail-oriented, I can build websites
-              and applications that are both functional and visually appealing.
+              As a front-end developer, I am driven by a desire to create
+              digital experiences that are accessible and user-friendly for
+              everyone. With more and more everyday tasks turning digital, it is
+              crucial that we are mindful of those who may have difficulty
+              adapting to the rapidly changing times. That's why I am committed
+              to building web experiences that cater to a diverse range of
+              demographics, ensuring that everyone has equal access to the
+              digital world.
             </p>
             <p>
-              I am continuously experimenting with new tools and techniques with
-              the goal of delivering the finest web experiences.
+              My focus is on building responsive, mobile-first designs that
+              enhance user experience and engagement. I am also committed to
+              staying up-to-date with the latest trends and technologies in web
+              development, and I am always seeking new challenges to expand my
+              skill set.
             </p>
           </motion.div>
           <motion.div
@@ -43,6 +50,7 @@ const About = () => {
             }}
             viewport={{ once: true }}
           >
+            <h2 className={styles["about__experience-title"]}>The following are some of my experiences:</h2>
             <div className={styles["about__career"]}>
               <h4>Career</h4>
               <div className="flex flex-jc-sb">
@@ -54,7 +62,7 @@ const About = () => {
             <div className={styles["about__tech"]}>
               <h4>Technologies</h4>
               <div className={styles["tech-category"]}>
-                <Marquee gradient={false} speed={50}>
+                <Marquee gradient={false} speed={50} className={styles.marquee}>
                   <span className={styles.skill}>JS (ES6)</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>HTML</span>
@@ -73,7 +81,12 @@ const About = () => {
                 <h5 className={styles["category-title"]}>Languages</h5>
               </div>
               <div className={styles["tech-category"]}>
-                <Marquee gradient={false} speed={30} direction={"right"}>
+                <Marquee
+                  gradient={false}
+                  speed={30}
+                  direction={"right"}
+                  className={styles.marquee}
+                >
                   <span className={styles.skill}>React</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Node.JS</span>
@@ -90,7 +103,7 @@ const About = () => {
                 </h5>
               </div>
               <div className={styles["tech-category"]}>
-                <Marquee gradient={false} speed={40}>
+                <Marquee gradient={false} speed={40} className={styles.marquee}>
                   <span className={styles.skill}>Git</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.skill}>Webpack</span>

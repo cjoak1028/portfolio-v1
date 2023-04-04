@@ -8,16 +8,9 @@ const hero = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 1.6,
+      staggerChildren: 0.25,
+      delayChildren: 1,
     },
-  },
-  hidden: { opacity: 0 },
-};
-
-const opacity = {
-  visible: {
-    opacity: 1,
   },
   hidden: { opacity: 0 },
 };
@@ -28,12 +21,12 @@ const fromBottom = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 160,
+      stiffness: 250,
     },
   },
   hidden: {
     opacity: 0,
-    y: 10,
+    y: 5,
   },
 };
 
@@ -43,12 +36,12 @@ const fromTop = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 160,
+      stiffness: 250,
     },
   },
   hidden: {
     opacity: 0,
-    y: -10,
+    y: -5,
   },
 };
 
@@ -65,9 +58,12 @@ const Hero = () => {
           <motion.p variants={fromBottom} className={styles.greeting}>
             Hello,
           </motion.p>
-          <motion.div variants={opacity}>
-            <div className={styles["hero-image"]}></div>
-          </motion.div>
+          <div>
+            <motion.div
+              variants={fromBottom}
+              className={styles["hero-image"]}
+            ></motion.div>
+          </div>
         </div>
         <div className={styles.intro}>
           <motion.p variants={fromBottom} className={styles.greeting}>

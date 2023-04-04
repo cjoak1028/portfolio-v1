@@ -1,17 +1,6 @@
 .about {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-}
-
-.about__img {
-    margin: clamp(2rem, 3vw, 3rem) 0;
-    height: clamp(15rem, 25vw, 30rem);
-    width: 100%;
-    background-image: url('../../assets/img/hero-img.jpg');
-    background-position: 50% 80%;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .about__content {
@@ -19,12 +8,12 @@
     flex-direction: column;
 }
 
-.about__me, .about__experience {
-    padding-top: clamp(2rem, 3vw, 4rem);
+.about__me {
+    padding-top: clamp(3rem, 3vw, 4rem);
 }
 
 .about__me {
-    padding-bottom: clamp(2rem, 3vw, 4rem);
+    padding-bottom: clamp(3rem, 3vw, 4rem);
 }
 
 .smiley-icon {
@@ -34,7 +23,9 @@
 .greeting {
     font-weight: var(--fw-medium) !important;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .about__content p, .skill {
@@ -42,12 +33,9 @@
     font-size: clamp(1.4rem, 1.8vw, 2rem);
 }
 
-.about__me {
-    border-bottom: 1px solid var(--c-sub);
-}
-
 .about__me p {
-    line-height: clamp(2rem, 2.4vw, 2.8rem);
+    font-weight: var(--fw-light);
+    line-height: clamp(2rem, 2.8vw, 3rem);
 }
 
 .about__me p:not(:last-child) {
@@ -60,7 +48,7 @@
 
 .about__career {
     border-bottom: 1px solid var(--c-sub);
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .skill {
@@ -81,11 +69,7 @@
     font-size: 1.1rem;
 }
 
-.about__tech {
-    overflow: hidden;
-}
-
-.tech-category {
+.tech-category:not(:last-child) {
     margin-bottom: 1.5rem;
 }
 
@@ -106,7 +90,15 @@
     margin-right: 4rem;
 }
 
-@media only screen and (min-width: 43.75em) {
+.about__experience-title {
+    margin-bottom: 2rem;
+    font-weight: var(--fw-regular);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    text-transform: none;
+    line-height: clamp(2rem, 2.8vw, 3rem);
+}
+
+@media only screen and (min-width: 61.25em) {
     .about__content {
         flex-direction: row;
         justify-content: space-between;
@@ -115,13 +107,21 @@
     .about__me {
         border-bottom: none;
         border-right: 1px solid var(--c-sub);
-        padding-right: clamp(2rem, 3vw, 3rem);
+        padding-right: clamp(2rem, 4vw, 5rem);
         width: 55%;
     }
 
     .about__experience {
-        padding-left: clamp(2rem, 3vw, 3rem);
-        padding-bottom: clamp(2rem, 3vw, 4rem);
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
         width: 45%;
+        padding-top: clamp(3rem, 3vw, 4rem);
+        padding-left: clamp(2rem, 4vw, 5rem);
+        padding-bottom: clamp(2rem, 4vw, 5rem);
+    }
+
+    .about__career {
+        margin-bottom: 4rem;
     }
 }
