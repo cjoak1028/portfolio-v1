@@ -2,7 +2,6 @@
 :root {
   /* COLORS */
   --c-bg: #EDEAE8;
-  /* --c-bg: #f9f9f9; */
   --c-main: #2C2B2B;
   --c-sub: #afafaf;
   /* FONTS */
@@ -73,8 +72,3 @@ code {
 .flex-jc-sb {
   justify-content: space-between;
 }
-
-/* TYPOGRAPHY */
-/* p {
-  font-size: clamp(1.4rem, 1.8vw, 1.6rem);
-} */
