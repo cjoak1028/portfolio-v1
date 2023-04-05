@@ -42,10 +42,10 @@ function App() {
             transition: { duration: 0.6, delay: 0.2 },
           }}
           viewport={{ once: true }}
-          className={`${styles.prompt} ${styles["prompt--rev"]}`}
+          className={styles.prompt}
         >
-          <BsArrowDownShort className={styles["arrow-icon"]} />
           <p>Get in touch </p>
+          <BsArrowDownShort className={styles["arrow-icon"]} />
         </motion.div>
         <Element name="contact">
           <Contact />

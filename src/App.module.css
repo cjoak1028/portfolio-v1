@@ -37,7 +37,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* margin: clamp(10rem, 16vw, 16rem) auto; */
     margin: auto;
     margin-top: clamp(10rem, 16vw, 16rem);
     margin-bottom: 2rem;
