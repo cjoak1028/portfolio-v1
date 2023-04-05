@@ -1,4 +1,5 @@
 .hero-container {
+    height: 100vh;
     min-height: 60rem;
     margin-bottom: clamp(5rem, 8vw, 10rem);
 }
@@ -28,18 +29,23 @@
     background-position: 50% 80%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+    /* margin-top: 1.5rem; */
 }
 
 .hero__footer {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     left: 0;
-    bottom: clamp(3rem, 3vw, 4rem);
-    margin: auto;
+    /* bottom: clamp(3rem, 3vw, 4rem); */
+    /* margin: auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-top: 0.5rem; */
+    /* border-top: 1px solid var(--c-sub); */
+    border-bottom: 1px solid var(--c-sub);
+    padding: 2px 0;
 }
 
 .scroll-prompt {
@@ -50,7 +56,7 @@
 .scroll-prompt p {
     font-size: clamp(1rem, 1.1vw, 1.2rem);
     font-weight: var(--fw-bold);
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     text-transform: uppercase;
 }
 
@@ -59,26 +65,44 @@
 }
 
 .greeting {
+    font-weight: var(--fw-light);
+    /* font-size: clamp(3rem, 7vw, 7rem); */
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    /* margin-bottom: 1rem; */
+    margin-left: clamp(0.2rem, 1vw, 1rem);
+    /* margin-bottom: 2rem; */
+    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    color: rgb(79, 79, 79);
+}
+
+.name {
+    font-size: clamp(4rem, 8vw, 9rem);
     font-weight: var(--fw-medium);
-    font-size: clamp(3rem, 7vw, 7rem);
+}
+
+.title {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    /* font-size: clamp(1.4rem, 1.8vw, 2rem); */
+    font-weight: var(--fw-light);
+    /* margin-left: clamp(0.5rem, 1vw, 1rem); */
 }
 
 .hero__section-2 .greeting {
     display: none;
 }
 
-.hero__section-2 p:not(.greeting) {
+.hero__section-2 .intro {
+    display: none;
+}
+
+/* .hero__section-2 p:not(.greeting) {
     font-size: clamp(2rem, 3.4vw, 4rem);
     font-weight: var(--fw-light);
-}
+} */
 
-.hero__section-2 p:not(:last-child) {
+/* .hero__section-2 p:not(:last-child) {
     margin-bottom: 1rem;
-}
-
-.title {
-    color: blue;
-}
+} */
 
 @media only screen and (min-width: 36em) {
     .hero__content {
@@ -103,6 +127,14 @@
 
     .hero__section-2 .greeting {
         display: block;
+    }
+
+    .hero__section-2 .intro {
+        display: block;
+    }
+
+    .hero__section-1 .intro {
+        display: none;
     }
 
     .hero-image {
