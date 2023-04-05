@@ -1,4 +1,5 @@
 .hero-container {
+    height: 100vh;
     min-height: 60rem;
     margin-bottom: clamp(5rem, 8vw, 10rem);
 }
@@ -13,6 +14,14 @@
     position: relative;
 }
 
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    max-width: 120rem;
+}
+
 .hero-image {
     height: 15rem;
     width: 100%;
@@ -21,14 +30,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
-}
-
-.hero__content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
-    max-width: 120rem;
 }
 
 .hero__footer {
