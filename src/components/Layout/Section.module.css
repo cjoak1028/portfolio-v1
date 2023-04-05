@@ -24,6 +24,8 @@
     background-color: var(--c-sub);
 }
 
+
+
 @media only screen and (min-width: 61.25em) {
     .section {
         width: 100%;

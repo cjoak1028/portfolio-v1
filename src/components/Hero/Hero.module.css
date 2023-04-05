@@ -1,3 +1,8 @@
+.hero-container {
+    min-height: 60rem;
+    margin-bottom: clamp(5rem, 8vw, 10rem);
+}
+
 .hero {
     height: 100%;
     display: flex;
@@ -5,57 +10,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-bottom: clamp(5rem, 8vw, 10rem);
     position: relative;
-}
-
-.hero-text {
-    display: inline-block;
-    text-align: right;
-}
-
-.name, .divider {
-    font-size: clamp(1.1rem, 1.2vw, 1.2rem);
-    font-weight: var(--fw-bold);
-    font-style: italic;
-}
-
-.divider {
-    margin: 0 .5rem;
-    font-weight: var(--fw-regular);
-}
-
-p {
-    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
-}
-
-.about {
-    margin-bottom: clamp(2rem, 3vw, 4rem);
-}
-
-.position {
-    margin-bottom: .2rem;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    opacity: 0.5;
-}
-
-.line {
-    height: 1px;
-    width: 100%;
-    background-color: var(--c-sub);
-    margin-right: 2rem;
-}
-
-.email {
-    font-style: italic;
-    letter-spacing: 2px;
-    font-size: clamp(1.1rem, 1.4vw, 1.4rem);
-    font-weight: var(--fw-medium);
-    text-transform: lowercase;
 }
 
 .hero-image {
@@ -68,38 +23,15 @@ p {
     margin: 2rem 0;
 }
 
-.hero-container {
+.hero__content {
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow: hidden;
     max-width: 120rem;
-    margin: 5rem 0;
 }
 
-.scroll-container {
-    margin-bottom: 0.1rem;
-    padding: 0.1rem 0;
-}
-
-.inf-scroll {
-    display: inline-flex;
-    align-items: center;
-    width: 100%;
-    white-space: nowrap;
-    animation: scrollToLeft 10s infinite linear;
-}
-
-.position, .location {
-    font-weight: var(--fw-medium);
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.bottom-section {
+.hero__footer {
     position: absolute;
     width: 100%;
     left: 0;
@@ -128,62 +60,50 @@ p {
 
 .greeting {
     font-weight: var(--fw-medium);
-    font-size: clamp(4rem, 7vw, 7rem);
+    font-size: clamp(3rem, 7vw, 7rem);
 }
 
-.intro .greeting {
+.hero__section-2 .greeting {
     display: none;
-    font-size: clamp(4rem, 7vw, 7rem);
 }
 
-.intro p {
+.hero__section-2 p:not(.greeting) {
     font-size: clamp(2rem, 3.4vw, 4rem);
     font-weight: var(--fw-light);
 }
 
-.intro p:not(:last-child) {
+.hero__section-2 p:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 28em) {
-    .flex-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
 @media only screen and (min-width: 36em) {
-    .hero-container {
+    .hero__content {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    .intro {
-        margin-right: 2rem;
-    }
-
-    .intro .greeting {
-        display: block;
-        font-weight: var(--fw-medium);
-    }
-
-    .image {
+    .hero__section-1 {
         width: 40%;
     }
 
-    .image .greeting {
+    .hero__section-2 {
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero__section-1 .greeting {
         display: none;
+    }
+
+    .hero__section-2 .greeting {
+        display: block;
     }
 
     .hero-image {
         margin: 0;
         height: 30rem;
-    }
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 }
 
