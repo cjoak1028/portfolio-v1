@@ -1,7 +1,7 @@
 .hero-container {
     min-height: 60rem;
     margin-bottom: clamp(5rem, 8vw, 10rem);
-    height: 80rem;
+    height: 100dvh;
 }
 
 .hero {
