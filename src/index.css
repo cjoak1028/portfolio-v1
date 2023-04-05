@@ -28,7 +28,6 @@ body {
   font-family: var(--ff-main);
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  margin: 0px;
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;

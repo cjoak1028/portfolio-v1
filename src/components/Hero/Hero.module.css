@@ -1,7 +1,6 @@
 .hero-container {
     min-height: 60rem;
     margin-bottom: clamp(5rem, 8vw, 10rem);
-    height: 80rem;
 }
 
 .hero {
@@ -78,7 +77,7 @@
 }
 
 .title {
-    color: red;
+    color: blue;
 }
 
 @media only screen and (min-width: 36em) {

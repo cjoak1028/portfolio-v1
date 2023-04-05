@@ -36,16 +36,19 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
   useEffect(() => {
     if (open) {
       menuRef.current.classList.add(styles.open);
+      if (!document.body.classList.contains("no-scroll")) {
+        document.body.classList.add("no-scroll");
+      }
     } else {
       menuRef.current.classList.add(styles.close);
       setTimeout(() => {
         menuRef.current.classList.remove(styles.open);
         menuRef.current.classList.remove(styles.close);
       }, 400);
+      if (document.body.classList.contains("no-scroll")) {
+        document.body.classList.remove("no-scroll");
+      }
     }
-    // document.body.classList.contains("no-scroll")
-    //   ? document.body.classList.remove("no-scroll")
-    //   : document.body.classList.add("no-scroll");
   }, [open]);
 
   return (
