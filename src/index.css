@@ -43,7 +43,7 @@ html, body {
   background-color: var(--c-bg);
 }
 
-#root {
+/* #root {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ html, body {
   margin: 0;
   overflow: auto;
   background-color: var(--c-bg);
-}
+} */
 
 *, *::before, *::after {
   margin: 0;
