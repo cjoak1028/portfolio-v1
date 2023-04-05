@@ -20,20 +20,17 @@ html {
   /* min-height: 100%; */
   font-size: 62.5%;
   background-color: var(--c-bg);
-  overflow: hidden;
-  /* width: 100%; */
+  width: 100%;
 }
 
 body {
+  margin: 0px;
   width: 100%;
-  height: 100%;
-  position: fixed;
-  /* overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; */
+  min-height: 100%;
   background-color: var(--c-bg);
   color: var(--c-main);
   font-family: var(--ff-main);
-  /* overflow: hidden; */
+  -webkit-font-smoothing: antialiased;
 }
 
 *, *::before, *::after {

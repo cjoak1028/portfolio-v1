@@ -48,7 +48,7 @@ const fromTop = {
 
 const Hero = () => {
   return (
-    <Div100vh className={styles["hero-container"]}>
+    <div className={styles["hero-container"]}>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -89,7 +89,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </motion.div>
-    </Div100vh>
+    </div>
   );
 };
 
