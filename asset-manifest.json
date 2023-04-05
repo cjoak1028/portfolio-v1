@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cdbbfd5.css",
-    "main.js": "/static/js/main.78e0c6fb.js",
-    "static/js/787.7649f2f7.chunk.js": "/static/js/787.7649f2f7.chunk.js",
-    "static/media/photosnap-desktop.png": "/static/media/photosnap-desktop.d04be82ddb16d5a15780.png",
-    "static/media/portfolio-desktop.png": "/static/media/portfolio-desktop.207c77a3275faf268de4.png",
-    "static/media/planets-desktop.png": "/static/media/planets-desktop.99397e9a698d97e32ab0.png",
-    "static/media/hero-img.jpg": "/static/media/hero-img.bb0995fd3172f6aa5a91.jpg",
-    "index.html": "/index.html",
-    "main.2cdbbfd5.css.map": "/static/css/main.2cdbbfd5.css.map",
-    "main.78e0c6fb.js.map": "/static/js/main.78e0c6fb.js.map",
-    "787.7649f2f7.chunk.js.map": "/static/js/787.7649f2f7.chunk.js.map"
+    "main.css": "/cjoak1028.github.io/portfolio-website-v1/static/css/main.134569a7.css",
+    "main.js": "/cjoak1028.github.io/portfolio-website-v1/static/js/main.38f47120.js",
+    "static/js/787.7649f2f7.chunk.js": "/cjoak1028.github.io/portfolio-website-v1/static/js/787.7649f2f7.chunk.js",
+    "static/media/photosnap-desktop.png": "/cjoak1028.github.io/portfolio-website-v1/static/media/photosnap-desktop.d04be82ddb16d5a15780.png",
+    "static/media/portfolio-desktop.png": "/cjoak1028.github.io/portfolio-website-v1/static/media/portfolio-desktop.207c77a3275faf268de4.png",
+    "static/media/planets-desktop.png": "/cjoak1028.github.io/portfolio-website-v1/static/media/planets-desktop.99397e9a698d97e32ab0.png",
+    "static/media/hero-img.jpg": "/cjoak1028.github.io/portfolio-website-v1/static/media/hero-img.bb0995fd3172f6aa5a91.jpg",
+    "index.html": "/cjoak1028.github.io/portfolio-website-v1/index.html",
+    "main.134569a7.css.map": "/cjoak1028.github.io/portfolio-website-v1/static/css/main.134569a7.css.map",
+    "main.38f47120.js.map": "/cjoak1028.github.io/portfolio-website-v1/static/js/main.38f47120.js.map",
+    "787.7649f2f7.chunk.js.map": "/cjoak1028.github.io/portfolio-website-v1/static/js/787.7649f2f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cdbbfd5.css",
-    "static/js/main.78e0c6fb.js"
+    "static/css/main.134569a7.css",
+    "static/js/main.38f47120.js"
   ]
 }
