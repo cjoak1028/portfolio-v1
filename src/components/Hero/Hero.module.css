@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    max-height: calc(-webkit-fill-avilable - 7rem);
+    max-height: -webkit-fill-avilable;
     display: flex;
     flex-direction: column;
     align-items: center;
