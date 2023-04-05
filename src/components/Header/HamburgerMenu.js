@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import styles from "./HamburgerMenu.module.css";
+import Div100vh from "react-div-100vh";
 
 const navList = {
   visible: {
@@ -48,7 +49,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
   }, [open]);
 
   return (
-    <div ref={menuRef} className={`${styles["hamburger-menu"]} padding-x`}>
+    <Div100vh ref={menuRef} className={`${styles["hamburger-menu"]} padding-x`}>
       <div className={styles["hamburger-menu__header"]}>
         <p className={styles.logo}>
           <Link
@@ -127,7 +128,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Div100vh>
   );
 };
 
