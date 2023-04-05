@@ -1,5 +1,4 @@
 .hero-container {
-    height: 80rem;
     min-height: 60rem;
     margin-bottom: clamp(5rem, 8vw, 10rem);
 }
@@ -75,6 +74,10 @@
 
 .hero__section-2 p:not(:last-child) {
     margin-bottom: 1rem;
+}
+
+.title {
+    opacity: 0.5 !important;
 }
 
 @media only screen and (min-width: 36em) {

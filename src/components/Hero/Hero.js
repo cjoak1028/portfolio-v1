@@ -48,7 +48,7 @@ const fromTop = {
 
 const Hero = () => {
   return (
-    <div className={styles["hero-container"]}>
+    <Div100vh className={styles["hero-container"]}>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -73,7 +73,7 @@ const Hero = () => {
             </motion.p>
             <div>
               <motion.p variants={fromBottom}>My name is Chang-Ju.</motion.p>
-              <motion.p variants={fromBottom}>
+              <motion.p variants={fromBottom} className={styles.title}>
                 I am a front-end developer.
               </motion.p>
             </div>
@@ -89,7 +89,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </motion.div>
-    </div>
+    </Div100vh>
   );
 };
 
