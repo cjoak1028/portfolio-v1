@@ -42,9 +42,9 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
         menuRef.current.classList.remove(styles.close);
       }, 400);
     }
-    document.body.classList.contains("no-scroll")
-      ? document.body.classList.remove("no-scroll")
-      : document.body.classList.add("no-scroll");
+    // document.body.classList.contains("no-scroll")
+    //   ? document.body.classList.remove("no-scroll")
+    //   : document.body.classList.add("no-scroll");
   }, [open]);
 
   return (
