@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     max-height: -webkit-fill-available;
     padding: 7rem 0;
     display: flex;
