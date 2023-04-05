@@ -33,17 +33,22 @@
     background-color: var(--c-sub);
 }
 
-.prompt {
+.prompt-container {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    margin: auto;
+
     margin-top: clamp(10rem, 16vw, 16rem);
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.prompt {
+    display: inline-flex;
+    align-items: center;
 }
 
 .prompt--rev {
-    justify-content: flex-start;
+    display: none;
 }
 
 .prompt--rev .arrow-icon {
@@ -59,6 +64,16 @@
 
 .arrow-icon {
     font-size: clamp(2rem, 2.3vw, 2.5rem);
+}
+
+@media only screen and (min-width: 36em) {
+    .prompt-container {
+        justify-content: space-between;
+    }
+
+    .prompt--rev {
+        display: inline-flex;
+    }
 }
 
 @media only screen and (min-width: 61.25em) {
