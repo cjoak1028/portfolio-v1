@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <>
+    <div className={styles.app}>
       <Header />
       <div className="padding-x">
         <Element name="hero">
@@ -80,7 +80,7 @@ function App() {
         </Element>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
