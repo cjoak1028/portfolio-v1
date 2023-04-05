@@ -56,7 +56,7 @@ const Hero = () => {
       <div className={styles["hero-container"]}>
         <div className={styles.image}>
           <motion.p variants={fromBottom} className={styles.greeting}>
-            Hello.
+            Hello
           </motion.p>
           <div>
             <motion.div
@@ -67,7 +67,7 @@ const Hero = () => {
         </div>
         <div className={styles.intro}>
           <motion.p variants={fromBottom} className={styles.greeting}>
-            Hello.
+            Hello
           </motion.p>
           <div>
             <motion.p variants={fromBottom}>My name is Chang-Ju.</motion.p>
