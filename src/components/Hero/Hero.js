@@ -48,7 +48,7 @@ const fromTop = {
 
 const Hero = () => {
   return (
-    <Div100vh className={styles["hero-container"]}>
+    <div className={styles["hero-container"]}>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className={styles["hero__footer"]}>
+        {/* <div className={styles["hero__footer"]}>
           <motion.div variants={fromTop} className={styles["scroll-prompt"]}>
             <BsArrowDownShort className={styles["arrow-icon"]} />
             <p>Scroll Down</p>
@@ -87,9 +87,9 @@ const Hero = () => {
           <motion.div variants={fromTop} className={styles.time}>
             <Time />
           </motion.div>
-        </div>
+        </div> */}
       </motion.div>
-    </Div100vh>
+    </div>
   );
 };
 
