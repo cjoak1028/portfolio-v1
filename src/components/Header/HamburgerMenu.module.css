@@ -41,7 +41,7 @@
     height: 1px;
     width: 100%;
     border-top: 1px solid var(--c-sub);
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
     opacity: 0.6;
 }
 
@@ -62,7 +62,7 @@
     align-items: center;
     font-weight: var(--fw-light);
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .email>p {

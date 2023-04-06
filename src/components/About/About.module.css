@@ -20,6 +20,21 @@
     margin: 0 .5rem;
 }
 
+/* .about__content p, .skill {
+    font-weight: var(--fw-light);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+} */
+
+.about__me p {
+    font-weight: var(--fw-light);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    line-height: clamp(2rem, 2.8vw, 3rem);
+}
+
+.about__me p:not(:last-child) {
+    margin-bottom: 1.8rem;
+}
+
 .greeting {
     font-weight: var(--fw-regular) !important;
     text-transform: uppercase;
@@ -28,22 +43,9 @@
     flex-wrap: wrap;
 }
 
-.about__content p, .skill {
-    font-weight: var(--fw-light);
-    font-size: clamp(1.4rem, 1.8vw, 2rem);
-}
-
-.about__me p {
-    font-weight: var(--fw-light);
-    line-height: clamp(2rem, 2.8vw, 3rem);
-}
-
-.about__me p:not(:last-child) {
-    margin-bottom: 1.8rem;
-}
-
 .about__experience {
     text-transform: uppercase;
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
 }
 
 .about__career {
