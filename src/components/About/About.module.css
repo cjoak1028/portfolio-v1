@@ -113,7 +113,6 @@
     .about__experience {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         width: 45%;
         padding-top: clamp(3rem, 3vw, 4rem);
         padding-left: clamp(2rem, 4vw, 5rem);
