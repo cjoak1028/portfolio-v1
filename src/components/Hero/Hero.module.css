@@ -83,8 +83,13 @@
 .title {
     font-size: clamp(2rem, 2.5vw, 3rem);
     /* font-size: clamp(1.4rem, 1.8vw, 2rem); */
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-regular);
     /* margin-left: clamp(0.5rem, 1vw, 1rem); */
+    color: rgba(75, 75, 75, 0.844);
+}
+
+.title:not(:last-child) {
+    margin-bottom: 0.5rem;
 }
 
 .hero__section-2 .greeting {
@@ -140,6 +145,10 @@
     .hero-image {
         margin: 0;
         height: 30rem;
+    }
+
+    .title {
+        margin-left: clamp(0.5rem, 1vw, 1rem);
     }
 }
 

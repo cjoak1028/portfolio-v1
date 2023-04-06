@@ -93,9 +93,14 @@ const Hero = () => {
                 CHANG-JU.
               </motion.p>
             </div>
-            <motion.p variants={fromBottom} className={styles.title}>
-              I am a front-end developer.
-            </motion.p>
+            <div>
+              <motion.p variants={fromBottom} className={styles.title}>
+                I am a front-end developer
+              </motion.p>
+              <motion.p variants={fromBottom} className={styles.title}>
+                based in Toronto.
+              </motion.p>
+            </div>
           </div>
         </div>
       </motion.div>
