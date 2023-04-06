@@ -34,9 +34,9 @@ const About = () => {
               digital world.
             </p>
             <p>
-              At the moment, my focus is staying up-to-date with the latest
-              trends and technologies in web development, and I am always
-              seeking new learning opportunities to expand my skill set.
+              Currently, my focus is to stay up-to-date with the latest trends and
+              technologies in web development, and I am seeking new
+              opportunities to expand my skill set.
             </p>
           </motion.div>
           <motion.div
