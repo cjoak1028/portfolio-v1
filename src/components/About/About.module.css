@@ -48,7 +48,7 @@
 
 .about__career {
     border-bottom: 1px solid var(--c-sub);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .skill {
@@ -90,7 +90,7 @@
 }
 
 .about__experience-title {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-weight: var(--fw-regular);
     font-size: clamp(1.4rem, 1.8vw, 2rem);
     text-transform: none;
