@@ -28,7 +28,7 @@ function App() {
             viewport={{ once: true }}
           >
             <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Allow me introduce myself</p>
+            <p>Allow me to introduce myself</p>
           </motion.div>
           <motion.div
             className={styles.prompt}
@@ -39,7 +39,7 @@ function App() {
             }}
             viewport={{ once: true }}
           >
-            <p>Allow me introduce myself</p>
+            <p>Allow me to introduce myself</p>
             <BsArrowDownShort className={styles["arrow-icon"]} />
           </motion.div>
         </div>
