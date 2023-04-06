@@ -60,7 +60,6 @@
 .email {
     display: flex;
     align-items: center;
-    font-style: italic;
     font-weight: var(--fw-light);
     width: 100%;
     padding-top: 2rem;
@@ -120,7 +119,6 @@
 
 .logo {
     font-weight: var(--fw-semi-bold);
-    font-style: italic;
 }
 
 .logo, .close-button {

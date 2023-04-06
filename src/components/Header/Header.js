@@ -71,7 +71,7 @@ const Header = () => {
           offset={-70}
           className={"link"}
         >
-          CJ PORTFOLIO
+          CK PORTFOLIO
         </Link>
       </p>
       <nav className={styles.navigation}>

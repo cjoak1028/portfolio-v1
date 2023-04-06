@@ -64,7 +64,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
             onClick={handleMenuClick}
             className={"link"}
           >
-            CJ PORTFOLIO
+            CK PORTFOLIO
           </Link>
         </p>
         <button className={styles["close-button"]} onClick={handleMenuClick}>
