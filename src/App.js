@@ -17,6 +17,32 @@ function App() {
         <Element name="hero">
           <Hero />
         </Element>
+        <div className={styles["prompt-container"]}>
+          <motion.div
+            className={`${styles.prompt} ${styles["prompt--rev"]}`}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
+            <BsArrowDownShort className={styles["arrow-icon"]} />
+            <p>Let me introduce myself</p>
+          </motion.div>
+          <motion.div
+            className={styles.prompt}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.6, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
+            <p>Let me introduce myself</p>
+            <BsArrowDownShort className={styles["arrow-icon"]} />
+          </motion.div>
+        </div>
         <Element name="about">
           <About />
         </Element>
