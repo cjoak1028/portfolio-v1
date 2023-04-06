@@ -42,7 +42,7 @@
     display: flex;
     justify-content: flex-end;
 
-    margin-top: clamp(10rem, 16vw, 16rem);
+    margin-top: clamp(10rem, 20vw, 20rem);
     margin-bottom: clamp(2rem, 3vw, 4rem);
 }
 
