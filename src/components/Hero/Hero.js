@@ -62,7 +62,7 @@ const Hero = () => {
                 Hello, my name is
               </motion.p>
               <motion.p variants={fromBottom} className={styles.name}>
-                CHANG-JU.
+                Chang-Ju.
               </motion.p>
             </div>
             <div>
@@ -90,15 +90,15 @@ const Hero = () => {
                 Hello, my name is
               </motion.p>
               <motion.p variants={fromBottom} className={styles.name}>
-                CHANG-JU.
+                Chang-Ju.
               </motion.p>
             </div>
             <div>
               <motion.p variants={fromBottom} className={styles.title}>
-                I am a front-end developer
+                I am a <span className={styles.bold}>front-end developer</span>
               </motion.p>
               <motion.p variants={fromBottom} className={styles.title}>
-                based in Toronto.
+                based in <span className={styles.bold}>Toronto</span>.
               </motion.p>
             </div>
           </div>
