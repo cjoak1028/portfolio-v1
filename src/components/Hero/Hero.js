@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-import { BsArrowDownShort } from "react-icons/bs";
-import Time from "./Time";
-import Div100vh from "react-div-100vh";
 
 const hero = {
   visible: {
