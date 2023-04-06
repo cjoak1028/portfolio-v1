@@ -65,7 +65,7 @@
 
 .about__career h4, .about__tech h4 {
     margin-bottom: 1rem;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.1rem;
 }
 

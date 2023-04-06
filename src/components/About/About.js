@@ -28,17 +28,15 @@ const About = () => {
               digital experiences that are accessible and user-friendly for
               everyone. With more and more everyday tasks turning digital, it is
               crucial that we are mindful of those who may have difficulty
-              adapting to the rapidly changing times. That's why I am committed
+              adapting to the rapidly changing times. That's why I am deticated
               to building web experiences that cater to a diverse range of
               demographics, ensuring that everyone has equal access to the
               digital world.
             </p>
             <p>
-              My focus is on building responsive, mobile-first designs that
-              enhance user experience and engagement. I am also committed to
-              staying up-to-date with the latest trends and technologies in web
-              development, and I am always seeking new project opportunities to
-              expand my skill set.
+              At the moment, my focus is staying up-to-date with the latest
+              trends and technologies in web development, and I am always
+              seeking new learning opportunities to expand my skill set.
             </p>
           </motion.div>
           <motion.div
@@ -51,7 +49,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className={styles["about__experience-title"]}>
-              The following are some of my experiences:
+              Here are some of my skills and experiences:
             </h2>
             <div className={styles["about__career"]}>
               <h4>Career</h4>

@@ -19,7 +19,7 @@
     align-self: flex-start;
     font-size: clamp(1.1rem, 1.2vw, 1.5rem);
     margin-right: clamp(2rem, 3vw, 4rem);
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: var(--fw-medium);
     text-transform: uppercase;
     padding-bottom: 0.5rem;
