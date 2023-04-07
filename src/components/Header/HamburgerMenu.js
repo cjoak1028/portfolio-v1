@@ -85,7 +85,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-130}
+                offset={-120}
                 onClick={handleMenuClick}
                 className={"link"}
               >
@@ -98,7 +98,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-130}
+                offset={-120}
                 onClick={handleMenuClick}
                 className={"link"}
               >
@@ -111,7 +111,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-130}
+                offset={-120}
                 onClick={handleMenuClick}
                 className={"link"}
               >

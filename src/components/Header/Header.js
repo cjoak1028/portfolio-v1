@@ -82,7 +82,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-170}
+              offset={-140}
               className={`${styles.underline} link`}
             >
               About
@@ -95,7 +95,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-170}
+              offset={-140}
               className={`${styles.underline} link`}
             >
               Work
@@ -108,7 +108,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-170}
+              offset={-140}
               className={`${styles.underline} link`}
             >
               Contact
