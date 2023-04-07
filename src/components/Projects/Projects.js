@@ -179,7 +179,7 @@ const Projects = () => {
                   <li>
                     <a
                       className={styles["project__link"]}
-                      href={"https://github.com/cjoak1028/portfolio-website-v1"}
+                      href={"https://github.com/cjoak1028/cjoak1028.github.io"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -189,7 +189,7 @@ const Projects = () => {
                   <li>
                     <a
                       className={styles["project__link"]}
-                      href={"/"}
+                      href={"https://cjkim.dev/"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
