@@ -26,11 +26,12 @@ html {
 body {
   color: var(--c-main);
   font-family: var(--ff-main);
-  -webkit-font-smoothing: antialiased;
   height: 100%;
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
 }
 
 *, *::before, *::after {
