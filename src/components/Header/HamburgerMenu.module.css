@@ -75,7 +75,7 @@
 }
 
 .logo {
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-bold);
 }
 
 .logo, .close-button {
