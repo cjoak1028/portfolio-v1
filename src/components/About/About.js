@@ -18,9 +18,12 @@ const About = () => {
           }}
           viewport={{ once: true }}
         >
-          <p className={styles.greeting}>
+          {/* <p className={styles.greeting}>
             Hello <AiOutlineSmile className={styles["smiley-icon"]} /> &#8212;
             I'm Chang-Ju (David) Kim.
+          </p> */}
+          <p className={styles.greeting}>
+            Hello &#8212; I'm Chang-Ju (David) Kim.
           </p>
           <p>
             As a front-end developer, I am driven by a desire to create digital

@@ -24,9 +24,9 @@
 .about__me .greeting {
     font-weight: var(--fw-regular);
     text-transform: uppercase;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .about__experience {
