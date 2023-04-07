@@ -28,21 +28,6 @@ const fromBottom = {
   },
 };
 
-const fromTop = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 250,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    y: -5,
-  },
-};
-
 const Hero = () => {
   return (
     <div className={styles["hero-container"]}>

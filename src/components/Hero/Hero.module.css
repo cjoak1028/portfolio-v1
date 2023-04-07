@@ -24,7 +24,7 @@
     height: clamp(15rem, 25vw, 25rem);
     width: 100%;
     background-image: url('../../assets/img/hero-img.jpg');
-    background-position: 50% 80%;
+    background-position: 50% 90%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: clamp(1.5rem, 2vw, 2rem) 0;
@@ -64,14 +64,19 @@
 }
 
 .name {
-    font-size: clamp(4rem, 9vw, 9rem);
+    font-size: clamp(4rem, 8vw, 8rem);
     font-weight: var(--fw-medium);
 }
 
 .title {
     font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: var(--fw-regular);
-    color: rgba(116, 116, 116, 0.844);
+    /* color: rgba(116, 116, 116, 0.844); */
+}
+
+.bold {
+    /* color: rgba(89, 89, 89, 0.844); */
+    font-weight: var(--fw-medium);
 }
 
 .title:not(:last-child) {
@@ -86,19 +91,14 @@
     display: none;
 }
 
-.bold {
-    color: rgba(89, 89, 89, 0.844);
-    font-weight: var(--fw-medium);
-}
-
-@media only screen and (min-width: 36em) {
+/* @media only screen and (min-width: 36em) {
     .hero__content {
         width: 60%;
     }
-}
+} */
 
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 61.25em) {
     .hero {
         align-items: center;
     }
