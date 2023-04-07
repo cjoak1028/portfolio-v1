@@ -18,7 +18,7 @@ const linksList = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      delay: 0.2,
+      delay: 0.1,
     },
   },
   hidden: { opacity: 0 },

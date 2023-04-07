@@ -11,7 +11,7 @@ const Prompt = ({ message }) => {
         initial={{ opacity: 0 }}
         whileInView={{
           opacity: 1,
-          transition: { duration: 0.6, delay: 0.2 },
+          transition: { duration: 0.6, delay: 0.1 },
         }}
         viewport={{ once: true }}
       >
