@@ -23,7 +23,7 @@
 }
 
 .hero-image {
-    height: clamp(15rem, 30vw, 25rem);
+    height: clamp(15rem, 28vw, 28rem);
     width: 100%;
     background-image: url('../../assets/img/hero-img.jpg');
     background-position: 50% 90%;
@@ -91,12 +91,6 @@
 .hero__section-2 .intro {
     display: none;
 }
-
-/* @media only screen and (min-width: 36em) {
-    .hero__content {
-        width: 60%;
-    }
-} */
 
 
 @media only screen and (min-width: 61.25em) {
