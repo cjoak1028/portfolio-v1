@@ -27,14 +27,14 @@ const About = () => {
             experiences that are accessible and user-friendly for everyone. With
             more and more everyday tasks turning digital, it is crucial that we
             are mindful of those who may have difficulty adapting to the rapidly
-            changing times. That's why I am deticated to building web
+            changing times. That's why I am dedicated to building web
             experiences that cater to a diverse range of demographics, ensuring
             that everyone has equal access to the digital world.
           </p>
           <p>
-            Currently, my focus is to stay up-to-date with the latest trends and
-            technologies in web development, and I am seeking new opportunities
-            to expand my skill set.
+            I am committed to staying up-to-date with the latest trends and
+            technologies in web development, and currently I am seeking new,
+            exciting opportunities to expand my skill set.
           </p>
         </motion.div>
         <motion.div
