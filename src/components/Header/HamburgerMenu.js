@@ -121,16 +121,9 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
           </motion.ul>
         </nav>
         <div className={styles["hamburger-menu__info"]}>
-          <span className={styles.divider}></span>
-          <div className={styles.padding}>
-            <p>Chang-Ju (David) Kim</p>
-            <p>Front-end Developer</p>
-            <p>Based in Toronto</p>
-          </div>
-          <div className={styles.email}>
-            <span className={styles.line}></span>
-            {/* <p>changju.kim10@gmail.com</p> */}
-          </div>
+          <p>Chang-Ju (David) Kim</p>
+          <p>Front-end Developer</p>
+          <p>Based in Toronto</p>
         </div>
       </div>
     </Div100vh>
