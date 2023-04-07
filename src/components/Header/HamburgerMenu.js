@@ -120,14 +120,16 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
             </motion.li>
           </motion.ul>
         </nav>
-        <span className={styles.divider}></span>
         <div className={styles["hamburger-menu__info"]}>
-          <p>Chang-Ju (David) Kim</p>
-          <p>Front-end Developer</p>
-          <p>Based in Toronto</p>
+          <span className={styles.divider}></span>
+          <div className={styles.padding}>
+            <p>Chang-Ju (David) Kim</p>
+            <p>Front-end Developer</p>
+            <p>Based in Toronto</p>
+          </div>
           <div className={styles.email}>
             <span className={styles.line}></span>
-            <p>changju.kim10@gmail.com</p>
+            {/* <p>changju.kim10@gmail.com</p> */}
           </div>
         </div>
       </div>
