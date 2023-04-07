@@ -3,40 +3,26 @@
     flex-direction: column;
 }
 
-.about__content {
-    display: flex;
-    flex-direction: column;
+.about p {
+    font-weight: var(--fw-light);
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    line-height: clamp(2rem, 2.8vw, 3rem);
 }
 
 .about__me {
-    padding-top: clamp(3rem, 3vw, 4rem);
-}
-
-.about__me {
-    padding-bottom: clamp(3rem, 3vw, 4rem);
+    padding: clamp(3rem, 3vw, 4rem) 0;
 }
 
 .smiley-icon {
     margin: 0 .5rem;
 }
 
-/* .about__content p, .skill {
-    font-weight: var(--fw-light);
-    font-size: clamp(1.4rem, 1.8vw, 2rem);
-} */
-
-.about__me p {
-    font-weight: var(--fw-light);
-    font-size: clamp(1.4rem, 1.8vw, 2rem);
-    line-height: clamp(2rem, 2.8vw, 3rem);
-}
-
 .about__me p:not(:last-child) {
     margin-bottom: 1.8rem;
 }
 
-.greeting {
-    font-weight: var(--fw-regular) !important;
+.about__me .greeting {
+    font-weight: var(--fw-regular);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -44,8 +30,13 @@
 }
 
 .about__experience {
-    text-transform: uppercase;
     font-size: clamp(1.4rem, 1.8vw, 2rem);
+    font-weight: var(--fw-light);
+}
+
+.about__experience .intro {
+    margin-bottom: 2.5rem;
+    line-height: clamp(2rem, 2.8vw, 3rem);
 }
 
 .about__career {
@@ -65,9 +56,14 @@
     font-weight: var(--fw-light) !important;
 }
 
-.about__career h4, .about__tech h4 {
+.about__career, .about__tech {
+    text-transform: uppercase;
+}
+
+.about__career .title, .about__tech .title {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    font-weight: var(--fw-semi-bold);
 }
 
 .tech-category:not(:last-child) {
@@ -88,19 +84,11 @@
 
 .space {
     display: inline-block;
-    margin-right: 4rem;
-}
-
-.about__experience-title {
-    margin-bottom: 2.5rem;
-    font-weight: var(--fw-regular);
-    font-size: clamp(1.4rem, 1.8vw, 2rem);
-    text-transform: none;
-    line-height: clamp(2rem, 2.8vw, 3rem);
+    margin-right: 5rem;
 }
 
 @media only screen and (min-width: 61.25em) {
-    .about__content {
+    .about {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -116,8 +104,8 @@
         display: flex;
         flex-direction: column;
         width: 45%;
-        padding-top: clamp(3rem, 3vw, 4rem);
         padding-left: clamp(2rem, 4vw, 5rem);
+        padding-top: clamp(3rem, 3vw, 4rem);
         padding-bottom: clamp(2rem, 4vw, 5rem);
     }
 }
