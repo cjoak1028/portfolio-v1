@@ -22,13 +22,13 @@
 }
 
 .hero-image {
-    height: clamp(15rem, 28vw, 28rem);
+    height: clamp(15rem, 25vw, 28rem);
     width: 100%;
     background-image: url('../../assets/img/hero-img.jpg');
     background-position: 50% 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: clamp(1.5rem, 2vw, 2rem) 0;
+    margin: clamp(1.5rem, 3vw, 3rem) 0;
 }
 
 .hero__footer {
