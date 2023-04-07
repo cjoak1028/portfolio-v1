@@ -52,18 +52,6 @@ const Hero = () => {
                 variants={fromBottom}
                 className={styles["hero-image"]}
               ></motion.div>
-              {/* <div className={styles["hero__footer"]}>
-                <motion.div
-                  variants={fromTop}
-                  className={styles["scroll-prompt"]}
-                >
-                  <BsArrowDownShort className={styles["arrow-icon"]} />
-                  <p>Front-end Developer</p>
-                </motion.div>
-                <motion.div variants={fromTop} className={styles.time}>
-                  <Time />
-                </motion.div>
-              </div> */}
             </div>
           </div>
           <div className={styles["hero__section-2"]}>
@@ -75,11 +63,11 @@ const Hero = () => {
                 Chang-Ju.
               </motion.p>
             </div>
-            <div>
-              <motion.p variants={fromBottom} className={styles.title}>
+            <div className={styles["intro-2"]}>
+              <motion.p variants={fromBottom}>
                 I am a <span className={styles.bold}>front-end developer</span>
               </motion.p>
-              <motion.p variants={fromBottom} className={styles.title}>
+              <motion.p variants={fromBottom}>
                 based in <span className={styles.bold}>Toronto</span>.
               </motion.p>
             </div>

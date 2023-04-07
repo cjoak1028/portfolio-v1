@@ -28,7 +28,7 @@ function App() {
             viewport={{ once: true }}
           >
             <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Get to know me</p>
+            {/* <p>Get to know me</p> */}
           </motion.div>
           <motion.div
             className={styles.prompt}
@@ -39,7 +39,7 @@ function App() {
             }}
             viewport={{ once: true }}
           >
-            <p>Get to know me</p>
+            {/* <p>Get to know me</p> */}
             <BsArrowDownShort className={styles["arrow-icon"]} />
           </motion.div>
         </div>
@@ -57,7 +57,7 @@ function App() {
             viewport={{ once: true }}
           >
             <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Check out some of my work</p>
+            {/* <p>Check out some of my work</p> */}
           </motion.div>
           <motion.div
             className={styles.prompt}
@@ -68,7 +68,7 @@ function App() {
             }}
             viewport={{ once: true }}
           >
-            <p>Check out some of my work</p>
+            {/* <p>Check out some of my work</p> */}
             <BsArrowDownShort className={styles["arrow-icon"]} />
           </motion.div>
         </div>
@@ -86,7 +86,7 @@ function App() {
             viewport={{ once: true }}
           >
             <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Reach me</p>
+            {/* <p>Reach me</p> */}
           </motion.div>
           <motion.div
             className={styles.prompt}
@@ -97,7 +97,7 @@ function App() {
             }}
             viewport={{ once: true }}
           >
-            <p>Reach me</p>
+            {/* <p>Reach me</p> */}
             <BsArrowDownShort className={styles["arrow-icon"]} />
           </motion.div>
         </div>
