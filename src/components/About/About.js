@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./About.module.css";
-import Section from "../Layout/Section";
+import Section from "../Section/Section";
 import { AiOutlineSmile } from "react-icons/ai";
 import Marquee from "react-fast-marquee";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
-import Section from "../Layout/Section";
+import Section from "../Section/Section";
 
 const Projects = () => {
   return (

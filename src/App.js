@@ -4,10 +4,9 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
+import Prompt from "./components/Prompt/Prompt";
 import Footer from "./components/Footer/Footer";
-import { BsArrowDownShort } from "react-icons/bs";
 import { Element } from "react-scroll";
-import { motion } from "framer-motion";
 
 function App() {
   return (
@@ -17,90 +16,15 @@ function App() {
         <Element name="hero">
           <Hero />
         </Element>
-        <div className={styles["prompt-container"]}>
-          <motion.div
-            className={`${styles.prompt} ${styles["prompt--rev"]}`}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.6, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Who am I ?</p>
-          </motion.div>
-          <motion.div
-            className={styles.prompt}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.6, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <p>Who am I ?</p>
-            <BsArrowDownShort className={styles["arrow-icon"]} />
-          </motion.div>
-        </div>
+        <Prompt message={"Who am I ?"} />
         <Element name="about">
           <About />
         </Element>
-        <div className={styles["prompt-container"]}>
-          <motion.div
-            className={`${styles.prompt} ${styles["prompt--rev"]}`}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.6, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Check out my work</p>
-          </motion.div>
-          <motion.div
-            className={styles.prompt}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.6, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <p>Check out my work</p>
-            <BsArrowDownShort className={styles["arrow-icon"]} />
-          </motion.div>
-        </div>
+        <Prompt message={"Check out some of my work"} />
         <Element name="projects">
           <Projects />
         </Element>
-        <div className={styles["prompt-container"]}>
-          <motion.div
-            className={`${styles.prompt} ${styles["prompt--rev"]}`}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.6, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <BsArrowDownShort className={styles["arrow-icon"]} />
-            <p>Get in touch</p>
-          </motion.div>
-          <motion.div
-            className={styles.prompt}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.6, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <p>Get in touch</p>
-            <BsArrowDownShort className={styles["arrow-icon"]} />
-          </motion.div>
-        </div>
+        <Prompt message={"changju.kim10@gmail.com"} />
         <Element name="contact">
           <Contact />
         </Element>

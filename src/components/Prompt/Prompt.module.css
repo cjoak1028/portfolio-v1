@@ -1,0 +1,23 @@
+.prompt-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: clamp(10rem, 20vw, 20rem);
+    margin-bottom: clamp(1.5rem, 2vw, 2rem);
+}
+
+.prompt {
+    display: inline-flex;
+    align-items: center;
+}
+
+.prompt p {
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    font-weight: var(--fw-bold);
+    margin-right: .5rem;
+    text-transform: uppercase;
+}
+
+.arrow-icon {
+    font-size: clamp(2rem, 2.3vw, 2.5rem);
+}

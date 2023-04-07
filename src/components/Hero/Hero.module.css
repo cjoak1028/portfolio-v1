@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    position: relative;
 }
 
 .hero__content {
@@ -19,7 +18,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    top: -2rem;
+    top: -1rem;
 }
 
 .hero-image {
@@ -138,11 +137,5 @@
 
     .intro-2 {
         margin-left: clamp(0.5rem, 1vw, 1rem);
-    }
-}
-
-@media only screen and (max-width: 20em) {
-    .time {
-        display: none;
     }
 }
