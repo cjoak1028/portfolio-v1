@@ -47,11 +47,16 @@ const Hero = () => {
                 Chang-Ju.
               </motion.p>
             </div>
-            <div>
+            <div className={styles["hero__image-container"]}>
               <motion.div
                 variants={fromBottom}
                 className={styles["hero-image"]}
               ></motion.div>
+              <div className={styles.email}>
+                <motion.p variants={fromBottom}>
+                  changju.kim10@gmail.com
+                </motion.p>
+              </div>
             </div>
           </div>
           <div className={styles["hero__section-2"]}>
@@ -70,6 +75,11 @@ const Hero = () => {
               <motion.p variants={fromBottom}>
                 based in <span className={styles.bold}>Toronto</span>.
               </motion.p>
+              <div className={styles.email}>
+                <motion.p variants={fromBottom}>
+                  changju.kim10@gmail.com
+                </motion.p>
+              </div>
             </div>
           </div>
         </div>

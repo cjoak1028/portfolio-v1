@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
-import Prompt from "./components/Prompt/Prompt";
+// import Prompt from "./components/Prompt/Prompt";
 import Footer from "./components/Footer/Footer";
 import { Element } from "react-scroll";
 
