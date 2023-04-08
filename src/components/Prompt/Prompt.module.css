@@ -3,7 +3,7 @@
     display: flex;
     justify-content: flex-end;
     margin-top: clamp(10rem, 20vw, 20rem);
-    margin-bottom: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: clamp(1rem, 1vw, 2rem);
 }
 
 .prompt {
@@ -14,7 +14,7 @@
 .prompt p {
     font-size: clamp(1rem, 1.1vw, 1.2rem);
     font-weight: var(--fw-bold);
-    margin-right: .5rem;
+    margin-right: clamp(.2rem, .4vw, .5rem);
     text-transform: uppercase;
 }
 

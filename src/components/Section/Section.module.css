@@ -2,6 +2,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    margin-top: clamp(10rem, 20vw, 30rem);
 }
 
 .marquee__title {
@@ -23,8 +24,6 @@
     width: 100%;
     background-color: var(--c-sub);
 }
-
-
 
 @media only screen and (min-width: 61.25em) {
     .section {

@@ -16,15 +16,15 @@ function App() {
         <Element name="hero">
           <Hero />
         </Element>
-        <Prompt message={"Who am I ?"} />
+        {/* <Prompt message={""} /> */}
         <Element name="about">
           <About />
         </Element>
-        <Prompt message={"Check out some of my work"} />
+        {/* <Prompt message={""} /> */}
         <Element name="projects">
           <Projects />
         </Element>
-        <Prompt message={"changju.kim10@gmail.com"} />
+        {/* <Prompt message={""} /> */}
         <Element name="contact">
           <Contact />
         </Element>

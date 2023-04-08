@@ -16,7 +16,7 @@ const Prompt = ({ message }) => {
         viewport={{ once: true }}
       >
         <p>{message}</p>
-        <BsArrowDownShort className={styles["arrow-icon"]} />
+        {/* <BsArrowDownShort className={styles["arrow-icon"]} /> */}
       </motion.div>
     </div>
   );
