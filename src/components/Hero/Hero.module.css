@@ -96,7 +96,6 @@
 .hero__section-2 .email p {
     margin-top: 4rem;
     width: 100%;
-    /* text-align: right; */
     font-size: 1.1rem;
     font-weight: var(--fw-medium);
 }
@@ -159,7 +158,6 @@
 
     .hero-image {
         margin: 0;
-        /* margin-right: 0.8rem; */
         margin-bottom: 0.8rem;
     }
 
