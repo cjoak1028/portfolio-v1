@@ -110,13 +110,14 @@
 
     .hero__content {
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: center;
         max-width: 120rem;
         width: 100%;
     }
 
     .hero__section-1 {
         width: 45%;
+        margin-left: clamp(4rem, 7vw, 10rem);
     }
 
     .hero__section-2 {
