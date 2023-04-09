@@ -39,7 +39,7 @@ const Hero = () => {
       >
         <div className={styles["hero__content"]}>
           <div className={styles["hero__section-1"]}>
-            <div className={styles.intro}>
+            <div className={styles["intro-1"]}>
               <motion.p variants={fromBottom} className={styles.greeting}>
                 Hello, my name is
               </motion.p>
