@@ -1,6 +1,6 @@
 .hero-container {
     height: 100vh;
-    min-height: 65rem;
+    min-height: 70rem;
     margin-bottom: clamp(5rem, 8vw, 10rem);
 }
 
@@ -20,7 +20,7 @@
     overflow: hidden;
     max-width: 55rem;
     position: relative;
-    top: -2rem;
+    top: -3rem;
 }
 
 .hero-image {
