@@ -20,7 +20,7 @@
     overflow: hidden;
     max-width: 55rem;
     position: relative;
-    top: -1rem;
+    top: -2rem;
 }
 
 .hero-image {
@@ -94,7 +94,7 @@
 }
 
 .hero__section-2 .email p {
-    margin-top: 4rem;
+    margin-top: 3rem;
     width: 100%;
     font-size: 1.2rem;
     font-weight: var(--fw-medium);
