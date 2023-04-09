@@ -60,7 +60,7 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles["hero__section-2"]}>
-            <div className={styles.intro}>
+            <div className={styles["intro-1"]}>
               <motion.p variants={fromBottom} className={styles.greeting}>
                 Hello, my name is
               </motion.p>

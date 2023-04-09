@@ -19,7 +19,6 @@
     overflow: hidden;
     max-width: 55rem;
     position: relative;
-    /* top: -2rem; */
 }
 
 .hero-image {
@@ -61,17 +60,17 @@
     font-weight: var(--fw-light);
     font-size: clamp(1.4rem, 1.8vw, 2rem);
     margin-left: clamp(0.2rem, 1vw, 1rem);
-    margin-bottom: clamp(0.5rem, 1vw, 2rem);
+    margin-bottom: clamp(0.5rem, 0.5vw, 1rem);
     color: rgb(79, 79, 79);
 }
 
 .name {
-    font-size: clamp(4rem, 8vw, 8rem);
+    font-size: clamp(4rem, 7vw, 8rem);
     font-weight: var(--fw-medium);
 }
 
 .intro-2 p {
-    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
     font-weight: var(--fw-regular);
     color: rgb(79, 79, 79);
 }
@@ -88,7 +87,7 @@
     display: none;
 }
 
-.hero__section-2 .intro {
+.hero__section-2 .intro-1 {
     display: none;
 }
 
@@ -104,12 +103,6 @@
     display: none;
 }
 
-@media only screen and (min-width: 43.75em) {
-    .hero__content {
-        /* top: -4rem; */
-    }
-}
-
 @media only screen and (min-width: 61.25em) {
     .hero {
         align-items: center;
@@ -120,7 +113,6 @@
         justify-content: space-between;
         max-width: 120rem;
         width: 100%;
-        /* top: -1rem; */
     }
 
     .hero__section-1 {
@@ -155,11 +147,11 @@
         display: block;
     }
 
-    .hero__section-2 .intro {
+    .hero__section-2 .intro-1 {
         display: block;
     }
 
-    .hero__section-1 .intro {
+    .hero__section-1 .intro-1 {
         display: none;
     }
 
