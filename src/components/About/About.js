@@ -20,20 +20,20 @@ const About = () => {
         >
           <p className={styles.greeting}>
             Hello <AiOutlineSmile className={styles["smiley-icon"]} /> &#8212;
-            I'm Chang-Ju (David) Kim.
+            I'm David Kim.
           </p>
           <p>
-            As a front-end developer, I am driven by a desire to create digital
+            As a software engineer, I am driven by a desire to create digital
             experiences that are accessible and user-friendly for everyone. With
             more and more everyday tasks turning digital, it is crucial that we
             are mindful of those who may have difficulty adapting to the rapidly
-            changing times. That's why I am dedicated to building web
+            changing times. That's why I am dedicated to building
             experiences that cater to a diverse range of demographics, ensuring
             that everyone has equal access to the digital world.
           </p>
           <p>
             I am committed to staying up-to-date with the latest trends and
-            technologies in web development, and currently I am seeking new,
+            technologies in software development, and currently I am seeking new,
             exciting opportunities to expand my skill set.
           </p>
         </motion.div>

@@ -135,7 +135,7 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           className={styles.project}
           initial={{ opacity: 0 }}
           whileInView={{
@@ -144,7 +144,7 @@ const Projects = () => {
           }}
           viewport={{ once: true }}
         >
-          <h3>03. CJ Portfolio</h3>
+          <h3>03. DK Portfolio</h3>
           <div className={styles["flex-container"]}>
             <div
               className={`${styles["project__img"]} ${styles["project__img--portfolio"]}`}
@@ -200,7 +200,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </Section>
   );

@@ -16,19 +16,21 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: 55rem;
     position: relative;
 }
 
 .hero-image {
-    height: clamp(15rem, 23vw, 28rem);
+    height: clamp(15rem, 20vw, 25rem);
     width: 100%;
     background-image: url('../../assets/img/hero-img.jpg');
     background-position: 50% 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: clamp(1.5rem, 3vw, 3rem) 0;
+    margin: clamp(1.5rem, 2vw, 3rem) 0;
+    border-radius: 0.5rem;
+    /* box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .hero__footer {
@@ -59,24 +61,25 @@
 .greeting {
     font-weight: var(--fw-light);
     font-size: clamp(1.4rem, 1.8vw, 2rem);
-    margin-left: clamp(0.2rem, 1vw, 1rem);
+    /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
     margin-bottom: clamp(0.5rem, 0.5vw, 1rem);
     color: rgb(79, 79, 79);
 }
 
 .name {
-    font-size: clamp(4rem, 7vw, 8rem);
+    font-size: clamp(4rem, 5vw, 6rem);
     font-weight: var(--fw-medium);
+    /* text-transform: uppercase; */
 }
 
 .intro-2 p {
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
-    font-weight: var(--fw-regular);
-    color: rgb(79, 79, 79);
+    /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
+    font-size: clamp(1.4rem, 1.8vw, 2rem);
+    font-weight: var(--fw-light);
 }
 
 .intro-2 .bold {
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
 }
 
 .intro-2 p:not(:last-child) {
@@ -110,14 +113,14 @@
 
     .hero__content {
         flex-direction: row-reverse;
-        justify-content: center;
-        max-width: 120rem;
+        justify-content: space-between;
+        max-width: 110rem;
         width: 100%;
     }
 
     .hero__section-1 {
-        width: 45%;
-        margin-left: clamp(4rem, 7vw, 10rem);
+        width: 64%;
+        /* margin-left: clamp(4rem, 7vw, 10rem); */
     }
 
     .hero__section-2 {
@@ -158,11 +161,7 @@
 
     .hero-image {
         margin: 0;
-        margin-bottom: 0.8rem;
-    }
-
-    .intro-2 {
-        margin-left: clamp(0.5rem, 1vw, 1rem);
+        margin-left: 0;
     }
 
     .email {

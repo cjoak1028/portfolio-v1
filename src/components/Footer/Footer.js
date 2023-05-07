@@ -4,8 +4,8 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={`${styles.footer} padding-x`}>
-      <p>DESIGNED & BUILT BY CHANG-JU KIM</p>
-      <p className={styles.copyright}>CK PORTFOLIO &#169; 2023</p>
+      <p>DESIGNED & BUILT BY DAVID KIM</p>
+      <p className={styles.copyright}>DK PORTFOLIO &#169; 2023</p>
     </div>
   );
 };

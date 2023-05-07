@@ -44,7 +44,7 @@ const Hero = () => {
                 Hello, my name is
               </motion.p>
               <motion.p variants={fromBottom} className={styles.name}>
-                Chang-Ju.
+                David Kim.
               </motion.p>
             </div>
             <div className={styles["hero__image-container"]}>
@@ -52,11 +52,11 @@ const Hero = () => {
                 variants={fromBottom}
                 className={styles["hero-image"]}
               ></motion.div>
-              <div className={styles.email}>
+              {/* <div className={styles.email}>
                 <motion.p variants={fromBottom}>
                   changju.kim10@gmail.com
                 </motion.p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={styles["hero__section-2"]}>
@@ -65,21 +65,21 @@ const Hero = () => {
                 Hello, my name is
               </motion.p>
               <motion.p variants={fromBottom} className={styles.name}>
-                Chang-Ju.
+                David Kim.
               </motion.p>
             </div>
             <div className={styles["intro-2"]}>
               <motion.p variants={fromBottom}>
-                I am a <span className={styles.bold}>front-end developer</span>
+                I am a <span className={styles.bold}>software engineer</span>
               </motion.p>
               <motion.p variants={fromBottom}>
                 based in <span className={styles.bold}>Toronto</span>.
               </motion.p>
-              <div className={styles.email}>
+              {/* <div className={styles.email}>
                 <motion.p variants={fromBottom}>
                   changju.kim10@gmail.com
                 </motion.p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

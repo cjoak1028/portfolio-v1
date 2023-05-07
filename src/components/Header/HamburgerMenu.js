@@ -64,7 +64,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
             onClick={handleMenuClick}
             className={"link"}
           >
-            CK PORTFOLIO
+            DK PORTFOLIO
           </Link>
         </p>
         <button className={styles["close-button"]} onClick={handleMenuClick}>
@@ -121,8 +121,8 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
           </motion.ul>
         </nav>
         <div className={styles["hamburger-menu__info"]}>
-          <p>Chang-Ju (David) Kim</p>
-          <p>Front-end Developer</p>
+          <p>David Kim</p>
+          <p>Software Engineer</p>
           <p>changju.kim10@gmail.com</p>
         </div>
       </div>
