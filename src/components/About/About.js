@@ -20,7 +20,7 @@ const About = () => {
         >
           <p className={styles.greeting}>
             Hello <AiOutlineSmile className={styles["smiley-icon"]} /> &#8212;
-            I'm David Kim.
+            I'm David.
           </p>
           <p>
             As a software engineer, I am driven by a desire to create digital

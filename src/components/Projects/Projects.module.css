@@ -1,7 +1,7 @@
 .projects {
     border-left: 1px solid var(--c-sub);
     padding-left: 0.8rem;
-    margin-top: clamp(2rem, 4vw, 5rem);
+    margin-top: clamp(3rem, 3vw, 4rem);
 }
 
 .project {
