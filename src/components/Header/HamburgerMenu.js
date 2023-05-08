@@ -123,7 +123,7 @@ const HamburgerMenu = ({ open, getOpenMenu }) => {
         <div className={styles["hamburger-menu__info"]}>
           <p>David Kim</p>
           <p>Software Engineer</p>
-          <p>changju.kim10@gmail.com</p>
+          <p>Based in Toronto</p>
         </div>
       </div>
     </Div100vh>
